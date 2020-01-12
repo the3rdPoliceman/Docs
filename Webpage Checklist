@@ -49,7 +49,8 @@ favicon
 SRI (Subresource Integrity)
 	used on remotely loaded resources from CDN etc.
 
-
+Tabbing
+	tabindex set on elements if necessary
 
 CSS
 
