@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<title>Website Checklist</title>
+	</head>
+	<body>
+		<h1>WEBPAGE CHECKLIST ( See https://codeburst.io/the-front-end-checklist-8b2292fdda44 for more detail)</h1>
+		<h3>HTML</h3>
+		<h5>doctype </h5>
+		<!doctype html>
+		<h5>html[lang] set to correct language</h5>
+		<!-- <html lang="fr"</pre> -->
+			<h5>rtl</h5>
+			<!-- <html dir="rtl"> -->
+				<h5>alternate languages</h5>
+				<!-- <link rel="alternate" href="https://es.example.com/" hreflang="es"> -->
+				<h5>IE Conditionals</h5>
+				Conditional comments are present for IE if needed.
+				<h5>Critical CSS Inlined</h5>
+				<!-- inline critical CSS: CSS which styles content that is immediately visible during pageload (“above the fold content”) is called “critical CSS”. It is embedded before your principal CSS call and between <style></style> in a single line (minified). -->
+				<h5>Import order</h5>
+				All CSS files are loaded before any JavaScript files
+				<h5>encoding set </h5>
+				<!-- <meta charset="utf-8"> -->
+				<h5>title set </h5>
+				<!-- <title>Page Title less than 65 characters</title> -->
+				<h5>description </h5>
+				<!-- <meta name="description" content="Description of the page less than 150 characters"> -->
+				<h5>author set</h5>
+				<h5>favicon </h5>
+				see https://css-tricks.com/favicon-quiz/ & realfavicon webpage
+				and https://github.com/audreyr/favicon-cheat-sheet
+				<!-- e.g.<link rel="icon" type="image/png" href="https://example.com/favicon.png"> -->
+				<h5>x-ua-compatible</h5>
+				<!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+				<h5>viewport</h5>
+				<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+				<h5>SRI (Subresource Integrity)</h5>
+				used on remotely loaded resources from CDN etc.
+				<h3>CSS</h3>
+				<h5>Web Fonts</h5>
+				Webfont format: WOFF, WOFF2 and TTF are supported by all modern browsers.
+				<h5>CSS Print</h5>
+				Print stylesheet present
+				<h5>Inline CSS</h5>
+				Should not exist
+				<h5>CSS Concatenated into single file & minified</h5>
+				<h5>Responsive</h5>
+				All pages were tested at the following breakpoints: 320px, 768px, 1024px
+				<h3>IMAGES</h3>
+				
+				<h5>Alt Text</h5>
+				Images have alt text
+				<h5>Optimization</h5>
+				All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).
+				<h3>JAVASCRIPT</h3>
+				<h5>No inline</h5>
+				No inline
+				<h5>Javascript files concatenated & minified</h5>
+				<h5>Linting</h5>
+				ESLint: No errors are flagged by ESLint
+				<h3>SECURITY</h3>
+				securityheaders.io
+				Observatory by Mozilla
+				<h5>Use HTTPS </h5>
+				On all pages
+				<h5>Lots of other stuff on</h5>
+				https://codeburst.io/the-front-end-checklist-8b2292fdda44
+				<h3>VALIDATION</h3>
+				<h5>Internationalisation</h5>
+				https://validator.w3.org/unicorn/
+				<h5>Links</h5>
+				https://validator.w3.org/checklink
+				<h5>HTML Lint</h5>
+				https://www.10bestdesign.com/dirtymarkup/
+				<h3>SEO</h3>
+				<h5>Google Analytics: </h5>
+				Google Analytics is installed and correctly configured.
+				<h5>Headings logic: </h5>
+				Heading text helps to understand the content in the current page.
+				<h5>sitemap.xml: </h5>
+				A sitemap.xml exists and was submitted to Google Search Console (previously Google Webmaster Tools).
+				<h5>robots.txt: </h5>
+				The robots.txt is not blocking webpages.
+			</body>
+			<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+			<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+			<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		</html>
