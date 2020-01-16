@@ -1,0 +1,22 @@
+h1{
+	margin-top: 2.0rem;
+	background: #668;
+	color: white;
+}
+
+h3{
+	margin-top: 1.5rem;
+	background: #BBD;
+}
+
+h5{
+	border-top: 1px solid #BBB;
+	margin-top: 1.0rem;
+	padding-top: 0.5rem;
+}
+
+code.html{
+	border: 1px solid #CCC;
+	background: #EEE;
+	padding: 10px;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!-- Required meta tags always come first -->
@@ -11,6 +11,7 @@
 		<title>Website Checklist</title>
 	</head>
 	<body>
+		<div class="container">
 		<h1>WEBPAGE CHECKLIST</h1>
 		( See https://codeburst.io/the-front-end-checklist-8b2292fdda44 for more detail)
 		<h3>HTML</h3>
@@ -21,28 +22,28 @@
 			<h5>rtl</h5>
 			<!-- <html dir="rtl"> -->
 				<h5>alternate languages</h5>
-				<!-- <link rel="alternate" href="https://es.example.com/" hreflang="es"> -->
+				<pre><code class="html">&lt;link rel=&quot;alternate&quot; href=&quot;https://es.example.com/&quot; hreflang=&quot;es&quot;&gt;</code></pre>
 				<h5>IE Conditionals</h5>
 				Conditional comments are present for IE if needed.
 				<h5>Critical CSS Inlined</h5>
-				<!-- inline critical CSS: CSS which styles content that is immediately visible during pageload (“above the fold content”) is called “critical CSS”. It is embedded before your principal CSS call and between <style></style> in a single line (minified). -->
+				inline critical CSS: CSS which styles content that is immediately visible during pageload (“above the fold content”) is called “critical CSS”. It is embedded before your principal CSS call and between <pre><code class="html">&lt;style&gt;&lt;/style&gt;</code></pre> in a single line (minified).
 				<h5>Import order</h5>
 				All CSS files are loaded before any JavaScript files
 				<h5>encoding set </h5>
-				<!-- <meta charset="utf-8"> -->
+				<pre><code class="html">&lt;meta charset=&quot;utf-8&quot;&gt;</code></pre>
 				<h5>title set </h5>
-				<!-- <title>Page Title less than 65 characters</title> -->
+				<pre><code class="html">&lt;title&gt;Page Title less than 65 characters&lt;/title&gt;</code></pre>
 				<h5>description </h5>
-				<!-- <meta name="description" content="Description of the page less than 150 characters"> -->
+				<pre><code class="html">&lt;meta name=&quot;description&quot; content=&quot;Description of the page less than 150 characters&quot;&gt;</code></pre>
 				<h5>author set</h5>
 				<h5>favicon </h5>
 				see https://css-tricks.com/favicon-quiz/ & realfavicon webpage
 				and https://github.com/audreyr/favicon-cheat-sheet
-				<!-- e.g.<link rel="icon" type="image/png" href="https://example.com/favicon.png"> -->
+				e.g.<pre><code class="html">&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;</code></pre>https://example.com/favicon.png&quot;&gt;</code></pre>
 				<h5>x-ua-compatible</h5>
-				<!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+				<pre><code class="html">&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;</code></pre>
 				<h5>viewport</h5>
-				<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+				<pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code></pre>
 				<h5>SRI (Subresource Integrity)</h5>
 				used on remotely loaded resources from CDN etc.
 				<h3>CSS</h3>
@@ -91,6 +92,7 @@
 				<h5>robots.txt: </h5>
 				The robots.txt is not blocking webpages.
 			</body>
+		</div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
