@@ -9,7 +9,7 @@ h3{
 	background: #BBD;
 }
 
-h5{
+.topic{
 	border-top: 1px solid #BBB;
 	margin-top: 1.0rem;
 	padding-top: 0.5rem;
@@ -18,5 +18,11 @@ h5{
 code.html{
 	border: 1px solid #CCC;
 	background: #EEE;
+	padding: 10px;
+}
+
+.daves-media-item{
+	border: 5px solid #EEE;
+	margin: 10px 0px 0px 0px;
 	padding: 10px;
 }
