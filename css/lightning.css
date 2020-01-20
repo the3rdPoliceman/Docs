@@ -1,0 +1,32 @@
+.header {
+  background: #51D0DE;
+  color: #BF4AA8;
+  padding: 50px 0px 50px 0px;
+  font-size: 800%;
+  font-weight: 900;
+  text-decoration: underline; }
+
+.section {
+  padding: 0px 0px 30px 0px; }
+
+.section-header {
+  color: #BF4AA8;
+  font-size: 200%;
+  font-weight: 500; }
+
+body {
+  background: #51D0DE; }
+
+a {
+  color: #D9D9D9;
+  font-size: 140%;
+  font-weight: 600; }
+
+a:hover {
+  color: #D9D9D9;
+  font-weight: 600;
+  text-decoration: none;
+  outline: 5px solid #D9D9D9; }
+
+a:focus {
+  outline: 5px solid #D9D9D9; }

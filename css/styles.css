@@ -1,28 +1,23 @@
-h1{
-	margin-top: 2.0rem;
-	background: #668;
-	color: white;
-}
+h1 {
+  margin-top: 2.0rem;
+  background: #668;
+  color: white; }
 
-h3{
-	margin-top: 1.5rem;
-	background: #BBD;
-}
+h3 {
+  margin-top: 1.5rem;
+  background: #BBD; }
 
-.topic{
-	border-top: 1px solid #BBB;
-	margin-top: 1.0rem;
-	padding-top: 0.5rem;
-}
+.topic {
+  border-top: 1px solid #BBB;
+  margin-top: 1.0rem;
+  padding-top: 0.5rem; }
 
-code.html{
-	border: 1px solid #CCC;
-	background: #EEE;
-	padding: 10px;
-}
+code.html {
+  border: 1px solid #CCC;
+  background: #EEE;
+  padding: 10px; }
 
-.daves-media-item{
-	border: 5px solid #EEE;
-	margin: 10px 0px 0px 0px;
-	padding: 10px;
-}
+.daves-media-item {
+  background: #EEE;
+  margin: 10px 0px 0px 0px;
+  padding: 10px; }

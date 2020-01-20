@@ -1,0 +1,44 @@
+$lightning-blue: #51D0DE;
+$lightning-purple: #BF4AA8;
+$lightning-white: #D9D9D9;
+
+
+.header{
+	background: $lightning-blue;
+	color: $lightning-purple;
+	padding: 50px 0px 50px 0px;
+	font-size: 800%;
+	font-weight : 900;
+	text-decoration: underline;
+}
+
+.section{
+	padding: 0px 0px 30px 0px;
+}
+
+.section-header{
+	color: $lightning-purple;
+	font-size: 200%;
+	font-weight : 500;
+}
+
+body{
+	background: $lightning-blue;
+}
+
+a{
+	color: $lightning-white;
+	font-size: 140%;
+	font-weight: 600;
+}
+
+a:hover{
+	color: $lightning-white;
+	font-weight: 600;
+	text-decoration: none;
+	outline: 5px solid $lightning-white;;
+}
+
+a:focus{
+	outline: 5px solid $lightning-white;;
+}
