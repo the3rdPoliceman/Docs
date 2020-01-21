@@ -6,6 +6,9 @@
   font-weight: 900;
   text-decoration: underline; }
 
+.header-highlight{
+ color: #D9D9D9;
+}
 .section {
   padding: 0px 0px 30px 0px; }
 
