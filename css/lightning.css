@@ -14,19 +14,29 @@
   font-size: 200%;
   font-weight: 500; }
 
+.container {
+  border-right: 90px solid #E9E9E9; }
+
+.vertical-filler {
+  flex-grow: 1; }
+
+html {
+  height: 100%; }
+
 body {
-  background: #51D0DE; }
+  background: #51D0DE;
+  min-height: 100%; }
 
 a {
-  color: #D9D9D9;
+  color: #E9E9E9;
   font-size: 140%;
   font-weight: 600; }
 
 a:hover {
-  color: #D9D9D9;
+  color: #E9E9E9;
   font-weight: 600;
   text-decoration: none;
-  outline: 5px solid #D9D9D9; }
+  outline: 5px solid #E9E9E9; }
 
 a:focus {
-  outline: 5px solid #D9D9D9; }
+  outline: 5px solid #E9E9E9; }

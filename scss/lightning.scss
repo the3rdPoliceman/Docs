@@ -1,6 +1,6 @@
 $lightning-blue: #51D0DE;
 $lightning-purple: #BF4AA8;
-$lightning-white: #D9D9D9;
+$lightning-white: #E9E9E9;
 
 
 .header{
@@ -22,8 +22,21 @@ $lightning-white: #D9D9D9;
 	font-weight : 500;
 }
 
+.container{
+	border-right: 90px solid $lightning-white;
+}
+
+.vertical-filler{
+	flex-grow: 1;
+}
+
+html{
+	height: 100%;
+}
+
 body{
 	background: $lightning-blue;
+	min-height: 100%;
 }
 
 a{
