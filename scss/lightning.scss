@@ -34,6 +34,42 @@ $lightning-white: #E9E9E9;
 	flex-grow: 1;
 }
 
+@media (max-width: 576){
+  .useless-ball{
+    height: 50px;
+    width: 50px;
+    top: calc(100% - 75px);
+    left: calc(100% - 75px);
+    border-radius: 25px;
+  }
+  .useless-ball:hover{
+    height: 50px;
+    width: 50px;
+    top: calc(100% - 75px);
+    left: calc(100% - 75px);
+    border-radius: 25px;
+  }
+}
+
+.useless-ball{
+    height: 100px;
+    width: 100px;
+    top: calc(100% - 150px);
+    left: calc(100% - 150px);
+    border-radius: 50px;
+    z-index: 10;
+    background: $lightning-purple;
+    position: fixed;
+}
+
+.useless-ball:hover{
+	height: 120px;
+    width: 120px;
+    top: calc(100% - 160px);
+    left: calc(100% - 160px);
+    border-radius: 60px;
+}
+
 html{
 	height: 100%;
 }
