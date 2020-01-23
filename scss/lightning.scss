@@ -1,10 +1,10 @@
 $lightning-blue: #51D0DE;
 $lightning-purple: #BF4AA8;
 $lightning-white: #E9E9E9;
+$lightning-pink: lighten($lightning-purple, 25%);
 
 
 .header{
-	background: $lightning-blue;
 	color: $lightning-purple;
 	padding: 50px 0px 50px 0px;
 	font-size: 800%;
@@ -58,8 +58,9 @@ $lightning-white: #E9E9E9;
     left: calc(100% - 150px);
     border-radius: 50px;
     z-index: 10;
-    background: $lightning-purple;
+    background: $lightning-pink;
     position: fixed;
+    z-index: -10;
 }
 
 .useless-ball:hover{

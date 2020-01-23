@@ -1,75 +1,62 @@
+// config settings
+let framesPerSecond = 100.0;
+let averageTimeToFindSomethingInteresting = 2000.0; // average time in ms to find something of interest
+let interestTimeLimit = 3000.0;  // maximum time to retain interest, in ms
+let speedLimit = 8.0;  // max pixels per frame to move in any direction per frame
+let accelerationLimit = 3; // maximum acceleration (in pixels per frame) per frame
+let attractionToMiddleOfScreen = 0.1;
+
+// constants
+const MS_PER_SECOND = 1000.0
+
+// main code
 let ball = document.getElementById('useless-ball');
+let speedX = 0.0;
+let speedY = 0.0;
+let accelerationRange = accelerationLimit * 2 + 1;
+let speedYcurrentInterestLevel = 0;
+let msPerRefresh = Math.floor((1.0/framesPerSecond) * MS_PER_SECOND);
+let framesToFindSomethingInteresting = Math.floor(averageTimeToFindSomethingInteresting/msPerRefresh)
 
-let attractionX = 0.0;
-let attractionY = 0.0;
-
-let id = setInterval(frame, 10);
-
-let currentInterestRemaining = 0;
-
-function frame() {
-	if (currentInterestRemaining > 0){
-		currentInterestRemaining--;
+// start loop
+let id = setInterval(refresh, msPerRefresh);
+function refresh() {
+	if (speedYcurrentInterestLevel > 0){
+		speedYcurrentInterestLevel--;
 		return;
 	}
 
-	let foundSomethingInteresting = Math.floor(Math.random() * 300) == 134;
+	let foundSomethingInteresting = Math.floor(Math.random() * framesToFindSomethingInteresting) == 0;
 	if (foundSomethingInteresting){
-		let howInteresting = Math.floor(Math.random() * 500);
-		currentInterestRemaining = howInteresting;
+		speedYcurrentInterestLevel = Math.floor(Math.random() * interestTimeLimit/MS_PER_SECOND * framesPerSecond);
 		return;
 	}
 
-    let attractionXAdjustment = Math.floor(Math.random() * 5) - 2;
-    let attractionYAdjustment = Math.floor(Math.random() * 5) - 2;
-    attractionX = Math.min(attractionX + attractionXAdjustment, 10);
-    attractionY = Math.min(attractionY + attractionYAdjustment,10);
-    attractionX = Math.max(attractionX + attractionYAdjustment,-10);
-    attractionY = Math.max(attractionY + attractionYAdjustment,-10);
+    let speedXAdjustment = Math.floor(Math.random() * accelerationRange) - accelerationLimit;
+    let speedYAdjustment = Math.floor(Math.random() * accelerationRange) - accelerationLimit;
+    speedX = Math.min(speedX + speedXAdjustment, speedLimit);
+    speedY = Math.min(speedY + speedYAdjustment,speedLimit);
+    speedX = Math.max(speedX + speedYAdjustment,-1 * speedLimit);
+    speedY = Math.max(speedY + speedYAdjustment,-1 * speedLimit);
 
     let currentTop = ball.style.top.replace("px", ""); 
     let currentLeft = ball.style.left.replace("px", ""); 
-    if (currentTop.length == 0){
-        currentTop = 0;
-    }
-    else{
-        currentTop = parseInt(currentTop);
-    }
+    currentTop = (currentTop.length == 0) ? 0 : parseInt(currentTop);
+    currentLeft = (currentLeft.length == 0) ? 0 : parseInt(currentLeft);
 
-    if (currentLeft.length == 0){
-        currentLeft = 0;
-    }
-    else{
-        currentLeft = parseInt(currentLeft);
-    }
+    let viewportWidth = getViewport()[0];
+    let viewportHeight = getViewport()[1];
+    let halfViewportWidth = viewportWidth/2;
+    let halfViewportHeight = viewportHeight/2;
 
-    if (currentTop < 50){
-        attractionY += 1;
-    }
-    if (currentLeft < 50){
-        attractionX += 1;
-    }
-    if (currentTop > (getViewport()[0] - 50)){
-        attractionY -= 1;
-    }
-    if (currentLeft > (getViewport()[1] - 50)){
-        attractionX -= 1;
-    }
-    if (currentTop < -50){
-        attractionY += 1;
-    }
-    if (currentLeft < -50){
-        attractionX += 1;
-    }
-    if (currentTop > (getViewport()[0] + 50)){
-        attractionY -= 1;
-    }
-    if (currentLeft > (getViewport()[1] + 50)){
-        attractionX -= 1;
-    }
+    let xRatio = (halfViewportWidth - currentLeft)/halfViewportWidth;
+    let yRatio = (halfViewportHeight - currentTop)/halfViewportHeight;
+
+    speedX += xRatio * attractionToMiddleOfScreen;
+    speedY += yRatio * attractionToMiddleOfScreen;
     
-    let movementTop = 0 + attractionY;
-    let movementLeft = 0 + attractionX;
+    let movementTop = 0 + speedY;
+    let movementLeft = 0 + speedX;
     
     let newTop = currentTop + movementTop;
     let newLeft = currentLeft + movementLeft;

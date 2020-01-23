@@ -1,5 +1,4 @@
 .header {
-  background: #51D0DE;
   color: #BF4AA8;
   padding: 50px 0px 50px 0px;
   font-size: 800%;
@@ -44,8 +43,9 @@
   left: calc(100% - 150px);
   border-radius: 50px;
   z-index: 10;
-  background: #BF4AA8;
-  position: fixed; }
+  background: #e0a8d5;
+  position: fixed;
+  z-index: -10; }
 
 .useless-ball:hover {
   height: 120px;
