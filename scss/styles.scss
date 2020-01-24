@@ -1,5 +1,8 @@
 $bg-grey : #EEE;
 
+body{
+	font-size: 110%;
+}
 
 h1{
 	margin-top: 2.0rem;
@@ -28,4 +31,66 @@ code.html{
 	background: $bg-grey;
 	margin: 10px 0px 0px 0px;
 	padding: 10px;
+}
+
+// sublime cheatcheet formatting
+.entry{
+}
+
+.command{
+	background: #DDD;
+	margin-bottom: 2px; 
+	padding: 2px 15px;
+}
+
+.keyboard-shortcut{
+	background: #EEE;
+	margin-bottom: 2px;
+	border-right: 2px solid white;
+	padding: 2px 15px;
+}
+
+.section-title{
+	font-size : 130%;
+	margin : 20px 0px 4px 0px;
+	text-transform: uppercase;
+}
+
+.page-title{
+	font-size : 250%;
+}
+
+.spacer{
+	margin-bottom: 7px;
+}
+// how-did-i-fix specific formatting
+.problem-area{
+}
+
+.problem-area-title{
+	font-size: 140%;
+	margin: 20px 0px 5px 0px;
+}
+
+.problem-list{
+}
+
+.problem-description{
+	background: #FDD;
+	padding: 15px 10px;
+	font-size: 110%;
+	border-top : 1px solid #CCC;
+	border-left : 1px solid #CCC;
+	border-right : 1px solid #CCC;
+}
+
+.solution{
+	background: #DFD;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 10px;
+	border : 1px solid #CCC;
+}
+
+.solution-link{
+
 }

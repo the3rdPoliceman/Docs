@@ -11,6 +11,9 @@
 .section {
   padding: 0px 0px 30px 0px; }
 
+.section a {
+  display: block; }
+
 .section-header {
   color: #BF4AA8;
   font-size: 200%;

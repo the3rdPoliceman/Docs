@@ -1,10 +1,10 @@
 // config settings
-let framesPerSecond = 100.0;
-let averageTimeToFindSomethingInteresting = 2000.0; // average time in ms to find something of interest
-let interestTimeLimit = 3000.0;  // maximum time to retain interest, in ms
-let speedLimit = 8.0;  // max pixels per frame to move in any direction per frame
-let accelerationLimit = 3; // maximum acceleration (in pixels per frame) per frame
-let attractionToMiddleOfScreen = 0.1;
+let framesPerSecond = 200.0;
+let averageTimeToFindSomethingInteresting = 1200.0; // average time in ms to find something of interest
+let interestTimeLimit = 8000.0;  // maximum time to retain interest, in ms
+let speedLimit = 15.0;  // max pixels per frame to move in any direction per frame
+let accelerationLimit = 25; // maximum acceleration (in pixels per frame) per frame
+let attractionToMiddleOfScreen = 0.2;
 
 // constants
 const MS_PER_SECOND = 1000.0
@@ -29,15 +29,17 @@ function refresh() {
 	let foundSomethingInteresting = Math.floor(Math.random() * framesToFindSomethingInteresting) == 0;
 	if (foundSomethingInteresting){
 		speedYcurrentInterestLevel = Math.floor(Math.random() * interestTimeLimit/MS_PER_SECOND * framesPerSecond);
+        speedX = 0.0;
+        speedY = 0.0;
 		return;
 	}
 
-    let speedXAdjustment = Math.floor(Math.random() * accelerationRange) - accelerationLimit;
-    let speedYAdjustment = Math.floor(Math.random() * accelerationRange) - accelerationLimit;
+    let speedXAdjustment = (Math.floor(Math.random() * accelerationRange) - accelerationLimit)/10;
+    let speedYAdjustment = (Math.floor(Math.random() * accelerationRange) - accelerationLimit)/10;
     speedX = Math.min(speedX + speedXAdjustment, speedLimit);
-    speedY = Math.min(speedY + speedYAdjustment,speedLimit);
-    speedX = Math.max(speedX + speedYAdjustment,-1 * speedLimit);
-    speedY = Math.max(speedY + speedYAdjustment,-1 * speedLimit);
+    speedY = Math.min(speedY + speedYAdjustment, speedLimit);
+    speedX = Math.max(speedX + speedYAdjustment, -1 * speedLimit);
+    speedY = Math.max(speedY + speedYAdjustment, -1 * speedLimit);
 
     let currentTop = ball.style.top.replace("px", ""); 
     let currentLeft = ball.style.left.replace("px", ""); 

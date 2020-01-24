@@ -1,0 +1,10 @@
+{
+  "dependencies": [],
+  "description": "Daves Snippets",
+  "url": "https://github.com/the3rdPoliceman/Docs/sublime-snippets",
+  "platforms": [
+    "*"
+  ],
+  "version": "1.0.0",
+  "sublime_text": ">=3000"
+}

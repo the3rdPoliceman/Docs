@@ -20,6 +20,10 @@ $lightning-pink: lighten($lightning-purple, 25%);
 	padding: 0px 0px 30px 0px;
 }
 
+.section a{
+    display: block;
+}
+
 .section-header{
 	color: $lightning-purple;
 	font-size: 200%;

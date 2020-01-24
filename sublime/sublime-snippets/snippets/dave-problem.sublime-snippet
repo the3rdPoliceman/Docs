@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[<div class="problem">
+    <div class="problem-description">${1:problem}</div>
+    <div class="solution">${2:solution}
+        <div class="solution-link"><a href="${3:solutionLink}">${4:solution-descrtiption}</a></div>
+    </div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dave-problem</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
