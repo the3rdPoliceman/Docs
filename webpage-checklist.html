@@ -1,99 +1,137 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags always come first -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-        <!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<title>Website Checklist</title>
-	</head>
-	<body>
-		<div class="container">
-		<h1>WEBPAGE CHECKLIST</h1>
-		( See https://codeburst.io/the-front-end-checklist-8b2292fdda44 for more detail)
-		<h3>HTML</h3>
-		<h5>doctype </h5>
-		<!doctype html>
-		<h5>html[lang] set to correct language</h5>
-		<!-- <html lang="fr"</pre> -->
-			<h5>rtl</h5>
-			<!-- <html dir="rtl"> -->
-				<h5>alternate languages</h5>
-				<pre><code class="html">&lt;link rel=&quot;alternate&quot; href=&quot;https://es.example.com/&quot; hreflang=&quot;es&quot;&gt;</code></pre>
-				<h5>IE Conditionals</h5>
-				Conditional comments are present for IE if needed.
-				<h5>Critical CSS Inlined</h5>
-				inline critical CSS: CSS which styles content that is immediately visible during pageload (“above the fold content”) is called “critical CSS”. It is embedded before your principal CSS call and between <pre><code class="html">&lt;style&gt;&lt;/style&gt;</code></pre> in a single line (minified).
-				<h5>Import order</h5>
-				All CSS files are loaded before any JavaScript files
-				<h5>encoding set </h5>
-				<pre><code class="html">&lt;meta charset=&quot;utf-8&quot;&gt;</code></pre>
-				<h5>title set </h5>
-				<pre><code class="html">&lt;title&gt;Page Title less than 65 characters&lt;/title&gt;</code></pre>
-				<h5>description </h5>
-				<pre><code class="html">&lt;meta name=&quot;description&quot; content=&quot;Description of the page less than 150 characters&quot;&gt;</code></pre>
-				<h5>author set</h5>
-				<h5>favicon </h5>
-				see https://css-tricks.com/favicon-quiz/ & realfavicon webpage
-				and https://github.com/audreyr/favicon-cheat-sheet
-				e.g.<pre><code class="html">&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;</code></pre>https://example.com/favicon.png&quot;&gt;</code></pre>
-				<h5>x-ua-compatible</h5>
-				<pre><code class="html">&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;</code></pre>
-				<h5>viewport</h5>
-				<pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code></pre>
-				<h5>SRI (Subresource Integrity)</h5>
-				used on remotely loaded resources from CDN etc.
-				<h3>CSS</h3>
-				<h5>Web Fonts</h5>
-				Webfont format: WOFF, WOFF2 and TTF are supported by all modern browsers.
-				<h5>CSS Print</h5>
-				Print stylesheet present
-				<h5>Inline CSS</h5>
-				Should not exist
-				<h5>CSS Concatenated into single file & minified</h5>
-				<h5>Responsive</h5>
-				All pages were tested at the following breakpoints: 320px, 768px, 1024px
-				<h3>IMAGES</h3>
-				
-				<h5>Alt Text</h5>
-				Images have alt text
-				<h5>Optimization</h5>
-				All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).
-				<h3>JAVASCRIPT</h3>
-				<h5>No inline</h5>
-				No inline
-				<h5>Javascript files concatenated & minified</h5>
-				<h5>Linting</h5>
-				ESLint: No errors are flagged by ESLint
-				<h3>SECURITY</h3>
-				securityheaders.io
-				Observatory by Mozilla
-				<h5>Use HTTPS </h5>
-				On all pages
-				<h5>Lots of other stuff on</h5>
-				https://codeburst.io/the-front-end-checklist-8b2292fdda44
-				<h3>VALIDATION</h3>
-				<h5>Internationalisation</h5>
-				https://validator.w3.org/unicorn/
-				<h5>Links</h5>
-				https://validator.w3.org/checklink
-				<h5>HTML Lint</h5>
-				https://www.10bestdesign.com/dirtymarkup/
-				<h3>SEO</h3>
-				<h5>Google Analytics: </h5>
-				Google Analytics is installed and correctly configured.
-				<h5>Headings logic: </h5>
-				Heading text helps to understand the content in the current page.
-				<h5>sitemap.xml: </h5>
-				A sitemap.xml exists and was submitted to Google Search Console (previously Google Webmaster Tools).
-				<h5>robots.txt: </h5>
-				The robots.txt is not blocking webpages.
-			</body>
-		</div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		</html>
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/prism.css" type="text/css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Website Checklist</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="page-title col-12">Webpage
+                Checklist</div>
+        </div>
+        ( See <a href="https://codeburst.io/the-front-end-checklist-8b2292fdda44">https://codeburst.io/the-front-end-checklist-8b2292fdda44</a> for more detail)
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">HTML</div>
+            </div>
+        </div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> doctype </div>
+        <pre><code class="language-markup">&lt;!doctype html&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> html[lang] set to correct language</div>
+        <pre><code class="language-markup">&lt;html lang=&quot;fr&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> rtl</div>
+        <pre><code class="language-markup">&lt;html dir=&quot;rtl&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> alternate languages</div>
+        <pre><code class="language-markup">&lt;link rel=&quot;alternate&quot; href=&quot;https://es.example.com/&quot; hreflang=&quot;es&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> IE Conditionals</div>
+        Conditional comments are present for IE if needed.
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Critical CSS Inlined</div>
+        inline critical CSS: CSS which styles content that is immediately visible during pageload (“above the fold content”) is called “critical CSS”. It is embedded before your principal CSS call and between
+        <pre><code class="language-markup">&lt;style&gt;&lt;/style&gt;</code></pre> in a single line (minified).
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Import order</div>
+        All CSS files are loaded before any JavaScript files
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> encoding set </div>
+        <pre><code class="language-markup">&lt;meta charset=&quot;utf-8&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> title set </div>
+        <pre><code class="language-markup">&lt;title&gt;Page Title less than 65 characters&lt;/title&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> description </div>
+        <pre><code class="language-markup">&lt;meta name=&quot;description&quot; content=&quot;Description of the page less than 150 characters&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> author set</div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> favicon </div>
+        see <a href="https://css-tricks.com/favicon-quiz/">https://css-tricks.com/favicon-quiz/</a> & realfavicon webpage
+        and <a href="https://github.com/audreyr/favicon-cheat-sheet">https://github.com/audreyr/favicon-cheat-sheet</a>
+        e.g.
+        <pre><code class="language-markup">&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;https://example.com/favicon.png&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> x-ua-compatible</div>
+        <pre><code class="language-markup">&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> viewport</div>
+        <pre><code class="language-markup">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> SRI (Subresource Integrity)</div>
+        used on remotely loaded resources from CDN etc.
+        <pre><code class="language-markup">&lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot; integrity=&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</code></pre>
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">CSS</div>
+            </div>
+        </div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Web Fonts</div>
+        Webfont format: WOFF, WOFF2 and TTF are supported by all modern browsers.
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> CSS Print</div>
+        Print stylesheet present
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Inline CSS</div>
+        Should not exist
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> CSS Concatenated into single file & minified</div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Responsive</div>
+        All pages were tested at the following breakpoints: 320px, 768px, 1024px
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">IMAGES</div>
+            </div>
+        </div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Alt Text</div>
+        Images have alt text
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Optimization</div>
+        All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">JAVASCRIPT</div>
+            </div>
+        </div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> No inline</div>
+        No inline
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Javascript files concatenated & minified</div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Linting</div>
+        ESLint: No errors are flagged by ESLint
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">SECURITY</div>
+            </div>
+        </div>
+        securityheaders.io
+        Observatory by Mozilla
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Use HTTPS </div>
+        On all pages
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Lots of other stuff on</div>
+        <a href="https://codeburst.io/the-front-end-checklist-8b2292fdda44">https://codeburst.io/the-front-end-checklist-8b2292fdda44</a>
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">VALIDATION</div>
+            </div>
+        </div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Internationalisation</div>
+        <a href="https://validator.w3.org/unicorn/">https://validator.w3.org/unicorn/</a>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Links</div>
+        <a href="https://validator.w3.org/checklink">https://validator.w3.org/checklink</a>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> HTML Lint</div>
+        <a href="https://www.10bestdesign.com/dirtymarkup/">https://www.10bestdesign.com/dirtymarkup/</a>
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">SEO</div>
+            </div>
+        </div>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Google Analytics: </div>
+        Google Analytics is installed and correctly configured.
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> Headings logic: </div>
+        Heading text helps to understand the content in the current page.
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> sitemap.xml: </div>
+        A sitemap.xml exists and was submitted to Google Search Console (previously Google Webmaster Tools).
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> robots.txt: </div>
+        The robots.txt is not blocking webpages.
+</body>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+</html>

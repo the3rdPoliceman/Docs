@@ -10,15 +10,13 @@ h3 {
   margin-top: 1.5rem;
   background: #BBD; }
 
-.topic {
-  border-top: 1px solid #BBB;
-  margin-top: 1.0rem;
-  padding-top: 0.5rem; }
+.page-title {
+  font-size: 300%; }
 
-code.html {
-  border: 1px solid #CCC;
-  background: #EEE;
-  padding: 10px; }
+.section-title {
+  font-size: 150%;
+  margin: 30px 0px 0px 0px;
+  text-transform: uppercase; }
 
 .daves-media-item {
   background: #EEE;
@@ -35,14 +33,6 @@ code.html {
   margin-bottom: 2px;
   border-right: 2px solid white;
   padding: 2px 15px; }
-
-.section-title {
-  font-size: 130%;
-  margin: 20px 0px 4px 0px;
-  text-transform: uppercase; }
-
-.page-title {
-  font-size: 250%; }
 
 .spacer {
   margin-bottom: 7px; }
@@ -64,3 +54,8 @@ code.html {
   margin: 0px 0px 10px 0px;
   padding: 5px 10px;
   border: 1px solid #CCC; }
+
+.checklist-item {
+  font-size: 110%;
+  font-weight: 500;
+  color: #666; }
