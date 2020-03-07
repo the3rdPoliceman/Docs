@@ -18,26 +18,259 @@
         <div class="row">
             <div class="page-title col-12">Grunt</div>
         </div>
+        
+        <div class="row">
+            <div class="col-12 ">
+                <div class="section-title">Resources</div>
+            </div>
+        </div>
+        <div>
+            <ul><li><a href="http://gruntjs.com/" target="_blank" rel="noopener nofollow">Grunt</a></li><li><a href="http://www.sitepoint.com/writing-awesome-build-script-grunt/" target="_blank" rel="noopener nofollow">Writing an Awesome Build Script with Grunt</a></li><li><a href="http://anders.janmyr.com/2014/01/clean-grunt.html" target="_blank" rel="noopener nofollow">Clean Grunt</a></li><li><a href="http://gruntjs.com/configuring-tasks#globbing-patterns" target="_blank" rel="noopener nofollow">File Globbing</a></li><li><a href="https://webdesign.tutsplus.com/tutorials/the-command-line-for-web-design-automation-with-grunt--cms-23454" target="_blank" rel="noopener nofollow">The Command Line for Web Design: Automation With Grunt</a></li></ul>
+        </div>
+        <div class="row">
+            <div class="col-12 ">
+                <div class="section-title">Plugins</div>
+            </div>
+        </div>
+        <div class="row">
+            <ul><li><a href="https://github.com/gruntjs/grunt-contrib-jshint" target="_blank" rel="noopener nofollow">grunt-contrib-jshint</a></li><li><a href="https://github.com/sindresorhus/jshint-stylish" target="_blank" rel="noopener nofollow">jshint-stylish</a></li><li><a href="https://github.com/gruntjs/grunt-contrib-copy" target="_blank" rel="noopener nofollow">grunt-contrib-copy</a></li><li><a href="https://github.com/gruntjs/grunt-contrib-clean" target="_blank" rel="noopener nofollow">grunt-contrib-clean</a></li><li><a href="https://github.com/yeoman/grunt-usemin" target="_blank" rel="noopener nofollow">grunt-usemin</a></li><li><a href="https://github.com/gruntjs/grunt-contrib-concat" target="_blank" rel="noopener nofollow">grunt-contrib-concat</a></li><li><a href="https://github.com/gruntjs/grunt-contrib-cssmin" target="_blank" rel="noopener nofollow">grunt-contrib-cssmin</a></li><li><a href="https://github.com/gruntjs/grunt-contrib-htmlmin" target="_blank" rel="noopener nofollow">grunt-contrib-htmlmin</a></li><li><a href="https://github.com/gruntjs/grunt-contrib-uglify" target="_blank" rel="noopener nofollow">grunt-contrib-uglify</a></li><li><a href="https://github.com/yeoman/grunt-filerev" target="_blank" rel="noopener nofollow">grunt-filerev</a></li></ul>
+        </div>
         <div class="row">
             <div class="col-12 ">
                 <div class="section-title">installation</div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 row-content">
-                <code>npm install -g grunt-cli</code><br>
-                <code>npm install grunt@1.0.2 --save-dev</code><br>
-                <code>npm install grunt-sass@2.1.0 --save-dev</code><br>
-                <code>npm install time-grunt@1.4.0 --save-dev</code><br>
-                <code>npm install jit-grunt@0.10.0 --save-dev</code><br>
+            <div class="col-12">
+                <code>npm install -g grunt-cli</code> the grunt command line<br>
+                <code>npm install grunt@1.0.2 --save-dev</code> grunt itself<br>
+                <code>npm install grunt-sass@2.1.0 --save-dev</code> process SCSS into CSS<br>
+                <code>npm install time-grunt@1.4.0 --save-dev</code> times tasks, just so you can see statistics at command line<br>
+                <code>npm install jit-grunt@0.10.0 --save-dev</code> a JIT plugin loader for grunt to use<br>
+                <code>npm install grunt-contrib-watch@1.0.0 --save-dev</code> for watching files/folders and triggering tasks<br>
+                <code>npm install grunt-browser-sync@2.2.0 --save-dev</code> for allowing browser syncing so that browser refreshes when you chage files<br>
+                <code>npm install grunt-contrib-copy@1.0.0 --save-dev</code> copies files<br>
+                <code>npm install grunt-contrib-clean@1.1.0 --save-dev</code> used to clean i.e. delete dist folder<br>
+                <code>npm install grunt-contrib-imagemin@2.0.1 --save-dev</code> minifies image files<br>
+                <code>npm install grunt-contrib-concat@1.0.1 --save-dev</code> Concatenate multiple files into one e.g. CSS files or java files to a single file<br>
+                <code>npm install grunt-contrib-cssmin@2.2.1 --save-dev</code> minifies CSS files<br>
+                <code>npm install grunt-contrib-htmlmin@2.4.0 --save-dev</code> minifies HTML files<br>
+                <code>npm install grunt-contrib-uglify@3.3.0 --save-dev</code> tool to uglify javascript & css files<br>
+                <code>npm install grunt-filerev@2.3.1 --save-dev</code> release hashes(md5) all assets (images, js and css ) so that if you release a new version, the users browser will know not to serve up an old cached version<br>
+                <code>npm install grunt-usemin@3.1.1 --save-dev</code> modifies html files to replace references to resources with references to their minified versions<br>
                 <br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 ">
+                <div class="section-title">Gruntfile.js</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">Below is an example grunt file</div>
+            <div class="col-12">
+                <pre><code class="language-javascript line-numbers">'use strict';
+
+module.exports = function (grunt) {
+    /*  Time how long tasks take. Can help when optimizing build times */
+    require('time-grunt')(grunt);
+
+    /*  Automatically load required Grunt tasks */
+    require('jit-grunt')(grunt, {
+      useminPrepare: 'grunt-usemin'
+    });
+
+    /*  Define the configuration for all the tasks which you want to call */
+    grunt.initConfig({
+        sass: {
+            dist: {
+                files: {
+                    'css/styles.css': 'css/styles.scss'
+                }
+            }
+        },
+
+        watch: {
+            files: 'css/*.scss',
+            tasks: ['sass']
+        },
+
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        'css/*.css',
+                        '*.html',
+                        'js/*.js',
+                        'img/*.*'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    server: {
+                        baseDir: "./"
+                    }
+                }
+            }
+        },
+
+        copy: {
+            html: {
+                files: [
+                {
+                    /* for html */
+                    expand: true,
+                    dot: true,
+                    cwd: './',
+                    src: ['*.html'],
+                    dest: 'dist'
+                }]                
+            },
+            fonts: {
+                files: [
+                {
+                    /* for font-awesome */
+                    expand: true,
+                    dot: true,
+                    cwd: 'node_modules/font-awesome',
+                    src: ['fonts/*.*'],
+                    dest: 'dist'
+                }]
+            }
+        },
+
+        clean: {
+            build: {
+                src: [ 'dist/']
+            }
+        },
+
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,                  /*  Enable dynamic expansion */
+                    cwd: './',                   /*  Src matches are relative to this path */
+                    src: ['img/*.{png,jpg,gif}'],   /*  Actual patterns to match */
+                    dest: 'dist/'                  /*  Destination path prefix */
+                }]
+            }
+        },
+
+        useminPrepare: {
+            foo: {
+                dest: 'dist',
+                src: ['contactus.html','aboutus.html','index.html']
+            },
+            options: {
+                flow: {
+                    steps: {
+                        css: ['cssmin'],
+                        js:['uglify']
+                    },
+                    post: {
+                        css: [{
+                            name: 'cssmin',
+                            createConfig: function (context, block) {
+                            var generated = context.options.generated;
+                                generated.options = {
+                                    keepSpecialComments: 0, rebase: false
+                                };
+                            }       
+                        }]
+                    }
+                }
+            }
+        },
+
+        /* Concat */
+        concat: {
+            options: {
+                separator: ';'
+            },
+  
+            /*  dist configuration is provided by useminPrepare */
+            dist: {}
+        },
+
+        /*  Uglify */
+        uglify: {
+            /*  dist configuration is provided by useminPrepare */
+            dist: {}
+        },
+
+        cssmin: {
+            dist: {}
+        },
+
+        /*  Filerev */
+        filerev: {
+            options: {
+                encoding: 'utf8',
+                algorithm: 'md5',
+                length: 20
+            },
+  
+            release: {
+            /*  filerev:release hashes(md5) all assets (images, js and css ) */
+            /*  in dist directory */
+                files: [{
+                    src: [
+                        'dist/js/*.js',
+                        'dist/css/*.css',
+                    ]
+                }]
+            }
+        },
+  
+        /* Usemin
+           Replaces all assets with their revved version in html and css files.
+           options.assetDirs contains the directories for finding the assets
+           according to their relative paths */
+        usemin: {
+            html: ['dist/contactus.html','dist/aboutus.html','dist/index.html'],
+            options: {
+                assetsDirs: ['dist', 'dist/css','dist/js']
+            }
+        },
+
+        htmlmin: {                                         /*  Task */
+            dist: {                                        /*  Target */
+                options: {                                 /*  Target options */
+                    collapseWhitespace: true
+                },
+                files: {                                   /*  Dictionary of files */
+                    'dist/index.html': 'dist/index.html',  /*  'destination': 'source' */
+                    'dist/contactus.html': 'dist/contactus.html',
+                    'dist/aboutus.html': 'dist/aboutus.html',
+                }
+            }
+        }
+    });
+
+    /* register tasks which can be called from command line. The first 
+    would be called by running "grunt css" */
+    grunt.registerTask('css', ['sass']);
+    grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('build', [
+        'clean',
+        'copy',
+        'imagemin',
+        'useminPrepare',
+        'concat',
+        'cssmin',
+        'uglify',
+        'filerev',
+        'usemin',
+        'htmlmin'
+    ]);
+};</code> </pre>
             </div>
         </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https:/* code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https:/* cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+<script src="https:/* maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 <script src="js/prism.js" type="text/javascript"></script>
 
 </html>

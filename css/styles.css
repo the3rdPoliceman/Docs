@@ -1,22 +1,49 @@
 body {
   font-size: 110%; }
 
-h1 {
-  margin-top: 2.0rem;
-  background: #668;
-  color: white; }
+html, .root {
+  font-size: 16px;
+  line-height: 23px; }
 
-h3 {
-  margin-top: 1.5rem;
-  background: #BBD; }
+body, .article {
+  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.4375em; }
+
+/* Let's make sure all's aligned */
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
 
 .page-title {
-  font-size: 300%; }
+  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+  font-size: 4.25em;
+  line-height: 1.01470588em;
+  margin-top: 0.33823529em;
+  margin-bottom: 0.67647058em; }
 
 .section-title {
-  font-size: 150%;
+  font-size: 2.625em;
+  line-height: 1.0952381em;
+  margin-top: 0.54761905em;
+  margin-bottom: 0.54761905em;
   margin: 30px 0px 0px 0px;
   text-transform: uppercase; }
+
+.section-title-2 {
+  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.4375em;
+  margin-top: 1.4375em;
+  margin-bottom: 0em;
+  font-weight: 600; }
 
 .daves-media-item {
   background: #EEE;
