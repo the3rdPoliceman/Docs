@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Fusion360 Questions</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Fusion360 Questions</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 ">
+                <div class="section-title">Questions answered</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="problem-description"><pre>Whats the use case for components vs assemblies vs projects</pre></div>
+                <div class="solution">
+                    It seems it's better to create components which reflect real word parts separately, and then assemble instances of the components together into ...an...assembly. Looks like the components can then be modified and these modifications would be seem in the assemblies in which it is used. Assembly joints and constraints define the position and behavior of the components.<br><br>
+
+                    e.g. wheel component, axle component, brake disc component. drivetrain assembly
+<br><br>
+                    Projects - dunno 
+                </div>
+                <div class="problem-description"><pre>Whats the difference between components and bodies?</pre></div>
+                <div class="solution">Bodies are modelling toos, components represent real world parts. <br><br>
+                A body is more or less just a 3D shape. A component contains bodies, sketches, construction objects etc. It is more like a real part</div>
+                <div class="problem-description"><pre>Can you assemble bodies?</pre></div>
+                <div class="solution">No, only components</div>
+                <div class="problem-description"><pre>Why would i need to use constraints?</pre></div>
+                <div class="solution">dunno</div>
+                <div class="problem-description"><pre>What does it mean to activating a component</pre></div>
+                <div class="solution">dunno</div>
+                <div class="problem-description"><pre>What are drawings for?</pre></div>
+                <div class="solution">dunno</div>
+                <div class="problem-description"><pre>What are selections sets for?</pre></div>
+                <div class="solution">dunno</div>
+                <div class="problem-description"><pre>Why would i want to isolate a component?</pre></div>
+                <div class="solution">dunno</div>
+                <div class="problem-description"><pre>Why would i want to activate a component?</pre></div>
+                <div class="solution">So you are editing only that component rather than the assembly, and all your changes e.g. sketches, construction will be within the component. The timeline will also be simpler.</div>
+                <div class="problem-description"><pre>What about components and versions used in assemblies. how are they managed?</pre></div>
+                <div class="solution">dunno</div>
+                <div class="problem-description"><pre>What is a snapshot?</pre></div>
+                <div class="solution">A captured particular position of an object</div>
+
+                <div class="problem-description"><pre>Why is there a timeline?</pre></div>
+                <div class="solution">It allows you to see history, and more important allows you to jump back in time and insert changes at a particular point e.g. If you have created 5 copies of a chair and want to change something common to all the chairs you can jump back to before you created the copies and insert the change there</div>
+
+                <div class="problem-description"><pre>Whats the difference in parametric and direct modelling?</pre></div>
+                <div class="solution">Direct modelling is just creating forms, like in sketchup. Parametric uses parameters for dimensions etc. and constraints</div>
+                <div class="problem-description"><pre>What is the difference in remove and delete?</pre></div>
+                <div class="solution">Delete removes them throughout the whole timeline and is likely to break the history, Remove removes from the current point in history</div>
+                <div class="problem-description"><pre>What is a spline?</pre></div>
+                <div class="solution">A splice is a curve in 3D space, defined by at least 2 poonts e.g. A bezier curve</div>
+                <div class="problem-description"><pre>What is a b-spline?</pre></div>
+                <div class="solution">A smooth curve created by passing through a number of control points</div>
+                <div class="problem-description"><pre>What are nurbs splines?</pre></div>
+                <div class="solution">A Non uniform rational b-spline - nurbs are essentially B-splines in homogeneous coordinates (don't think i want to go further down this rabbit hole)</div>
+                <div class="problem-description"><pre>What are nurbs surfaces?</pre></div>
+                <div class="solution">A surface created from a network of nurbs splines</div>
+                <div class="problem-description"><pre>What is a t-spline?</pre></div>
+                <div class="solution">A type of spline that allows creating organic meshes which would be impossible with nurbs alone, because of ....something to do with the way control points are defined or interact. Seems like more 4 splines can join at a control point?</div>
+                <div class="problem-description"><pre>What are Rigid Groups?</pre></div>
+                <div class="solution">A group of components that are joined rigidy and do not move independently</div>
+                <div class="problem-description"><pre>What are As Built Joints?</pre></div>
+                <div class="solution">Joints that can be created based on the current position of components</div>
+                <div class="problem-description"><pre>What are Contact Sets?</pre></div>
+                <div class="solution">dunno</div>
+                <div class="problem-description"><pre>Where are Fusion 360 files stored?</pre></div>
+                <div class="solution">In their cloud</div>
+                <div class="problem-description"><pre>Where is a rigid group?</pre></div>
+                <div class="solution">A group of multiple components which cannot be moved independently, but can be moved as a group</div>
+                <div class="problem-description"><pre>Whhat is a skeletal workflow?</pre></div>
+                <div class="solution">Using user parameters (normally predefined), and using those parameters to create the design. Then, if you change those parameters later, the whole design will modify based on that</div>
+                <div class="problem-description"><pre>How do i backup in fusion 360?</pre></div>
+                <div class="solution">dunno</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

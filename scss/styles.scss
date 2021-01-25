@@ -100,6 +100,10 @@ sub {
 	padding: 10px;
 }
 
+.inline{ 
+  display : inline !important;
+}
+
 // sublime cheatcheet formatting
 .command{
 	background: #DDD;
@@ -151,4 +155,13 @@ sub {
 	font-size: 110%;
 	font-weight: 500;
 	color: #666;
+}
+
+.term{
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
+.definition{
+
 }
