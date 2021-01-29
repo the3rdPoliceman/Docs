@@ -86,9 +86,10 @@ sub {
   border: 1px solid #CCC; }
 
 .checklist-item {
-  font-size: 110%;
-  font-weight: 500;
-  color: #666; }
+  font-size: 120%;
+  font-weight: 700;
+  color: #555;
+  margin-top: 1.5em; }
 
 .term {
   font-weight: 600;

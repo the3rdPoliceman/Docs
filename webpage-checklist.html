@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/prism.css" type="text/css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Website Checklist</title>
 </head>
@@ -32,6 +33,9 @@
         <pre><code class="language-markup">&lt;html lang=&quot;fr&quot;&gt;</code></pre>
         <div class="checklist-item"><span class="fa fa-check-square"> </span> rtl</div>
         <pre><code class="language-markup">&lt;html dir=&quot;rtl&quot;&gt;</code></pre>
+        <div class="checklist-item"><span class="fa fa-check-square"> </span> encoding set </div>
+        It's important that this is as high as possible up the page. Once the browser reads this, it will parse the whole document again from the top
+        <pre><code class="language-markup">&lt;meta charset=&quot;utf-8&quot;&gt;</code></pre>
         <div class="checklist-item"><span class="fa fa-check-square"> </span> alternate languages</div>
         <pre><code class="language-markup">&lt;link rel=&quot;alternate&quot; href=&quot;https://es.example.com/&quot; hreflang=&quot;es&quot;&gt;</code></pre>
         <div class="checklist-item"><span class="fa fa-check-square"> </span> IE Conditionals</div>
@@ -41,8 +45,6 @@
         <pre><code class="language-markup">&lt;style&gt;&lt;/style&gt;</code></pre> in a single line (minified).
         <div class="checklist-item"><span class="fa fa-check-square"> </span> Import order</div>
         All CSS files are loaded before any JavaScript files
-        <div class="checklist-item"><span class="fa fa-check-square"> </span> encoding set </div>
-        <pre><code class="language-markup">&lt;meta charset=&quot;utf-8&quot;&gt;</code></pre>
         <div class="checklist-item"><span class="fa fa-check-square"> </span> title set </div>
         <pre><code class="language-markup">&lt;title&gt;Page Title less than 65 characters&lt;/title&gt;</code></pre>
         <div class="checklist-item"><span class="fa fa-check-square"> </span> description </div>
