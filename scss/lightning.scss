@@ -4,12 +4,17 @@ $lightning-white: #E9E9E9;
 $lightning-pink: lighten($lightning-purple, 25%);
 
 
+:focus{
+    outline : none;
+}
+
 .header{
 	color: $lightning-purple;
 	padding: 50px 0px 50px 0px;
 	font-size: 800%;
 	font-weight : 900;
 	text-decoration: underline;
+    text-decoration-color: $lightning-white;
 }
 
 .header-highlight{
@@ -22,6 +27,7 @@ $lightning-pink: lighten($lightning-purple, 25%);
 
 .section a{
     display: block;
+    line-height: 1.3em;
 }
 
 .section-header{
@@ -90,13 +96,9 @@ a{
 	font-weight: 600;
 }
 
-a:hover{
-	color: $lightning-white;
-	font-weight: 600;
+a:hover,
+a:focus
+{
+	color: $lightning-purple;
 	text-decoration: none;
-	outline: 5px solid $lightning-white;;
-}
-
-a:focus{
-	outline: 5px solid $lightning-white;;
 }

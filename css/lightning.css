@@ -1,9 +1,13 @@
+:focus {
+  outline: none; }
+
 .header {
   color: #BF4AA8;
   padding: 50px 0px 50px 0px;
   font-size: 800%;
   font-weight: 900;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-decoration-color: #E9E9E9; }
 
 .header-highlight {
   color: #E9E9E9; }
@@ -12,7 +16,8 @@
   padding: 0px 0px 30px 0px; }
 
 .section a {
-  display: block; }
+  display: block;
+  line-height: 1.3em; }
 
 .section-header {
   color: #BF4AA8;
@@ -69,11 +74,7 @@ a {
   font-size: 140%;
   font-weight: 600; }
 
-a:hover {
-  color: #E9E9E9;
-  font-weight: 600;
-  text-decoration: none;
-  outline: 5px solid #E9E9E9; }
-
+a:hover,
 a:focus {
-  outline: 5px solid #E9E9E9; }
+  color: #BF4AA8;
+  text-decoration: none; }

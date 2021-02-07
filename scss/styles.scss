@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+
 $bg-grey : #EEE;
 $lightning-blue: #51D0DE;
 $lightning-purple: #BF4AA8;
 $lightning-white: #E9E9E9;
 $lightning-pink: lighten($lightning-purple, 25%);
+$text-normal: #777777;
+$text-dark: #222222;
 $font-stack: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
 
 body{
@@ -18,6 +22,7 @@ body, .article {
   font-family: $font-stack;
   font-size: 1em;
   line-height: 1.4375em;
+  color:$text-normal;
 }
 
 @mixin h1-mixin {
@@ -26,20 +31,25 @@ body, .article {
   line-height: 1.01470588em;
   margin-top: 0.33823529em;
   margin-bottom: 0.67647058em;
+  color:$text-dark;
 }
 
 @mixin h2-mixin {
+  font-family: $font-stack;
   font-size: 2.625em;
   line-height: 1.0952381em;
   margin-top: 0.54761905em;
   margin-bottom: 0.54761905em;
+  color:$text-dark;
 }
 
 @mixin h3-mixin {
+  font-family: $font-stack;
   font-size: 1.625em;
-  line-height: 1.76923077em;
+  line-height: 1.2375em;
   margin-top: 0.88461538em;
   margin-bottom: 0em;
+  color:$text-dark;
 }
 
 @mixin h4-mixin {
@@ -48,6 +58,7 @@ body, .article {
   line-height: 1.4375em;
   margin-top: 1.4375em;
   margin-bottom: 0em;
+  color:$text-dark;
 }
 
 @mixin h5-mixin {
@@ -56,6 +67,7 @@ body, .article {
   line-height: 1.4375em;
   margin-top: 1.4375em;
   margin-bottom: 0em;
+  color:$text-dark;
 }
 
 
@@ -90,8 +102,7 @@ sub {
 }
 
 .section-title-2{
-	@include h4-mixin;
-	font-weight: 600;
+	@include h3-mixin;
 }
 
 .daves-media-item{
@@ -129,6 +140,10 @@ sub {
 }
 
 .problem-list{
+}
+
+.full-height{
+  height:100%;
 }
 
 .problem-description{
