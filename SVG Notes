@@ -1,0 +1,13 @@
+SVG Notes
+
+INLINE OR FILE?
+Inline - not file loading
+Inline - can be styled via CSS
+File - much less code 
+
+COMPROMISE - Use inline, but with id link in main html and svg at bottom  
+<svg><use href="my-svg-id"></use></svg>
+...
+<svg...
+	<symbol id="my-svg-id"
+...

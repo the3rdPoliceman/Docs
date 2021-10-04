@@ -1,0 +1,31 @@
+DOCKER Notes
+
+What is a docker image?
+A bundle containing the code & software in a file
+
+Where are images in Docker defined?
+in a Dockerfile
+
+How are images built in Docker?
+By running the Dockerfile
+
+When developing, how do you see live updates to your application without building a new image every time?
+The -v (volume) command line arg when your running docker, to point a docker directory path to a local path
+e.g. docker run -p 80:80 -v /Users/dave/Documents/GitHub/Dockertest/src:/var/html/www/ hello-world
+
+When running an application from a Docker image, how is uploaded data stored in the image?
+It isn't. You would need to supply a volume. This can be an external volume i.e. a local directory, or a named volume which is a persistent volume managed by docker
+
+How do i see where a docker named volume actually stores files in the file system?
+Run docker volume inspect <volume_name>
+
+How to list files in working dir when building image?
+RUN ls-l 
+
+How can you start up multiple Docker containers in one go?
+Docker Compose
+
+How do you run docker containers in the background?
+Using the -d (detatched) flag
+
+	

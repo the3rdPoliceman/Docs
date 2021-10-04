@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
-body {
-  font-size: 110%; }
-
 html, .root {
-  font-size: 16px;
-  line-height: 23px; }
+  font-size: 18px;
+  line-height: 24px; }
 
 body, .article {
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4375em;
   color: #777777; }
+
+.container {
+  max-width: 960px; }
 
 /* Let's make sure all's aligned */
 sub, sup {
@@ -26,15 +26,16 @@ sub {
 
 .page-title {
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
-  font-size: 4.25em;
+  font-size: 4.25rem;
   line-height: 1.01470588em;
   margin-top: 0.33823529em;
   margin-bottom: 0.67647058em;
-  color: #222222; }
+  color: #222222;
+  margin-bottom: 0px; }
 
 .section-title {
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
-  font-size: 2.625em;
+  font-size: 2.625rem;
   line-height: 1.0952381em;
   margin-top: 0.54761905em;
   margin-bottom: 0.54761905em;
@@ -44,7 +45,7 @@ sub {
 
 .section-title-2 {
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
-  font-size: 1.625em;
+  font-size: 1.625rem;
   line-height: 1.2375em;
   margin-top: 0.88461538em;
   margin-bottom: 0em;
@@ -102,3 +103,6 @@ sub {
 .term {
   font-weight: 600;
   margin-top: 0.5em; }
+
+.medium-image {
+  width: 50%; }

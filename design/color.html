@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Color</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="page-title col-12">Color</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">Basic Rules</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Start without color</div>
+            Initial design work is best done in grayscale - if it doesn't work in black and white, it won't work in color
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Use HSL for Colors</div>
+            <img class="medium-image" src="../images/hsl.jpeg" alt="HSL color space">
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Introduce ONE Primary Color</div>
+            <p>Having many different colors makes consistency difficult and requires a high degree of skill. It also reduces the effectiveness of accents or "calls to action" later. </p>
+            <p>Having a single primary (as in important, not red, yellow, blue) color will help create a more cohesive design scheme - Choose your starting color by
+                <ul>
+                    <li>Matching the brand</li>
+                    <li>If you already have photos you will use, match with them</li>
+                    <li>Pick one you like</li>
+                    <li>Steal</li>
+                </ul>
+            </p>
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Choose Informational Colors (if you need them)</div>
+            <p>If you're doing any sort of form input, normally you will need some colors to indicate correctness of the data</p>
+            <p>Think red, yellow, blue, green colors for things like error, warning, info, success messages and boxes</p>
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Think carefully before adding another main color</div>
+            <p>Having another secondary color is fine. But takes some extra skill</p>
+            <p>Avoid colors which don't go well together. Online color choosers or <a href="https://color.adobe.com">adobe colors</a> will help find complementary colors, which will work well.</p>
+            <p>Complementary colors will help bring attention to information, headings, buttons etc.</p>
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">For every Color, Create a Scale</div>
+            <p>Using different shades of your one color is a good way of distinguishing different elements. For example, if you chose a dark blue as a primary color, you might use lighter or darker versions for headers, links, names...whatever...</p>
+            <p>Create 8 to 10 shades for scaling from white to black (via neutral, warm, or cool greys), and 6 to 8 shades for other colors</p>
+            <img class="medium-image" src="../images/color-scales.jpeg" alt="Color Scales">
+            <p>To define a colour scale, start with a middle shade, then dark and light, then fill in between</p>
+            <p>With HSL, the obvious way to create a shade scale is by tweaking the lightness. But it's also useful to tweak the hue towards the dark (0, 120, 240) or the light (60, 180, 300) regions of the scale. Just not too much or the hue gets too different</p>
+            <img class="medium-image" src="../images/hsl-hues.jpeg" alt="HSL Hues">
+            <p>When creating shade scales you'll need higher saturation towards each end of the scale, otherwise your colours at the end will be washed out</p>
+            <img class="medium-image" src="../images/hsl-saturation-variation.jpeg" alt="HSL Saturation Variation">
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Perfecting font colors</div>
+            Absolute blacks and whites are often a bit too harsh. For the final design, you will likely want to replace black with a dark grey, and white with very light grey. <br>
+            Fonts: 3 font shades and 2 weights should be enough
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Get rid of the black blacks and white whites</div>
+            Absolute blacks and whites are often a bit too harsh. For the final design, it's often good to replace black with dark grey, and white with very light grey
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Color tips for accessibility</div>
+            <p>Useful things to remember when considering color accessibility
+                <ul>
+                    <li>Dark/light contrast is more reliable than hue for colorblind people e.g. In graph legend</li>
+                    <li>Increase contrast by rotating hue</li>
+                    <li>Use icons in addition to colour</li>
+                </ul>
+            </p>
+        </div>
+        <div class="section">
+            <div class="section-title-2 row col-12">Color of Icons and Borders vs Fonts</div>
+            <p>When solid icons are used along with corresponding text, you may need to reduce their contrast so they don't feel too heavy beside text. Similarly, if you're not happy with  borders or dividers, play with the width and contrast (having predefined color scales will make this easier)</p>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>

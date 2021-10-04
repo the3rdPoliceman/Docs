@@ -9,25 +9,25 @@ $text-normal: #777777;
 $text-dark: #222222;
 $font-stack: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
 
-body{
-	font-size: 110%;
-}
-
 html, .root {
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 body, .article {
   font-family: $font-stack;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4375em;
   color:$text-normal;
 }
 
+.container{
+  max-width: 960px;
+}
+
 @mixin h1-mixin {
   font-family: $font-stack;
-  font-size: 4.25em;
+  font-size: 4.25rem;
   line-height: 1.01470588em;
   margin-top: 0.33823529em;
   margin-bottom: 0.67647058em;
@@ -36,7 +36,7 @@ body, .article {
 
 @mixin h2-mixin {
   font-family: $font-stack;
-  font-size: 2.625em;
+  font-size: 2.625rem;
   line-height: 1.0952381em;
   margin-top: 0.54761905em;
   margin-bottom: 0.54761905em;
@@ -45,7 +45,7 @@ body, .article {
 
 @mixin h3-mixin {
   font-family: $font-stack;
-  font-size: 1.625em;
+  font-size: 1.625rem;
   line-height: 1.2375em;
   margin-top: 0.88461538em;
   margin-bottom: 0em;
@@ -54,7 +54,7 @@ body, .article {
 
 @mixin h4-mixin {
   font-family: $font-stack;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4375em;
   margin-top: 1.4375em;
   margin-bottom: 0em;
@@ -63,13 +63,12 @@ body, .article {
 
 @mixin h5-mixin {
   font-family: $font-stack;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4375em;
   margin-top: 1.4375em;
   margin-bottom: 0em;
   color:$text-dark;
 }
-
 
 /* Let's make sure all's aligned */
 @mixin hr-mixin {
@@ -93,6 +92,7 @@ sub {
 
 .page-title{
 	@include h1-mixin;
+  margin-bottom: 0px;
 }
 
 .section-title{
@@ -176,6 +176,10 @@ sub {
 .term{
   font-weight: 600;
   margin-top: 0.5em;
+}
+
+.medium-image{
+  width : 50%;
 }
 
 .definition{
