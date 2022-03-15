@@ -1,0 +1,12 @@
+[general]
+version = 4
+name = Normal Quality White PLA w Layer 1 Tips
+definition = creality_base
+
+[metadata]
+type = quality_changes
+quality_type = standard
+setting_version = 19
+
+[values]
+
