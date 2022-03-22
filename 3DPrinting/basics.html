@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <title>3D Printing</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">3D Printing Basics</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                My Printer
+                <ul>
+                    <li>Creality Ender 3 v2</li>
+                    <li>Motherboard 4.2.2</li>
+                    <li>Firmware from <a href="https://github.com/Jyers/Marlin/releases">Jyers (Manual Mesh)</a>, which includes manual bed levelling. Making use of the bed levelling requires adding the GCode command <code>M420 S1</code> in Cura printer setup to use stored bed levelling mesh. <a href="https://www.youtube.com/watch?v=ZqFIpoekTXY">This video</a> explains the features of <Jyers></Jyers></li>                    
+                </ul>
+                My Software
+                <ul>
+                    <li>Ultimaker Cura</li>
+                    <li>Fusion 360 free edition</li>
+                </ul>
+                My Filaments
+                <ul>
+                    <li><a href="filament/orangePLA_BASF.html">BASF Orange PLA, 1.75mm</a></li>
+                    <li><a href="filament/whitePLA_BASFInnofil.html">Innofil (BASF) PLA white 1,75 mm</a></li>
+                    <li><a href="filament/blackABS_Velleman.html">Velleman Black ABS, 1.75 mm</a></li>
+                </ul>
+                Updating the Firmware
+                <ul>
+                    <li>Locate the firmware you want</li>
+                    <li>Copy the bin file to the route of the SD Card</li>
+                    <li>Load the SD card into the printer and restart it</li>
+                    <li>While restarting it will automatically do the firmware update           </li>
+                </ul>
+                Finding correct settings for a new filament
+                <ul>
+                    <li>Level the bed as normal</li>
+                    <li>Print a temperature tower & retraction tower - <a href="https://www.youtube.com/watch?v=6LjbCIGCmd0">video with details</a></li>
+                    <li>Print a benchy</li>
+                </ul>
+
+                Useful Help Videos
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=_EfWVUJjBdA">Easy Way To Manually Level Your Bed (Not needed with Jyers)</a> </li>
+                    <li><a href="https://all3dp.com/2/adjust-ender-3-v2-z-offset/">Setting the Z-Offset (Not needed with Jyers)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=qvkgjV7XqZ4">Easy method to change Filament on the Ender 3 3D Printer</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=6LjbCIGCmd0">Calibrate Perfect Retraction Settings Using a Cura 4.8 Plug-in (the copy scripts is unnecessary now)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=gdA9WjxxDgc">Ender 3 Pro Nozzle Clogging Solution</a></li>
+                </ul>
+                General Quality Issues
+                <ul>
+                    <li><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">Troubleshooting from simplify3d.com</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=t_7EMnQ6Rlc">Teaching Tech - How a 3DBenchy can tell where your 3D prints need improvement</a></li>
+                </ul>
+                
+                Troubleshooting
+                <ul>
+                    <li><strong>The print speed is fucking up, and goes really high even though I set it low</strong> - This happens because of a bug. If the name of the gcode file is too long (more than about 20 characters) it messes with the print speed</li>
+                    <li><strong>First layer Not Sticking</strong> 
+                        <ul>
+                            <li>Clean the bed with alcohol, to remove the oil from your filthy mitts</li>
+                            <li>A brim helps, especially for things with small footprints</li>
+                            <li>Bump initial layer temp 10 degress higher than the rest</li>
+                            <li>Lower initial layer height to maybe 90% of standard layer height</li>
+                            <li>Slow down initial layer speed &amp; initial layer travel speed</li>
+                            <li>Bump initial layer line width to 110-120%</li>
+                            <li>Turn off fan for the first layer</li>
+                            <li>Print outer walls before inner</li>
+                            <li>Bottom pattern to concentric &amp; connect top/bottom polygons on</li>
+                            <li><a href="https://www.youtube.com/watch?v=nMLKNB2r-M4">CHEP - Fixing First Layers on 3D Prints</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=AaF28dnDgKA">Thomas Sanladerer</a> has good example prints to show issues</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="https://rigid.ink/blogs/news/the-ultimate-3d-printing-glossary">3D Printing Glossary</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>
