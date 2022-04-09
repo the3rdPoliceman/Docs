@@ -19,38 +19,47 @@
         </div>
         <div class="row">
             <div class="col-12 row-content">
-                My Printer
+                <div><a href="https://rigid.ink/blogs/news/the-ultimate-3d-printing-glossary">3D Printing Glossary</a></div>
+                <div class="h4">My Printer</div>
                 <ul>
                     <li>Creality Ender 3 v2</li>
+                    <li>Takes nozzle with an M6 thread e.g. MK8 (Haven't actually bought one, but reddit thinks this is the right one). Recommended manufacturers of nozzles include micro swiss (expensive, very good, available) and <a href="https://www.aliexpress.com/item/32835656952.html?spm=a2g0o.cart.0.0.292a3c00lo9cFo&mp=1">trianglelab</a> (cheap, also good, available slowly through aliexpress) </li>
                     <li>Motherboard 4.2.2</li>
-                    <li>Firmware from <a href="https://github.com/Jyers/Marlin/releases">Jyers (Manual Mesh)</a>, which includes manual bed levelling. Making use of the bed levelling requires adding the GCode command <code>M420 S1</code> in Cura printer setup to use stored bed levelling mesh. <a href="https://www.youtube.com/watch?v=ZqFIpoekTXY">This video</a> explains the features of <Jyers></Jyers></li>                    
+                    <li>Firmware E3V2-UBL-BLTouch-10x10-v4.2.2-v2.0 from <a href="https://github.com/Jyers/Marlin/releases">Jyers (Universal Bed Levelling BL Touch)</a>. Making use of the bed levelling requires adding the GCode command <code>M420 S1</code> in Cura printer setup to use stored bed levelling mesh. <a href="https://www.youtube.com/watch?v=ZqFIpoekTXY">This video</a> explains the features of Jyers</li>    
+                    <li>Triangle labs 3d Touch sensor for bed levelling</li>
+                    <li><strong>Potential upgrade</strong> - Noctua quiet fans - <a href="https://www.reddit.com/r/ender3v2/comments/lto6uq/ender_3_v2_all_noctua_fans_buck_converter/">https://www.reddit.com/r/ender3v2/comments/lto6uq/ender_3_v2_all_noctua_fans_buck_converter/    </a></li>
                 </ul>
-                My Software
+                <div class="h4">My Software</div>
                 <ul>
                     <li>Ultimaker Cura</li>
-                    <li>Fusion 360 free edition</li>
+                    <li><a href="../fusion360/fusion360Basics.html">Fusion 360</a> free edition</li>
+                    <li><a href="octoprint/octoprint.html">Octoprint</a> is used to remotely control the printer</li>
                 </ul>
-                My Filaments
+                <div class="h4">My Filaments</div>
                 <ul>
                     <li><a href="filament/orangePLA_BASF.html">BASF Orange PLA, 1.75mm</a></li>
                     <li><a href="filament/whitePLA_BASFInnofil.html">Innofil (BASF) PLA white 1,75 mm</a></li>
                     <li><a href="filament/blackABS_Velleman.html">Velleman Black ABS, 1.75 mm</a></li>
                 </ul>
-                Updating the Firmware
+                <div class="h4">Potential other Filaments</div>
+                <ul>
+                    <li>For rubber gaskets, a TPU filament is recommended, and typical <a href="shore-hardness.png">shore hardness</a> is 75A-80A. <a href="https://www.3djake.ch/de-CH/extrudr/tpu-semi-soft-schwarz">Extrudr Semi Soft</a> or 3dJake TPU are possibilities. 3dJake gets slightly better reviews, but exrtudr is closer to the correct hardness</li>
+                </ul>
+                <div class="h4">How to update the Firmware</div>
                 <ul>
                     <li>Locate the firmware you want</li>
                     <li>Copy the bin file to the route of the SD Card</li>
                     <li>Load the SD card into the printer and restart it</li>
                     <li>While restarting it will automatically do the firmware update           </li>
                 </ul>
-                Finding correct settings for a new filament
+                <div class="h4">Dialling in correct settings for a new filament</div>
                 <ul>
                     <li>Level the bed as normal</li>
                     <li>Print a temperature tower & retraction tower - <a href="https://www.youtube.com/watch?v=6LjbCIGCmd0">video with details</a></li>
                     <li>Print a benchy</li>
                 </ul>
 
-                Useful Help Videos
+                <div class="h4">Useful Videos</div>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=_EfWVUJjBdA">Easy Way To Manually Level Your Bed (Not needed with Jyers)</a> </li>
                     <li><a href="https://all3dp.com/2/adjust-ender-3-v2-z-offset/">Setting the Z-Offset (Not needed with Jyers)</a></li>
@@ -58,16 +67,22 @@
                     <li><a href="https://www.youtube.com/watch?v=6LjbCIGCmd0">Calibrate Perfect Retraction Settings Using a Cura 4.8 Plug-in (the copy scripts is unnecessary now)</a></li>
                     <li><a href="https://www.youtube.com/watch?v=gdA9WjxxDgc">Ender 3 Pro Nozzle Clogging Solution</a></li>
                 </ul>
-                General Quality Issues
+                <div class="h4">Generating Easily Removable Support</div>
                 <ul>
-                    <li><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">Troubleshooting from simplify3d.com</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=t_7EMnQ6Rlc">Teaching Tech - How a 3DBenchy can tell where your 3D prints need improvement</a></li>
+                    <li>Use the lines infill pattern</li>
+                    <li>Try as low as 5% infill. seems to almost always work without problems</li>
+                    <li>Use clippers for support removal & a soldering iron ferrule for smoothing</li>
                 </ul>
-                
-                Troubleshooting
+                <div class="h4">Troubleshooting</div>
                 <ul>
+                    <li><strong>I need some general help troubleshooting</strong> try one of these
+                        <ul>
+                            <li><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">Troubleshooting from simplify3d.com</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=t_7EMnQ6Rlc">Teaching Tech - How a 3DBenchy can tell where your 3D prints need improvement</a></li>
+                        </ul>
+                    </li>
                     <li><strong>The print speed is fucking up, and goes really high even though I set it low</strong> - This happens because of a bug. If the name of the gcode file is too long (more than about 20 characters) it messes with the print speed</li>
-                    <li><strong>First layer Not Sticking</strong> 
+                    <li><strong>My first layer won't stick</strong> 
                         <ul>
                             <li>Clean the bed with alcohol, to remove the oil from your filthy mitts</li>
                             <li>A brim helps, especially for things with small footprints</li>
@@ -83,8 +98,9 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="h4">Possible Alternative Processes</div>
                 <ul>
-                    <li><a href="https://rigid.ink/blogs/news/the-ultimate-3d-printing-glossary">3D Printing Glossary</a></li>
+                    <li><a href="https://machining-4u.co.uk/">machining-4u.co.uk</a> do CNC</li>
                 </ul>
             </div>
         </div>

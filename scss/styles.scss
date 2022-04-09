@@ -6,7 +6,7 @@ $lightning-purple: #BF4AA8;
 $lightning-white: #E9E9E9;
 $lightning-pink: lighten($lightning-purple, 25%);
 $text-normal: #777777;
-$text-dark: #222222;
+$text-dark: #555555;
 $font-stack: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
 
 html, .root {
@@ -20,6 +20,12 @@ body, .article {
   line-height: 1.4375em;
   color:$text-normal;
 }
+
+
+code {
+  display: block;
+  white-space: pre-wrap   
+} 
 
 .container{
   max-width: 960px;
@@ -56,7 +62,7 @@ body, .article {
   font-family: $font-stack;
   font-size: 1rem;
   line-height: 1.4375em;
-  margin-top: 1.4375em;
+  margin-top: 1.5em;
   margin-bottom: 0em;
   color:$text-dark;
 }
@@ -74,6 +80,11 @@ body, .article {
 @mixin hr-mixin {
   border: 1px solid;
   margin: -1px 0;
+}
+
+.h4{
+  margin-top: 1.5em;
+  color: $text-dark;
 }
 
 sub, sup {

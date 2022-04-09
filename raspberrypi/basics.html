@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <title>Raspberry Pi</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Raspberry Pi</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">My Hardware</div>
+                <ul>
+                    <li>Raspberry Pi 3B V1.2</li>
+                    <li>Raspberry Pi Zero W V1.1</li>
+                    <li>Arducam IMX519 - Info and installation woes <a href="arducam-imx519.html">here</a>. Maybe should have gone for a standard pi camera, as these seem to be easily used from PiCamera python library</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Interesting Hardware</div>
+                <ul>
+                    <li>Arducam 4 to 1 camera adapter <a href="https://thepihut.com/products/multi-camera-adapter-module-v2-2-for-raspberry-pi">https://thepihut.com/products/multi-camera-adapter-module-v2-2-for-raspberry-pi. Although maybe it's just cheaper to get 4 pi zeros.</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Useful links</div>
+                <ul>
+                    <li><a href="https://pinout.xyz/">GPIO Pin Explanation</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Raspberry_Pi_OS">Raspbian OS Version & Compatibility List</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Useful Commands & Files</div>
+                <ul>
+                    <li>raspi-config - configure the pi from terminal window rather than GUI. Access to more advanced options</li>
+                    <li>cat /etc/os-release - see what veersion of OS you are running</li>
+                    <li>/boot/config.txt file - config options for one or more pi's the current installation can work with - see <a href="https://www.raspberrypi.com/documentation/computers/config_txt.html">here</a> for more details</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Connecting via SSH, and other useful stuff</div>
+                <ul>
+                    <li><strong>SSHing</strong> - Connect to the same network as the pi. Run <code>arp -a</code> to list all the computers on the network, and identify the ip address of the pi. Connect by running <code>ssh pi@&lt;pi-ip-address&gt;</code></li>
+                    <li><strong>Grabbing a file from the pi</strong> - Connect to the same network as the pi and run <code>scp pi@192.168.0.139:/home/pi/Desktop/output.jpg /Users/dave/Documents</code></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 row-content h4">Diagrams</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 row-content">
+                <figure>
+                    <img src="raspberryPi3Diagram.png" alt="Raspberry Pi 3B "  class="full-width-image">
+                    <figcaption>Raspberry Pi 3B</figcaption>
+                </figure>
+            </div>
+            <div class="col-12 col-sm-6 row-content">
+                <figure>
+                    <img src="raspberryPiZeroWDiagram.png" alt="Raspberry Pi Zero W"  class="full-width-image">
+                    <figcaption>Raspberry Pi Zero W</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 row-content h4">Physical Connections</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 row-content">
+                Raspberry Pi 3B V1.2
+                <ul>
+                    <li>5V Micro USB power, recommended 2.5A</li>
+                    <li>CSI camera port for Pi camera</li>
+                    <li>DSI display port for Pi touchscreen display</li>
+                    <li>40-pin extended GPIO</li>
+                    <li>4 USB 2 ports</li>
+                    <li>Full size HDMI</li>
+                    <li>Micro SD port</li>
+                    <li>100 Base Ethernet</li>
+                    <li>4 Pole stereo output and composite video port</li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 row-content">
+                Raspberry Pi Zero W V1.1
+                <ul>
+                    <li>Micro USB power 5v, minimum 1.2A, recommended 2.5A</li>
+                    <li>Mini CSI camera connector</li>
+                    <li>HAT-compatible 40-pin header</li>
+                    <li>Micro USB On-The-Go (OTG) port</li>
+                    <li>Mini HDMI port</li>
+                    <li>Micro SD port</li>
+                    <li>Composite video and reset headers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 row-content h4">Specs & Non Physical Connections</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 row-content">
+                Raspberry Pi 3B V1.2
+                <ul>
+                    <li>Quad Core 1.2GHz Broadcom BCM2837 64bit CPU</li>
+                    <li>1GB RAM</li>
+                    <li>BCM43438 wireless LAN</li>
+                    <li>Bluetooth Low Energy (BLE)</li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 row-content">
+                Raspberry Pi Zero W V1.1
+                <ul>
+                    <li>1GHz, single-core CPU</li>
+                    <li>512MB RAM</li>
+                    <li>802.11 b/g/n wireless LAN</li>
+                    <li>Bluetooth 4.1</li>
+                    <li>Bluetooth Low Energy (BLE)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 row-content h4">GPIO Pins</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div>Pins for all models seem to have the same layout. There's an in depth explanation of each pin <a href="https://pinout.xyz/">here</a></div>
+                <figure>
+                    <img src="raspberryPiPins.png" alt="Raspberry Pi Pin Diagram"  class="full-width-image">
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <title>Arducam IMX519 16pmx autofocus cam</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Arducam IMX519 16pmx Autofocus</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Basics</div>
+                <ul>
+                    <li>
+                The <a href="https://www.arducam.com/downloads/arducam-imx519-start-guide.pdf">Arducam installation guide</a> contains some useful information on operating the camera, and a link to their github repo where there are some python examples
+                    </li>
+                    <li>                        
+                Uses a custom version of libcamera to control the camera. Detailed guide for libcamera is available at <a href="https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps">https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps</a>
+                    </li>
+                    <li>The camera is installed as 2 devices - 
+                        <ul>
+                            <li>the imx519, which i found at /dev/v4l-subdev0</li>
+                            <li>the AK7375 camera lens motor (a voice coil motor) which does the focusing, which i found at /dev/v4l-subdev1</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Control with Video4Linux (v4l2)</div>
+                <ul>
+                    <li><strong>v4l2-ctl --list-devices</strong> - lists all video devices, but not subdevices</li>
+                    <li><strong>v4l2-ctl --list-formats-ext --device /dev/video0</strong> - lists formats available from device /dev/video0</li>
+                    <li><strong>v4l2-ctl --all --device path/to/video_device</strong> - lists all camera details</li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+
+                </ul>
+                <div>
+                    As mentioned, <strong>v4l2-ctl --list-devices</strong> does not list subdevices, and our focuser seems to be a subdevice. Not sure if unix figured that out? I guess not - more likely something I installed led to it being visible as a subdevice. <strong>ls /dev/*</strong> can be used to list all devices, including video0, video1..., and v4l-subdev0, v4l-subdev1 (which seem to be the arducam and the focuser, although /dev/video0 looks like the arducam too :-/) <br>
+                    There's some useful info at <a href="https://www.youtube.com/watch?v=_RC1YF2Tv8Y">https://www.youtube.com/watch?v=_RC1YF2Tv8Y</a> which explains a bit more about how you can look for devices and info about them. Also a bit about shell scripting to read them by name etc. <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Control with libcamera</div>
+                Seems to work for capturing images from command line. <br>
+                An example of calling from within python with a bunch of parameters can be found at <a href="https://github.com/OpenScanEu/OpenScan2/blob/main/update/main/OpenScan.py">openscan github</a>. This eventually sends a command line call to libcamera, and could be useful for me.
+                <a href="https://forum.arducam.com/t/how-to-use-code-to-access-libcamera-c-python/2028">https://forum.arducam.com/t/how-to-use-code-to-access-libcamera-c-python/2028</a> indicates it should be possible to call from python using libcamera python library, which would also be useful. See separate doc where i have trouble getting it working so far
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Control from python</div>
+                Some Python code, downloadable from <a href="https://github.com/ArduCAM/Arducam-Pivariety-V4L2-Driver.git">https://github.com/ArduCAM/Arducam-Pivariety-V4L2-Driver.git</a> creates a focuser class which sets focus distance via v4l2. This example requires the subdevice path of the focuser (/dev/v4l-subdev1) to be passed in as an argument, otherwise it defaults to /dev/video0 and doesn't work. I guess things other than the focus could be achieved like this
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4">Installation Pains</div>
+                <div>
+                    There seem to be a lot of issues with this in general. Initially, I tried with bullseye (raspbian v11) - it didn't work and i'm not sure why - it says it should<br><br>
+                    Eventually I got it working on the Raspberry Pi 3B v1.2, on Buster (raspbian v10), with the help of <a href="https://forum.arducam.com/">https://forum.arducam.com</a>, like this
+                    <ul>
+                        <li>Installed Raspbian clean OS. These are the OS details: <br>
+                            <code>
+pi@raspberrypi3:~ $ cat /etc/os-release
+PRETTY_NAME="Raspbian GNU/Linux 10 (buster)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="10"
+VERSION="10 (buster)"
+VERSION_CODENAME=buster
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+                            </code>
+                        </li>
+                        <li>Enabled the Camera interface from the Raspberry Pi Configuration dialog</li>
+                        <li>Followed the start guide from https://www.arducam.com/downloads/arducam-imx519-start-guide.pdf, running the following command whch all seemed to work <br>
+                            <code>
+wget -O install_pivariety_pkgs.sh https://github.com/ArduCAM/Arducam-Pivariety-V4L2-Driver/releases/download/install_script/install_pivariety_pkgs.sh
+chmod +x install_pivariety_pkgs.sh
+./install_pivariety_pkgs.sh -p dev_libcamera
+sudo apt update
+./install_pivariety_pkgs.sh -p libcamera_apps
+./install_pivariety_pkgs.sh -p imx519_kernel_driver
+                            </code>
+                        </li>
+                        <li>Edited config.txt to be like this and restarted (all other lines in the file were already commented out) <br>
+                            <code>
+dtparam=audio=on
+[pi4]
+# Enable DRM VC4 V3D driver on top of the dispmanx display stack
+dtoverlay=vc4-fkms-v3d
+max_framebuffers=2
+[all]
+dtoverlay=vc4-fkms-v3d
+start_x=1
+gpu_mem=128
+#dtoverlay=imx519
+                            </code>
+                        </li>
+                        <li>
+                            When running libcamera to test the camera, I then got this <br>
+                            <code>
+[0:00:49.382382531] [889] INFO Camera camera_manager.cpp:293 libcamera v0.0.0
+ERROR: *** no cameras available ***
+                            </code>
+                        </li>
+                        <li>
+                            Followed the advice <a href="https://forum.arducam.com/t/16mp-autofocus-raspbian-buster-no-camera-available/2464">here</a>, downloading the file <a href="imx519_kernel_driver.tar.gz">imx519_kernel_driver.tar.gz</a> and running the following commands <br>
+                            <code>
+tar xzvf imx519_kernel_driver.tar.gz
+cd Release
+./install_driver.sh
+                            </code>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>
