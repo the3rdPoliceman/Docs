@@ -82,6 +82,21 @@ code {
   margin: -1px 0;
 }
 
+.copyable{
+  cursor: pointer;
+  color : $lightning-purple;
+}
+
+.copyable::before{
+    content: "";
+    display: block;
+    background: url("../images/icons/clipboard.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
 .h4{
   margin-top: 1.5em;
   color: $text-dark;

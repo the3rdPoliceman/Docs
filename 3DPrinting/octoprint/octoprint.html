@@ -19,22 +19,33 @@
         </div>
         <div class="row">
             <div class="col-12 row-content">
-                <div class="h4">Basics</div>
+                <div class="h4" id="contents">Contents</div>
+                <!--<div class="content-link"><a href="#"></a></div> -->
+                <div class="content-link"><a href="#Basics">Basics</a></div>
+                <div class="content-link"><a href="#Plugins">Installed Plugins</a></div>
+                <div class="content-link"><a href="#Resources">Resources</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="Basics">Basics</div>
                 <ul>
                     <li>Sets up a web server on a raspberry pi, so you can connect to it on your network at <a href="http://octopi.local/">http://octopi.local/</a> and control/monitor the printer</li>
-                    <li>To get this to work, i followed the basic guides, then dad to update the GCODE scripts settings in Octoprint settings, following <a href="https://github.com/Jyers/Marlin/wiki/OctoPrint-Settings#error-handling">this article</a> from the jyers wiki. I "think" this is only necessary for Jyers</li>
-                    <li>This doesn't seem to work with every USB to USB micro cable. I had to try a couple</li>
+                    <li>To get this to work, i followed the basic guides, then had to update the GCODE scripts settings in Octoprint settings, following <a href="https://github.com/Jyers/Marlin/wiki/OctoPrint-Settings#error-handling">this article</a> from the jyers wiki. I "think" this is only necessary for Jyers</li>
+                    <li>When trying to use the Arducam IMX519 with octopi, it didn't like it. Installed again from scratch following <a href="https://forum.arducam.com/t/using-libcamera-imx519-on-octopi/2272/2">this guide</a></li>
+                    <li>It doesn't seem to work with every USB to USB micro cable. I had to try a couple</li>
+                    <li>Also doesn't seem to like running when the SD card is in</li>
                 </ul>
-                <div class="h4">Octoprint Plugins installed</div>
+                <div class="h4" id="Plugins">Octoprint Plugins installed</div>
                 <ul>
-                    <li>Creality Temperature (1.2.4) - mandatory according to a dude on the internet</li>
+                    <li>Creality Temperature Fix (1.2.4) - mandatory according to a dude on the internet</li>
                     <li>Creality-2x-temperature-reporting-fix (0.0.4) - mandatory according to a dude on the internet</li>
-                    <li>OctoEverywhere! (1.6.6) - make the octopi available on the internet. Mine is <a href="https://ender3v2.octoeverywhere.com">here</a></li>
-                    <li>Camera Settings (0.3.2) - advanced camera settings</li>
+                    <li>OctoEverywhere! (1.6.6) - make the octopi available on the internet. Mine is <a href="https://ender_3_v2.octoeverywhere.com">here</a></li>
+                    <li>Camera plugin from the Arducam article above (ok, and <a href="https://forum.arducam.com/t/using-libcamera-imx519-on-octopi/2272/2">here</a>)</li>
                     <li>Exclude Region (0.3.0) - See something fucked? This lets you stop certain areas printing on the fly</li>
                     <li>M73 Progress - To update the progress bar and time remaining on the printer display during an OctoPrint job</li>
                 </ul>
-                <div class="h4">Useful Resources</div>
+                <div class="h4" id="Resources">Resources</div>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=HBd0olxI-No">How to setup OctoPrint! - Thomas Sanladerer</a></li>
                     <li><a href="https://howchoo.com/octoprint/ender-3-v2-octoprint">How to Set Up and Use OctoPrint on the Creality Ender 3 V2 - Howchoo</a> </li>

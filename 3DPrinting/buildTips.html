@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <title>3D Printing Build Tips</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">3D Printing Build Tips</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="contents">Content</div>
+                <div class="content-link"><a href="#PrintingStronger">Printing Stronger</a></div>
+                <div class="content-link"><a href="#generatingeasilyRemovableSupport">Generating Easily Removable Support</a></div>
+                <div class="content-link"><a href="#storingFilament">Storing Filament</a></div>
+                <div class="content-link"><a href="#ThreadedMetalInsertsfor3Dprints">Threaded Metal Inserts for 3D prints</a></div>
+                <div class="content-link"><a href="#ThreadedPlasticPartsGuide">Threaded Plastic Parts Guide</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="PrintingStronger">Printing Stronger</div>
+                <p> <strong>AFFECT OF FAN SETTING ON LAYER ADHESION</strong><br>
+                    PLA - The lower the fan setting, the stronger the adhesion</br>
+                    PETG - The lower the fan setting, the stronger the adhesion
+                    <br><a href="https://www.youtube.com/watch?v=Bl2ESvtBiLo">https://www.youtube.com/watch?v=Bl2ESvtBiLo</a>
+                </p>
+                <p> <strong>AFFECT OF EXTRUSION WIDTH ON LAYER ADHESION</strong><br>
+                    Wider extrusions increases layer adhesion and therefore strength by up to around 50%. There are limits to how far you can push this, after which parts get ugly - around 150% extrusion width seems to be about the maximum
+                    <br><a href="https://www.youtube.com/watch?v=9YaJ0wSKKHA">https://www.youtube.com/watch?v=9YaJ0wSKKHA</a>
+                </p>
+                <p> <strong>AFFECT OF INFILL PERCENT AND SHELL STRENGTH</strong><br>
+                    You'll get beter bang for your buck by increasing shell count/thickness rather than infill percentage. For max strength, 5 perimeters and 50% infill.
+                    <br><a href="https://www.youtube.com/watch?v=AmEaNAwFSfI">https://www.youtube.com/watch?v=AmEaNAwFSfI</a>
+                </p>
+                <p> <strong>AFFECT OF INFILL PATTERN AND SHELL STRENGTH</strong><br>
+                    Gyroid or cubic for parts that need to be strong in all directions.
+                    For parts that need strength in one axis, rectilinear, grid and triangle are superior to gyroid and cubic, and all give similar results
+                    <br><a href="https://youtu.be/upELI0HmzHc?t=398">https://youtu.be/upELI0HmzHc?t=398</a>
+                </p>
+                <p> <strong>AFFECT OF INFILL PATTERN ON STRENGTH</strong><br>
+                    Honeycomb gives best strength to weight, closely followed by triangular. Triangular actually gives stonger parts for the same infill percentage, but that is because it actually infills more than the specified amount
+                    <br><a href="https://www.youtube.com/watch?v=AmEaNAwFSfI">https://www.youtube.com/watch?v=AmEaNAwFSfI</a>
+                </p>
+            </div>
+
+            <div cLass="col-12 row-content">
+                <div clasS="h4" id="generatingeasilyRemovableSupport">Generating Easily Removable Support</div>
+                <ul>
+                    <li>Use the lines infill pattern</li>
+                    <li>Try as low as 5% infill. seems to almost always work without problems</li>
+                    <li>Use clippers for support removal & a soldering iron ferrule for smoothing</li>
+                </ul>
+            </div>
+            <div cLass="col-12 row-content">
+                <div clasS="h4" id="storingFilament">Storing Filament</div>
+                    <p>In general for all plastic filament, it should be stored in as dry conditions as possible. If water gets into the filament it can cause all sorts of issues. This isn't such a big deal with PLA (although it does increase stringing etc.), but can make a huge difference for other filaments.</p>
+                    <p>Ideally you should store filament in sealed boxes with silica dessicant. If having trouble with trickier filaments like TPU or nylon, its worth exploring drying them in the oven. See <a href="https://www.youtube.com/watch?v=eqQRN9TUw08">https://www.youtube.com/watch?v=eqQRN9TUw08</a> for a guide</p>
+            </div>
+            <div class="col-12 row-content">
+                <div class="h4" id="ThreadedMetalInsertsfor3Dprints">Threaded Metal Inserts for 3D prints</div>
+                Based on <a href="https://www.youtube.com/watch?v=2wRc1KbEAU8">this video</a> from CNC kitchen
+                <ul>
+                    <li><strong>Best Overall: Heat set inserts</strong>
+                        A threaded insert that can be heated and pushed into the 3D print with a soldering iron (example <a href="https://www.youtube.com/watch?v=GP1qrN-ONTA">here</a>) . Ruthex style with opposing diagonal grooves on the outside are really good. Not far behind hex nuts for strength, and good enough for most things
+                    </li>
+                    <li>
+                        <strong>Best for Strength: Hex nuts on opposite side</strong>
+                        Best for strength, but a bit more annoying to fit and they have a tendency to fall out
+                    </li>
+                    <li>
+                        <strong>Helicoils - wtf are helicoils?</strong>
+                        Thingies that look a bit like springs. They're for fixing spripped out threads in a recess where replacement isn't an option e.g. bike frame. You drill out the hole nicely, tap it, screw in the helicoil, and then the inside of the helicoil acts as the replacement thread. Not great for 3D prints, they don't really improve over screwing directly into the plastic. But cool idea
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 row-content">
+                <div class="h4" id="ThreadedPlasticPartsGuide">Threaded Plastic Parts Guide</div>
+                Based on <a href="https://www.youtube.com/watch?v=aGWrFeu8Hv0">this video</a> from Product Design Online <br>
+                <strong>When designing</strong>
+                <ul>
+                    <li>You'll need more clearance for plastic threads. When designing threads, add more clearance than suggested by default by offsetting thread faces (0.2mm total offset is a good estimate). Slice through threads with a section to inspect the clearance</li>
+                    <li>Finer pitches won't normally work very well in plastic</li>
+                    <li>Plastic threads with sharp edges will degrade quickly. Round the edge of threads & grooves with fillets (start from 0.15mm fillet)</li>
+                </ul>
+                <strong>Printing options</strong>
+                <ul>
+                    <li>Reducing layer height when slicing will help. Maybe go to 0.15 or less</li>
+                    <li>Increasing the temperature 15C to improve layer adhesion</li>
+                    <li>For printing most things, I use "print outer before inner". Maybe this is a bad idea with threaded parts?</li>
+                    <li>Should also try "print infill before walls"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

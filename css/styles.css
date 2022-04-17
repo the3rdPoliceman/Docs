@@ -17,6 +17,19 @@ code {
   max-width: 960px; }
 
 /* Let's make sure all's aligned */
+.copyable {
+  cursor: pointer;
+  color: #BF4AA8; }
+
+.copyable::before {
+  content: "";
+  display: block;
+  background: url("../images/icons/clipboard.svg") no-repeat;
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 6px 0 0; }
+
 .h4 {
   margin-top: 1.5em;
   color: #555555; }
