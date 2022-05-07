@@ -32,7 +32,7 @@ body {
   font-family: $font-stack;
   font-size: 1rem;
   line-height: 1.4375em;
-  color:$text-normal;
+  color:$text-light;
   margin: 50px 50px;
 }
 
@@ -40,7 +40,7 @@ body {
   font-family: $font-stack;
   font-size: 1rem;
   line-height: 1.4375em;
-  color:$text-normal;
+  color:$text-light;
 }
 
 script{
@@ -54,6 +54,7 @@ script{
 @mixin h1-mixin {
   font-family: $script-font-stack;
   font-size: 6rem;
+  font-weight: normal;
   line-height: 1.01470588em;
   margin-bottom: 0.67647058em;
   color:$airbnb-red;
@@ -62,6 +63,7 @@ script{
 @mixin h2-mixin {
   font-family: $script-font-stack;
   font-size: 2.625rem;
+  font-weight: normal;
   line-height: 1.0952381em;
   margin-top: 0.54761905em;
   margin-bottom: 0.54761905em;
@@ -98,6 +100,7 @@ script{
 
 .basics-sub-heading{
   font-family: $script-font-stack;
+  font-weight: bold;
   color: $airbnb-red;
   margin : 30px 0px 0px 0px;
   font-size: 1.3rem;
@@ -106,6 +109,16 @@ script{
 
 .basics-section-detail{
   margin : 0px 10px;
+  font-weight: bold;
+}
+
+.label {
+  @include h1-mixin;
+  margin: 100px 40px;
+}
+
+.label-image {
+  height: 200px;
 }
 
 .bottom{
@@ -114,12 +127,17 @@ script{
   width :100%;
 }
 
-ul {
+
+.full-width-image{
+  width: 100%;
+}
+
+ul.basics-list{
   padding: 0px 20px;
   list-style: none; /* Remove default bullets */
 }
 
-ul li::before {
+ul.basics-list li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: $airbnb-red; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
