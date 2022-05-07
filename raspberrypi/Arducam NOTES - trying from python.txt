@@ -1,0 +1,60 @@
+TRYING TO RUN THINGS FROM PYTHON
+
+based on this - https://forum.arducam.com/t/how-to-use-code-to-access-libcamera-c-python/2028
+
+
+INITIAL INSTALL ATTEMPT
+downloaded and unzipped libcamera_python-1.0.1.zip from link on page above
+cd into the top unzipped directory
+opened the README for instructions
+follwed instruction, and as i had python3.7 installed, I ran python3 -m pip install ./libcamera-1.0.1-cp37-cp37m-linux_armv7l.whl
+
+
+TRY TO RUN
+tried to run python3 capture_demo.py
+error: ModuleNotFoundError No module named cv2
+
+
+MAKE SURE NUMPY AND OPENCV ARE INSTALLED (from random internet dude:)
+pip3 install numpy
+pip3 install opencv-python (this should include cv2)
+
+
+NEXT TRY
+tried to run python3 capture_demo.py
+error:
+    from .cv2 import *
+ImportError: libcblas.so.3: cannot open shared object file: No such file or directory
+
+
+ADD SOME MISSING STUFF (from https://stackoverflow.com/questions/53347759/importerror-libcblas-so-3-cannot-open-shared-object-file-no-such-file-or-dire, subcomment to accepted answer)
+sudo apt-get install libatlas-base-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev libqtgui4 libqt4-test
+
+
+NEXT TRY
+tried to run python3 capture_demo.py
+    from .cv2 import *
+ImportError: numpy.core.multiarray failed to import
+
+
+UPDATE NUMPY (from https://stackoverflow.com/questions/20518632/importerror-numpy-core-multiarray-failed-to-import)
+pip install -U numpy
+
+
+NEXT TRY
+tried to run python3 capture_demo.py
+Initiated libcamera, but then seemed to get errors later
+Unable to init server: Could not connect: Connection refused
+Traceback (most recent call last):
+  File "capture_demo.py", line 63, in <module>
+    cv2.imshow("image", frame)
+cv2.error: OpenCV(4.5.5) /tmp/pip-wheel-8dvnqe62/opencv-python_7949e8065e824f1480edaa2d75fce534/opencv/modules/highgui/src/window_gtk.cpp:635: error: (-2:Unspecified error) Can't initialize GTK backend in function 'cvInitSystem'
+
+[5:59:43.032193397] [15760] ERROR V4L2 v4l2_videodevice.cpp:1158 /dev/video16[17:cap]: Unable to request 0 buffers: Device or resource busy
+[5:59:43.035695627] [15760] ERROR V4L2 v4l2_videodevice.cpp:1158 /dev/video15[16:cap]: Unable to request 0 buffers: Device or resource busy
+[5:59:43.040294796] [15760] ERROR V4L2 v4l2_videodevice.cpp:1158 /dev/video14[15:cap]: Unable to request 0 buffers: Device or resource busy
+[5:59:43.047452955] [15760] ERROR V4L2 v4l2_videodevice.cpp:1158 /dev/video13[14:out]: Unable to request 0 buffers: Device or resource busy
+[5:59:43.051145291] [15760] ERROR V4L2 v4l2_videodevice.cpp:1158 /dev/video1[13:cap]: Unable to request 0 buffers: Device or resource busy
+[5:59:43.052261242] [15760] ERROR V4L2 v4l2_videodevice.cpp:1158 /dev/video0[12:cap]: Unable to request 0 buffers: Device or resource busy
+terminate called without an active exception
+Aborted

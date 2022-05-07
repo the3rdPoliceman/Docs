@@ -30,10 +30,12 @@
                 <div class="content-link"><a href="#STEPPER">Stepper Motors</a></div>
                 <div class="content-link"><a href="#UNIVERSAL_MOTOR">Universal Motors</a></div>
                 <div class="content-link"><a href="#DC_MOTOR">DC Motors</a></div>
+                <div class="content-link"><a href="#brushless">Brushless DC Motors</a></div>
                 <div class="content-link"><a href="#AC_MOTOR">AC Motors</a></div>
                 <div class="content-link"><a href="#INDUCTION_MOTOR">Inductions Motors</a></div>
                 <div class="content-link"><a href="#Identifying">Identifying Motors</a></div>
                 <div class="content-link"><a href="#wiring">Wiring Motors</a></div>
+                <div class="content-link"><a href="#vfd">Variable Frequency Drives (VFDs)</a></div>
             </div>
         </div>
         <div class="row content-section">
@@ -192,7 +194,10 @@
                 <ul>
                     <li>Similar to a DC motor, but instead of permanent magnets, electromagnets are used</li>
                     <li>Can run on AC or DC</li>
-                    <li></li>
+                    <li>High RPM is possible</li>
+                    <li>High power density</li>
+                    <li>Speed controllable through VFDs, using a thiristor or triac. Without speed control it will set its own speed based on the load</li>
+                    <li>Have commutators and brushes</li>
                 </ul>
             </div>
         </div>
@@ -224,8 +229,25 @@
                     <li>Split ring commutator</li>
                     <li>Multiple coils on the armature attached to the commutator</li>
                     <li>DC Permanent magnet can be easily used as a generator</li>
+                    <li>Can run on batteries</li>
                     <li></li>
-                    <li></li>
+                </ul>
+                <strong>Speed Control Options</strong>
+                <ul>
+                    <li>Varible transformer to step up/down voltage, and Full bridge rectifier to convert to DC</li>
+                    <li>PWM</li>
+                    <li>Varying the input voltage</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="brushless">Brushless DC Motors</div>
+                <strong>Main features</strong>
+                <ul>
+                    <li>Multiple permanent magnets arranged in rotor</li>
+                    <li>Rotor generally mounted outside stator windings</li>
+                    <li>Use transistors to generate rotating magnetic field in the coils</li>
                 </ul>
             </div>
         </div>
@@ -251,6 +273,7 @@
                     <li>Stator contains coils</li>
                     <li>No electrical connection between the rotor and the stator</li>
                     <li>Rotating magnetic field is created by the fact the phases are 120 degrees out of phase</li>
+                    <li>Powerful and smooth power</li>
                     <li>Extremely low maintenance. Bearing are the only consumables</li>
                     <li>Can be used with a variable-frequency drive (VFD). This allows speed control of the motor by varying the input frequency and, depending on topology, to control associated voltage or current variation</li>
                 </ul>
@@ -288,11 +311,39 @@
                 </ul>
             </div>
         </div>
+                <div class="content-link"><a href="#characteristics">Important Characteristics Of Motors</a></div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="characteristics">Important Characteristics Of Motors</div>
+                <ul>
+                    <li>How fast will the motor spin at the rated voltage, with no load?</li>
+                    <li>At which torque will the motor stall?</li>
+                    <li>How high is the current under no load, and at stall?</li>
+                    <li>What is the point of maximum mechanical power?</li>
+                    <li>Where is the point of maximum efficiency?</li>
+                </ul>
+            </div>
+        </div>
         <div class="row content-section">
             <div class="col-12 row-content">
                 <div class="h4" id="wiring">Wiring Motors</div>
                 <a href="https://www.youtube.com/watch?v=ZKodxGcRSnw&list=PL4njCTv7IRby2MEHBUJ51QIovAZK3rcKJ&index=1">How to wire motors</a>
                 Often the direction can be changed, by switching wires around
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="vfd">Variable Frequency Drives (VFDs)</div>
+                <a href="https://www.youtube.com/watch?v=cE34YHsRY88&list=PL4njCTv7IRby2MEHBUJ51QIovAZK3rcKJ&index=6">https://www.youtube.com/watch?v=cE34YHsRY88&list=PL4njCTv7IRby2MEHBUJ51QIovAZK3rcKJ&index=6</a>
+                
+            </div>
+        </div>  
+                <div class="content-link"><a href="#reusing">Reusing Motore</a></div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="reusing">Reusing Motore</div>
+                <a href="https://youtu.be/tUQg2WiHpUY?t=235">https://youtu.be/tUQg2WiHpUY?t=235</a> is from the post apocalyptic inventer, mesuring motor rotation speed with a magnet and hall effect sensor <br>
+                <a href="https://www.youtube.com/watch?v=KLiqpuJBBD4"https://www.youtube.com/watch?v=KLiqpuJBBD4></a> is from the post apocalyptic inventer, building an arduino + triac universal motor speed controller <br>
             </div>
         </div>
     </div>

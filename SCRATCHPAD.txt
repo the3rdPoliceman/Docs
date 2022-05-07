@@ -1,0 +1,78 @@
+SCRATCHPAD
+
+
+*****************
+
+DC SHUNT MOTOR
+https://www.youtube.com/watch?v=6RAE-Y7cQG0  ...  and for comparison, a series ... https://www.youtube.com/watch?v=gSCv0rj2uYs
+https://www.youtube.com/watch?v=ih6HXOVDkQE
+
+Name
+Shunt is another way to say parallel
+
+
+Vibration damping a motor
+https://www.youtube.com/watch?v=LvOrBQcnQfk	
+
+
+*****************
+
+STEPPER MOTOR INTERNET OPINIONS (MIGHT BE BS)
+
+DM542 better than TB6600
+TB6600 better (or at least more powerful) than A4988
+
+
+PRINTING GEARS
+gf gear generator plugin for fusion 360. Double helical are good
+
+
+*****************
+
+
+making a full bridge rectifier https://www.youtube.com/watch?v=sI5Ftm1-jik
+
+
+*****************
+
+
+MOTOR SPEED CONTROL POSSIBILITIES
+
+3 PHASE + VFD
+3 Phase AC Motor
+VFD (with modbus RS485 support) to run the 3 phase motor from 220V AC
+MODBUS RS485 Communication between Pi and VFD 
+https://www.instructables.com/How-to-Use-Modbus-With-Raspberry-Pi/  (see comments....shield seems to work but have some bad labelling)
+https://www.hwhardsoft.de/english/projects/rs485-shield/
+https://www.youtube.com/embed/7VVQ2KOZTRU?feature=oembed&autoplay=1
+https://www.youtube.com/watch?v=apQKgs_D0DM
+This seems to be from the people that make the Pi Modbus hat - https://www.hackster.io/hartmut-wendt/how-to-use-modbus-with-raspberry-pi-295400
+
+
+THYRISTOR/TRIAC + DIGITAL POTENTIOMETER
+
+
+*****************
+
+
+HOW MUCH POWER DOES YOUR MOTOR NEED?
+
+STEPS
+Establish RPM requirements
+Measure torque needed
+Establish safety factor. This is a factor applied to your calcuation to ensure you don't underpower. With a stepper, a factor of 2 is good. For other motor types, it should probably be less
+
+power(kw) = safetyFactor * ((speed (rpm) * torque (Nm)) / 9550)
+
+
+COPY METHOD
+Look at existing machines. They are probably good, and probably also include a safety factor
+
+
+DUTY CYCLE
+
+
+ENVIRONMENT
+
+
+
