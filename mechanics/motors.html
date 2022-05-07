@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,6 +21,7 @@
         <div class="row">
             <div class="col-12 row-content">
                 <div class="h4" id="contents">Contents</div>  
+                <div class="content-link"><a href="#fundamentals">Fundamentals</a></div>
                 <div class="content-link"><a href="#MyMotors">My Motors</a></div>
                 <div class="content-link"><a href="#steppersizes">Stepper Dimensions</a></div>
                 <div class="content-link"><a href="#Standards">Standards</a></div>
@@ -32,6 +33,23 @@
                 <div class="content-link"><a href="#AC_MOTOR">AC Motors</a></div>
                 <div class="content-link"><a href="#INDUCTION_MOTOR">Inductions Motors</a></div>
                 <div class="content-link"><a href="#Identifying">Identifying Motors</a></div>
+                <div class="content-link"><a href="#wiring">Wiring Motors</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="fundamentals">Fundamentals</div>
+                <strong>Force Generated between Current Carrying Wire and Magnetic Field</strong><br>
+                This is proportional to
+                <ul>
+                    <li>Strength of magnetic field</li>
+                    <li>Current through the wire</li>
+                    <li>Length of wire perpendicular to magnetic field i.e. if the wire was parallel to the field no force would occur. Basic trig to work out the effective length of wire crossing the field</li>
+                </ul>
+                <strong>Force between Parallel Conductors</strong><br>
+                I.e. between wires in a coil. This is caused by the magnetic field created due to current flowing through each of the wires. <br>
+                If current travels in the same direction through wires (as it would in a coil) there is an attractive force, if current is in opposite direct there's a repulsive force. <br>
+                The force is proportional to the product of the currents and the length of common wire. It is inversely proportional to the distance between them.
             </div>
         </div>
         <div class="row">
@@ -148,11 +166,6 @@
                     <li><strong>TIME RATING/DUTY</strong> - e.g. Cont for continuous. How long you can run the motor at full load</li>
                     <li><strong>ENC</strong> - Enclosure type</li>
                     <li><strong></strong> - </li>
-                    <li><strong></strong> - </li>
-                    <li><strong></strong> - </li>
-                    <li><strong></strong> - </li>
-                    <li><strong></strong> - </li>
-                    <li><strong></strong> - </li>
                 </ul>
             </div>
         </div>
@@ -162,10 +175,9 @@
                 Types
                 <ul>
                     <li></li>
-                    <li></li>
-                    <li></li>
                 </ul>
-                Main features - A good interactive representation of stepper motors can be found at <a href="https://en.nanotec.com/knowledge-base/stepper-motor-animation">https://en.nanotec.com/knowledge-base/stepper-motor-animation</a>
+                <strong>Main features</strong>
+                A good interactive representation of stepper motors can be found at <a href="https://en.nanotec.com/knowledge-base/stepper-motor-animation">https://en.nanotec.com/knowledge-base/stepper-motor-animation</a>
             </div>
         </div>
         <div class="row">
@@ -175,19 +187,11 @@
                     <img src="universal-ac-motor.png" alt="universal motor">
                     <figcaption>Universal motor</figcaption>
                 </figure>
-                Types
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                Main features
+
+                <strong>Main features</strong>
                 <ul>
                     <li>Similar to a DC motor, but instead of permanent magnets, electromagnets are used</li>
                     <li>Can run on AC or DC</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                     <li></li>
                 </ul>
             </div>
@@ -195,22 +199,31 @@
         <div class="row">
             <div class="col-12 row-content">
                 <div class="h4" id="DC_MOTOR">DC Motor</div>
-                Types
+                <strong>Types</strong>
                 <ul>
                     <li>DC Permanent Magnet motors - Have permanent magnets in the stator. The brushes contact the coils in turn as the motor rotates (via the commutator), gradually changing the magnetic field position in the rotor. This change in the field position puts a force on the rotor from the stator magnets
                         <figure>
                             <img src="dc-permanent-magnet-motor.png" alt="DC Permanent Magnet motor">
                         </figure>
                     </li>
-                    <li></li>
-                    <li></li>
+                    <li>DC Electromagnetic motors - Operation is similar to a DC permanent magnet motor, but an electromagnet is used instead of permenent magnet to create the magnetic field</li>
+                    <li>DC Series motor - A DC electromagnetic motor where the field windings are in SERIES with the coil windings
+                        <figure>
+                            <img src="dc-series-motor.png" alt="DC Permanent Magnet motor" class="full-width-image">
+                        </figure>
+                    </li>
+                    <li>DC Shunt motor - A DC electromagnetic motor where the field windings are in PARALLEL with the coil windings
+                        <figure>
+                            <img src="dc-shunt-motor.png" alt="DC Permanent Magnet motor" class="full-width-image">
+                        </figure>
+                    </li>
                 </ul>
-                Main features
+                <strong>Main features</strong>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Stator containing either permanent or electro magnets</li>
+                    <li>Split ring commutator</li>
+                    <li>Multiple coils on the armature attached to the commutator</li>
+                    <li>DC Permanent magnet can be easily used as a generator</li>
                     <li></li>
                     <li></li>
                 </ul>
@@ -218,34 +231,35 @@
         </div>
         <div class="row">
             <div class="col-12 row-content">
-                <div class="h4" id="AC_MOTOR">AC Motor</div>
-                Types
+                <div class="h4" id="AC_MOTOR">Single Phase AC Induction Motor</div>
+                <strong>Main features</strong>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Stator contains coils</li>
+                    <li>No electrical connection between the rotor and the stator</li>
+                    <li>Not easily speed controllable. Messing with input voltage is likely to increase current and cause problems with the centrifugal switch. Also, probably not a good idea to have extra current in there anyway</li>
+                    <li>Low maintenance. Bearing are the only consumables</li>
+                    <li>Capacitor & centrifugal switch are potential sources of problems. If motor hums, but doesn't spin, there is a problem with one of these</li>
+                    <li>May or may not be reversible, depending on whether you have access to the starter windings</li>
                 </ul>
-                Main features
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="AC_MOTOR">3 Phase AC Induction Motor</div>    
+                <strong>Main features</strong>
                 <ul>
-                    <li>Can be used with a variable-frequency drive (VFD). This type of motor drive can be used to control AC motor speed and torque by varying motor input frequency and, depending on topology, to control associated voltage or current variation</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Stator contains coils</li>
+                    <li>No electrical connection between the rotor and the stator</li>
+                    <li>Rotating magnetic field is created by the fact the phases are 120 degrees out of phase</li>
+                    <li>Extremely low maintenance. Bearing are the only consumables</li>
+                    <li>Can be used with a variable-frequency drive (VFD). This allows speed control of the motor by varying the input frequency and, depending on topology, to control associated voltage or current variation</li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-12 row-content">
                 <div class="h4" id="INDUCTION_MOTOR">Induction Motor</div>
-                Types
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                Main features
+                <strong>Main features</strong>
                 <ul>
                     <li>Run on AC</li>
                     <li>Often require a capacitor, or even 2 for starting</li>
@@ -272,6 +286,13 @@
                     <li>Is it magnetic? Most likely a permanent magnet DC motor</li>
                     <li>See a squirrel cage rotor inside (no electrical connection to rotor)? Probably induction. A squirrel-cage rotor consists of a cylinder of steellaminations, with aluminum or copper conductors embedded in its surface, and resembles a rodent exercise wheel. </li>
                 </ul>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="wiring">Wiring Motors</div>
+                <a href="https://www.youtube.com/watch?v=ZKodxGcRSnw&list=PL4njCTv7IRby2MEHBUJ51QIovAZK3rcKJ&index=1">How to wire motors</a>
+                Often the direction can be changed, by switching wires around
             </div>
         </div>
     </div>

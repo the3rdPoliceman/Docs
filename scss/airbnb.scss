@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+@font-face {
+  font-family: 'Buttershine';
+  src: url('../fonts/Buttershine.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Caveat-VariableFont_wght';
+  src: url('../fonts/Caveat-VariableFont_wght.ttf')  format('truetype');
+}
+
+
+
+
+$airbnb-red: #f7585b;
+$lightning-blue: #51D0DE;
+$lightning-purple: #BF4AA8;
+$lightning-white: #E9E9E9;
+$lightning-pink: lighten($lightning-purple, 25%);
+$text-normal: #454545;
+$text-light: #717171;
+$font-stack: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+$script-font-stack: 'Caveat-VariableFont_wght';
+
+html, .root {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  color:$text-normal;
+  margin: 50px 50px;
+}
+
+.article {
+  font-family: $font-stack;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  color:$text-normal;
+}
+
+script{
+  font-family: $script-font-stack;
+}
+
+.container{
+  max-width: 960px;
+}
+
+@mixin h1-mixin {
+  font-family: $script-font-stack;
+  font-size: 6rem;
+  line-height: 1.01470588em;
+  margin-bottom: 0.67647058em;
+  color:$airbnb-red;
+}
+
+@mixin h2-mixin {
+  font-family: $script-font-stack;
+  font-size: 2.625rem;
+  line-height: 1.0952381em;
+  margin-top: 0.54761905em;
+  margin-bottom: 0.54761905em;
+  color:$airbnb-red;
+}
+
+@mixin h3-mixin {
+  font-family: $font-stack;
+  font-size: 1.625rem;
+  line-height: 1.2375em;
+  margin-top: 0.88461538em;
+  margin-bottom: 0em;
+  color:$airbnb-red;
+}
+
+@mixin h4-mixin {
+  font-family: $font-stack;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  color:$airbnb-red
+}
+
+.page-title{
+	@include h1-mixin;
+  margin-bottom: 0px;
+}
+
+.basics-section-title{
+  @include h2-mixin;
+  margin : 30px 0px 0px 0px;
+}
+
+.basics-sub-heading{
+  font-family: $script-font-stack;
+  color: $airbnb-red;
+  margin : 30px 0px 0px 0px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.basics-section-detail{
+  margin : 0px 10px;
+}
+
+.bottom{
+  margin: 20px;
+  height: 300px;
+  width :100%;
+}
+
+ul {
+  padding: 0px 20px;
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $airbnb-red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}

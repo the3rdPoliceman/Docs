@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <title>Lathe</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Lathe</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="contents">Contents</div>
+        		<div class="content-link"><a href="#motor">Motor</a></div>
+        		<div class="content-link"><a href="#speeds">Spindle Speeds</a></div>
+        		<div class="content-link"><a href="#vibration">Vibration</a></div>
+        		<div class="content-link"><a href="#sanding">Sanding Attatchment</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="motor">Motor</div>
+                <strong>Examples</strong>
+                <ul>
+                    <li>
+                    Post Apocalyptic Inventor used a three phase induction motor with a VFD for his lathe <a href="https://www.youtube.com/watch?v=LpMLQb48mps&list=PLxaGnte1Dq0ni-d9CVGXkY3n1j32HQ4Wj&index=3">here</a> <br>
+                    </li>
+                    <li>
+                    Treadmill motor, with controller circuit, run by arduino. Example, with no real details at <a href="https://www.youtube.com/watch?v=DJJ6G3-XbjA">https://www.youtube.com/watch?v=DJJ6G3-XbjA</a>
+                    </li>
+                    <li>
+                    Servo motors are typically used in industrial CNCs <br>
+                    </li>
+                    <li>
+                    3 phase induction speed controlled via VFD which is controlled using MODbus<br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		<div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="speeds">Spindle Speeds</div>
+                One suggested rule from <a href="https://blog.woodturnerscatalog.com/2012/08/safe-wood-lathe-speeds/">Woodturners Catalog</a> gives
+                <ul>
+	                <li>150000/D(mm) = RPM<sub>min</sub></li>
+	                <li>225000/D(mm) = RPM<sub>max</sub></li>
+                </ul>
+                This would give the following speeds
+                <table>
+                	<thead>
+                		<tr>
+	                		<th>Diameter</th>
+	                		<th>RPM<sub>min</sub></th>
+	                		<th>RPM<sub>max</sub></th>
+                		</tr>
+                	</thead>
+                	<tbody>
+                		<tr>
+                			<td>25mm</td>
+                			<td>6000</td>
+                			<td>9000</td>
+                		</tr>
+                		<tr>
+                			<td>40mm</td>
+                			<td>3750</td>
+                			<td>5650</td>
+                		</tr>
+                		<tr>
+                			<td>50mm</td>
+                			<td>3000</td>
+                			<td>4500</td>
+                		</tr>
+                	</tbody>
+                </table>
+
+            </div>
+        </div>	
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="vibration">Vibration</div>
+                <p>The main cause of vibration in a wood lathe is an unbalanced workpiece, which is likely at the start. This is exacerbated at higher speeds, so ideally you want to be turning fast enough for a good finish, but not so fast as to increase vibration. This would suggest the following potential tactics 
+                <ul>
+                	<li>A rough shaping pass should be done, followed by one or two finer passes (My idea)</li>
+                	<li>If speed is variable, the roughing pass could be done at lower speed than the finish pass (idea from <a href="https://blog.woodturnerscatalog.com/2012/08/safe-wood-lathe-speeds/">https://blog.woodturnerscatalog.com/2012/08/safe-wood-lathe-speeds/</a></li>
+                </ul> 
+            	</p>
+            	<p><strong>Idea: </strong>Would be interesting to know if some sort of vibration sensor cuold be used. Initially, while spinning but not yet cutting to determine balance. While cutting to detect poor cutting or chatter</p>
+            	<p><strong>Question:</strong> Could a large centered weight e.g. a heavy steel disc or heavy headstock, help to reduce vibration</p>
+            	<p><strong>Spindle Spped Variantion</strong> should be investigated. See <a href="https://www.youtube.com/watch?v=dXR2wDDFFm4">https://www.youtube.com/watch?v=dXR2wDDFFm4</a> for an example and investigate further</p>
+            	<p><strong>Real time harmonic analysis</strong> probably over the top but interesting. See <a href="https://hackaday.com/2020/01/16/analyzing-cnc-tool-chatter-with-audacity/">this</a> for an example</p>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="sanding">Sanding Attatchment</div>
+                <strong>Sanding Belt Options</strong>
+                <ul>
+                	<li><a href="https://www.aliexpress.com/item/1005003638573602.html?spm=a2g0o.detail.1000023.15.6ca216c5KR9su6">25*2mm belts</a></li>
+                	<li><a href="https://www.aliexpress.com/item/1005003482890489.html?spm=a2g0o.detail.1000023.13.6ca216c53FNWUW">25*50m belts</a></li>
+                	<li><a href="https://www.aliexpress.com/item/32954930910.html?spm=a2g0o.productlist.0.0.55193a66JDIyaU&algo_pvid=7d8fb7f3-9162-4e2c-ba1c-3a01dbf2d377&algo_exp_id=7d8fb7f3-9162-4e2c-ba1c-3a01dbf2d377-16&pdp_ext_f=%7B%22sku_id%22%3A%2212000026574567454%22%7D&pdp_pi=-1%3B1.23%3B-1%3B-1%40salePrice%3BCHF%3Bsearch-mainSearch">762*25mm belts</a></li>
+                </ul>
+                <p>Short belt option e.g. 762*25mm could be held in a zigzag along a set of rollers. Advantage being the simplicity of the setup.</p>
+                <p>Long belts roll from one pulley onto another. This would be more complicated mechenism, but longer time between replacement</p>
+                <p>For round pieces, belts would pun perpendicular to lathe. Similar setup could be used on <a href="routerLathe.html">router lathe</a> to sand pieces with hex or octagon proflies</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

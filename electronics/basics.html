@@ -21,10 +21,48 @@
             <div class="col-12 row-content">
                 <div class="h4" id="contents">Contents</div>
                 <div class="content-link"><a href="#relaysSolenoidsContactors">Relays, Solenoids & Contactors</a></div>
-                <div class="content-link"><a href="#relays">Relays</a></div>
-                <div class="content-link"><a href="#wiregauges">Wire Gauges</a></div>
                 <div class="content-link"><a href="#powersupplies">Power Supplies</a></div>
+                <div class="content-link"><a href="#oscilloscope">Oscilloscopes</a></div>
+                <div class="content-link"><a href="#relays">Relays</a></div>
+                <div class="content-link"><a href="#encoders">Encoders</a></div>
+                <div class="content-link"><a href="#servos">Servos</a></div>
+                <div class="content-link"><a href="#wiregauges">Wire Gauges</a></div>
+                <div class="content-link"><a href="#inductors">Inductors</a></div>
+                <div class="content-link"><a href="#transistors">Transistors</a></div>
+                <div class="content-link"><a href="#potentiometers">Potentiometers</a></div>
+                <div class="content-link"><a href="#current">Current</a></div>
                 <div class="content-link"><a href="#usefulvideos">Useful Videos</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="powersupplies">Power Supplies</div>
+                <div><strong>My supply is a Riden RD6018W</strong> and the manual can be found <a href="rd6018.pdf">here</a></li></div><br>
+                <div><strong>General Info</strong></div>
+                <div>There are 2 types of DC power supply - Linear vs Switching DC Power Supplies - What's the Difference? <a href="https://www.youtube.com/watch?v=v_HtdbsV69k">https://www.youtube.com/watch?v=v_HtdbsV69k</a></div> <br>
+                Switching seems most common, but not sure which is generally used for motors. Pros and cons are
+                <ul>
+                    <li>Switching supplies are more efficient</li>
+                    <li>Switching supplies are smaller</li>
+                    <li>Linear supplies provide a much smoother supply (less noise)</li>
+                    <li>Linear supplies have a much faster response</li>
+                </ul>
+                <div><a href="https://www.youtube.com/watch?v=nbKwUSH9NiY">Further information about supplies</a> from the post apocalyptic inventor </div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="oscilloscope">Oscilloscopes</div>
+            <a href="https://youtu.be/d58GzhXKKG8">How to choose an oscilloscope</a> by great scott <br>
+            <a href="https://youtu.be/xaELqAo4kkQ">EEVblog #279 - How NOT To Blow Up Your Oscilloscope!</a>
+            Potential oscilloscope - <a href="https://rigolshop.eu/product/oscilloscope/ds1000z/ds1054z.html">Rigol DS1054Z</a> comes recommended often on reddit 
+
+            Main considerations are 
+            <ul>
+                <li>Number of channels - number of signals you can look at simultaneously</li>
+                <li>Bandwidth</li>
+                <li>Sampling rate</li>
+            </ul>
             </div>
         </div>
         <div class="row">
@@ -46,6 +84,19 @@
                     <li></li>
                     <li></li>
                 </ul>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="encoders">Encoders</div>
+                Some info on motor encoders in <a href="https://www.youtube.com/watch?v=lSqUNlWYXcE">https://www.youtube.com/watch?v=lSqUNlWYXcE</a>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="servos">Servos</div>
+                <p>Seems like they mostly use a potentiometer for determining location. Could be useful for pivoting sanders.</p>
+                <p>Nice simple servo robot arm at <a href="https://www.youtube.com/watch?v=IN8tjTk8ExI">https://www.youtube.com/watch?v=IN8tjTk8ExI</a></p>
             </div>
         </div>
         <div class="row">
@@ -103,16 +154,128 @@
         </div>
         <div class="row content-section">
             <div class="col-12 row-content">
-                <div class="h4" id="powersupplies">Power Supplies</div>
-                <div>There are 2 types of DC power supply - Linear vs Switching DC Power Supplies - What's the Difference? <a href="https://www.youtube.com/watch?v=v_HtdbsV69k">https://www.youtube.com/watch?v=v_HtdbsV69k</a></div>. Switching seems most common, but not sure which is generally used for motors.
+                <div class="h4" id="inductors">Inductors</div>
+                <a href="https://www.youtube.com/watch?v=ukBFPrXiKWA">https://www.youtube.com/watch?v=ukBFPrXiKWA</a> gives an explanation in simple terms  
+                <strong>Considerations when using</strong>
                 <ul>
-                    <li>Switching supplies are more efficient</li>
-                    <li>Switching supplies are smaller</li>
-                    <li>Linear supplies provide a much smoother supply (less noise)</li>
-                    <li>Linear supplies have a much faster response</li>
+                    <li>Pay attention to the maximum current allowed through an inductor. They are limited by resistance and dissipate heat, so need to be chosen appropriately</li>
+                    <li>Inductors tend to be much larger, physically, than capacitors are for storing equivalent amounts of energy</li>
+                    <li>The magnetic fields from inductors can affect nearby components on a circuit board. These fields can extend significant distances beyond the inductor. This is especially true if there are other inductors nearby. They can link up, and fuck up</li>
+                    <li>After current to the inductor has shut off, the current generated by the inductor needs some well thought out place to dissipate. Otherwise it will find a place itself. The voltage produced by the inductor as the current to the inductor is shuts off will be very high - much higher than the supply voltage, and enough to create a spark and generally fuck things up</li>
                 </ul>
             </div>
         </div>
+
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="transistors">Transistors</div>
+                <strong>The three main types are</strong>
+                <ul>
+                    <li>BJTs: bipolar junction transistors</li>
+                    <li>FETs: field-effect transistors, including the most common, MOSFETs</li>
+                    <li>IGBTs: insulated-gate bipolar transistors</li>
+                </ul>
+                <strong>Characteristics of each (from <a href="https://www.youtube.com/watch?v=VlMdSCI29A0" title="">https://www.youtube.com/watch?v=VlMdSCI29A0</a>)</strong>
+                <table class="table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>BJT</th>
+                            <th>MOSFET</th>
+                            <th>IGBT</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Driving property</td>
+                            <td>Current</td>
+                            <td>Voltage</td>
+                            <td>Voltage</td>
+                        </tr>
+                        <tr>
+                            <td>Voltage/Current<br>Suitability</td>
+                            <td>High Voltage, Low Current</td>
+                            <td>High current, Low Voltage</td>
+                            <td>High Voltage, High Current</td>
+                        </tr>
+                        <tr>
+                            <td>Losses when on</td>
+                            <td>Low</td>
+                            <td>Low</td>
+                            <td>Low</td>
+                        </tr>
+                        <tr>
+                            <td>Speed</td>
+                            <td>Around 100kHz</td>
+                            <td>Up to 500Khz</td>
+                            <td>Around 50kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Drive Complexity</td>
+                            <td>Complex base drive</td>
+                            <td>Simple gate drive</td>
+                            <td>Simple gate drive</td>
+                        </tr>
+                        <tr>
+                            <td>Properties to<br> check when<br> selecting</td>
+                            <td>
+                                <ul>
+                                    <li>Continuous current rating (I<sub>c</sub>) </li>
+                                    <li>Breakdown voltage (V<sub>CEO</sub>)</li>
+                                    <li>Current gain (H<sub>FE</sub>)</li>
+                                    <li>ON-Voltage (V<sub>CE</sub>)</li>
+                                    <li>Turn off time (T<sub>s</sub> + T<sub>f</sub>)</td></li>
+                                </ul>
+                            <td>
+                                <ul>
+                                    <li>Continuous Current Rating (I<sub>D</sub>) </li>
+                                    <li>Breakdown voltage (V<sub>DSS</sub>)</li>
+                                    <li>Threshold voltage (V<sub>GS</sub>)</li>
+                                    <li>Forward Transconductance (g<sub>FS</sub>)</li>
+                                    <li>ON Resistance (R<sub>DS</sub>)</li>
+                                    <li>Turn off Time (T<sub>d</sub> + T<sub>f</sub>)</td></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Continuous Current Rating (I<sub>C</sub>) </li>
+                                    <li>Breakdown voltage (V<sub>DES</sub>)</li>
+                                    <li>Threshold voltage (V<sub>GE</sub>)</li>
+                                    <li>Forward Transconductance (g<sub>FE</sub>)</li>
+                                    <li>ON Voltage (V<sub>CE</sub>)</li>
+                                    <li>Turn off Time (T<sub>d</sub> + T<sub>f</sub>)</td></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <strong>Example of transistor use by type</strong>
+                <img src="transistor-use-by-type.png" alt="" class="full-width-image">
+
+
+                <br><strong>Resources</strong>   <br>
+                <a href="https://www.youtube.com/watch?v=56p3_aORiJ0">Designing Power MOSFET Circuits - Circuit Tips and Tricks</a> has good practical info on MOSFET use and applies to high power circuits <br>
+                <a href="https://www.youtube.com/watch?v=f9Mgcf6EcTg">Choosing MOSFETs | So Many Options! - Circuit Tips and Tricks</a> has tips on how to choose components from digikey <br>
+                <a href="https://www.homemade-circuits.com/dc-motor-speed-controller-circuits/">Some DC motor speed control circuits using MOSFETs</a><br>
+                <a href="https://www.youtube.com/watch?v=sTu3LwpF6XI">https://www.youtube.com/watch?v=sTu3LwpF6XI</a> contains a useful exaplanation from Ben Eater of using transistors to create logic gates <br>
+                <a href="https://youtu.be/IG5vw6P9iY4">https://youtu.be/IG5vw6P9iY4</a> contains a good intro to MOSFETs <br>
+                <a href="https://youtu.be/o4_NeqlJgOs">https://youtu.be/o4_NeqlJgOs</a> from GreatScott contains some useful info about MOSFET use <br>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="potentiometers">Potentiometers</div>
+                <a href="https://youtu.be/uezoQ5fkixY">Great Scott intro to digital potentiometers</a>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="current">Current</div>
+                <a href="https://www.youtube.com/watch?v=oNW371DQQqA">https://www.youtube.com/watch?v=oNW371DQQqA</a> and <a href="https://www.youtube.com/watch?v=wopmEyZKnYo">https://www.youtube.com/watch?v=wopmEyZKnYo</a> have good details of how to reduce ripple in rectified currents
+            </div>
+        </div>  
         <div class="row">
             <div class="col-12 row-content">
                 <div class="h4" id="usefulvideos">Useful Videos</div>
