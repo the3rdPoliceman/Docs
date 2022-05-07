@@ -12,7 +12,11 @@ body {
   font-size: 1rem;
   line-height: 1.4375em;
   color: #717171;
-  margin: 50px 50px; }
+  margin: 10px 10px; }
+
+@media (min-width: 600px) {
+  body {
+    margin: 50px 50px; } }
 
 .article {
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
@@ -34,6 +38,16 @@ script {
   margin-bottom: 0.67647058em;
   color: #f7585b;
   margin-bottom: 0px; }
+
+@media screen and (max-width: 599px) {
+  .page-title {
+    font-family: "Caveat-VariableFont_wght";
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.01470588em;
+    margin-bottom: 0.67647058em;
+    color: #f7585b;
+    margin-bottom: 0px; } }
 
 .basics-section-title {
   font-family: "Caveat-VariableFont_wght";

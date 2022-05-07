@@ -26,7 +26,14 @@ body {
   font-size: 1rem;
   line-height: 1.4375em;
   color:$text-light;
-  margin: 50px 50px;
+  margin: 10px 10px;
+}
+
+@media (min-width:600px) {
+  body {
+
+    margin: 50px 50px;
+  }
 }
 
 .article {
@@ -63,27 +70,36 @@ script{
   color:$airbnb-red;
 }
 
-@mixin h3-mixin {
-  font-family: $font-stack;
-  font-size: 1.625rem;
-  line-height: 1.2375em;
-  margin-top: 0.88461538em;
-  margin-bottom: 0em;
+@mixin h1-mixin-small-screen {
+  font-family: $script-font-stack;
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: 1.01470588em;
+  margin-bottom: 0.67647058em;
   color:$airbnb-red;
 }
 
-@mixin h4-mixin {
-  font-family: $font-stack;
-  font-size: 1rem;
-  line-height: 1.4375em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
-  color:$airbnb-red
+@mixin h2-mixin-small-screen {
+  font-family: $script-font-stack;
+  font-size: 2.625rem;
+  font-weight: normal;
+  line-height: 1.0952381em;
+  margin-top: 0.54761905em;
+  margin-bottom: 0.54761905em;
+  color:$airbnb-red;
 }
 
 .page-title{
 	@include h1-mixin;
   margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 599px){
+  .page-title{
+    @include h1-mixin-small-screen;
+    margin-bottom: 0px;
+  }
 }
 
 .basics-section-title{
