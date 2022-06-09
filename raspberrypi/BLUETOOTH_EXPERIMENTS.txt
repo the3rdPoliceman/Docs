@@ -1,0 +1,56 @@
+BLUETOOTH EXPERIMENTS
+
+FOLLOWING THIS - HTTPS://GITHUB.COM/ENABLETECH/RASPBERRY-BLUETOOTH-DEMO
+sudo apt-get install bluetooth bluez   ****** worked
+sudo apt-get install bluez python-bluez   ****** didnt work, used sudo apt-get install bluez python3-bluez
+sudo hciconfig hci0 piscan     **** no output - assuming it worked
+sudo hciconfig hci0 name 'Daves RPi Zero W' **** no output - assuming it worked
+sudo python /usr/share/doc/python3-bluez/examples/simple/inquiry.py   ****  changed to python 3, but otherwise ok. Seemed to run successfully but found no devices
+sudo python /usr/share/doc/python-bluez/examples/simple/rfcomm-server.py   **** initially error. Traceback (most recent call last):
+  File "/usr/share/doc/python3-bluez/examples/simple/rfcomm-server.py", line 21, in <module>
+    bluetooth.advertise_service(server_sock, "SampleServer", service_id=uuid,
+  File "/usr/lib/python3/dist-packag
+
+
+FOLLOWING ADVICE IN HTTPS://FORUMS.RASPBERRYPI.COM/VIEWTOPIC.PHP?F=63&T=133263
+	sudo sdptool add SP   *** ran this in order to fix it . no output, no error
+	Edited /etc/systemd/system/dbus-org.bluez.service and added '-C' after 'bluetoothd'
+	Rebooted
+	sudo sdptool add SP   *** this time got a response. "Serial Port service registered"
+	Rebooted
+	Same error when running rfcomm-server.py
+
+FOLLOWING ADVICE FROM https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=690749
+	edited /etc/bluetooth/main.conf and added the following line to the end of the file
+   		DisablePlugins = pnat
+
+Clicked on Make Discoverable from the Bluetooth menu on RPi, and ran the rfcomm again   ****	got "Waiting for connection on RFCOMM channel 1"
+Paired, but had to confirm code acceptance on both sides
+Was able connect with "Serial Bluetooth Terminal" app on phone and send messages which got through to the rfcomm-server.py app
+
+
+ACHIEVEMENT. Can now pair. But I have to manually make bluetooth discoverable each time, and confirm a pin when a device wants to connect. No good for headless
+
+FOLLOWING https://medium.com/cemac/keep-bluetooth-discoverable-rpi-unix-bbe1c9ecbdb6
+sudo vi /etc/bluetooth/main.conf
+	uncomment line DiscoverableTimeout = 0
+	uncomment PairableTimeout = 0
+	set Name = DavesGardener
+	AlwaysPairable = true
+sudo systemctl daemon-reload;
+sudo systemctl restart bluetooth.service;
+
+sudo vi /etc/rc.local  **** and add the following
+	sudo bluetoothctl <<EOF
+	power on
+	discoverable on
+	pairable on
+	EOF
+
+
+ACHIEVEMENT. Pi is discoverable by default. But the Pi still asks for a PIN CODE to allow the device to pair
+randomly edited sudo vi /etc/bluetooth/network.conf  to set disableSecurity to true    ****  no effect on the PIN code requirement
+created a file /etc/bluetooth/hcid.conf  containing security=none    ****  no effect on the PIN code requirement
+
+
+MAYBE THIS CAN HELP https://stackoverflow.com/questions/12888589/linux-command-line-howto-accept-pairing-for-bluetooth-device-without-pin

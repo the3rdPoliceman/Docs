@@ -28,6 +28,7 @@
                 <div class="content-link"><a href="#filamentInfo">Specific Filament Info</a></div>
                 <div class="content-link"><a href="#Maintenance">Common Maintenance</a></div>
                 <div class="content-link"><a href="#Dialingincorrectsettingsforanewfilament">Dialing in correct settings for a new filament</a></div>
+                <div class="content-link"><a href="#threadedInserts">Threaded Inserts</a></div>
                 <div class="content-link"><a href="#UsefulVideos">Useful Videos</a></div>
                 <div class="content-link"><a href="#Troubleshooting">Troubleshooting</a></div>
                 <div class="content-link"><a href="#PossibleAlternativeProcesses">Possible Alternative Processes</a></div>
@@ -50,6 +51,8 @@
                     <li><strong>Potential upgrade</strong> - Noctua quiet fans - <a href="https://www.reddit.com/r/ender3v2/comments/lto6uq/ender_3_v2_all_noctua_fans_buck_converter/">https://www.reddit.com/r/ender3v2/comments/lto6uq/ender_3_v2_all_noctua_fans_buck_converter/ </a></li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
             <div cLaSs="col-12 row-content">
                 <div class="h4" id="MySoftware">My Software</div>
                 <ul>
@@ -58,6 +61,8 @@
                     <li><a href="octoprint/octoprint.html">Octoprint</a> is used to remotely control the printer</li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
             <div cLass="col-12 row-content">
                 <div class="h4" id="HowtoupdatetheFirmware">How to update the Firmware</div>
                 <ul>
@@ -67,6 +72,8 @@
                     <li>While restarting it will automatically do the firmware update </li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
             <div cLaSs="col-12 row-content">
                 <div class="h4" id="MyFilaments">My Filaments</div>
                 <ul>
@@ -76,6 +83,8 @@
                     <li><a href="filament/extrudrSemiSoft.html">Extrudr Semi Soft Black, 1.75 mm</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
             <div cLass="col-12 row-content">
                 <div class="h4" id="PotentialotherFilaments">Potential other Filaments</div>
                 <ul>
@@ -83,30 +92,65 @@
                     <li>For strong parts, nylon is recommended but requires an all metal hotend. Fiberlogy Nylon PA12 Natural looks like a good possible filament and is available at <a href="https://www.3djake.ch/de-CH/fiberlogy/nylon-pa12-natural">https://www.3djake.ch/de-CH/fiberlogy/nylon-pa12-natural</a></li>
                 </ul>
             </div>
-            <div class="row content-section">
-                <div class="col-12 row-content">
-                    <div class="h4" id="filamentInfo">Specific Filament Info</div>
-                    <strong>Nylon</strong>
-                    <ul>
-                        <li>Requires upgrading to all metal hotend - micro swiss like <a href="https://www.3djake.ch/de-CH/micro-swiss/all-metal-hotend-kit-fuer-cr-10">this </a>seems standard</li>
-                        <li>Nylon loves to soak up water and fuck up prints. Keep it dry. If you can't, dry it in the oven for 8 hours at 80C</li>
-                        <li>It doesn't like to stick. To help this: Set bed temp around 60, with a coating of prittstick on it, experiment with first layer height as this is pretty critical</li>
-                        <li>Turn off the print fan</li>
-                    </ul>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="filamentInfo">Specific Filament Info</div>
+                <strong>Nylon</strong>
+                <ul>
+                    <li>Requires upgrading to all metal hotend - micro swiss like <a href="https://www.3djake.ch/de-CH/micro-swiss/all-metal-hotend-kit-fuer-cr-10">this </a>seems standard</li>
+                    <li>Nylon loves to soak up water and fuck up prints. Keep it dry. If you can't, dry it in the oven for 8 hours at 80C</li>
+                    <li>It doesn't like to stick. To help this: Set bed temp around 60, with a coating of prittstick on it, experiment with first layer height as this is pretty critical</li>
+                    <li>Turn off the print fan</li>
+                </ul>
             </div>
+        </div>
+        <div class="row">
             <div cLass="col-12 row-content">
-                <div class="h4" id="dialingincorrectsettingsforanewfilament">Dialying in correct settings for a new filament</div>
+                <div class="h4" id="dialingincorrectsettingsforanewfilament">Dialing in correct settings for a new filament</div>
                 <ul>
                     <li>Level the bed as normal</li>
                     <li>Print a temperature tower & retraction tower - <a href="https://www.youtube.com/watch?v=6LjbCIGCmd0">video with details</a></li>
                     <li>Print a benchy</li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="threadedInserts">Threaded Inserts</div>
+                <strong>General Tips</strong>
+                <ul>
+                    <li>High temperature seems to liquify the plastic around the insert better (although it also leaves more melted plastic around the bottom of the threads). Around 400C</li>
+                    <li>Heat the insert on the soldering iron first, then slowly push in</li>
+                    <li>Melt the inserts 90% of the way in with the soldering iron, then quickly push the last bit in with a flat tool</li>
+                </ul>
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">Insert Size</th>
+                            <th title="Field #2">Hole Diameter (mm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="right">M3</td>
+                            <td align="right">4.0</td>
+                        </tr>
+                        <tr>
+                            <td align="right">M5</td>
+                            <td align="right">6.2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
             <div cLass="col-12 row-content">
                 <div class="h4" id="Maintenance">Common Maintenance</div>
                 <strong>Nozzle condition</strong> - check the nozzle itself to see if the hole is rounded out or misshapen. See <a href="https://www.youtube.com/watch?v=uvlMeTnjriQ">https://www.youtube.com/watch?v=uvlMeTnjriQ</a>
             </div>
+        </div>
+        <div class="row">
             <div cLass="col-12 row-content">
                 <div class="h4" id="UsefulVideos">Useful Videos</div>
                 <ul>
@@ -118,6 +162,8 @@
                     <li><a href="https://www.youtube.com/watch?v=y08v6PY_7ak&t=840s">Reducing printer noise</a> with concrete slab and foam</li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
             <div cLass="col-12 row-content">
                 <div class="h4" id="Troubleshooting">Troubleshooting</div>
                 <ul>
@@ -145,6 +191,8 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
             <div cLass="col-12 row-content">
                 <div claSs="h4" id="possibleAlternativeProcesses">Possible Alternative Processes</div>
                 <ul>

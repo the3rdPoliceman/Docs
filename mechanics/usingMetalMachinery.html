@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <title>Using Metalworking Machinery</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Using Metalworking Machinery</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="contents">Contents</div>
+        		<div class="content-link"><a href="#videoResources">Video Resources</a></div>
+                <div class="content-link"><a href="#drilling">Drilling a hole</a></div>
+                <div class="content-link"><a href="#milling">Milling</a></div>
+                <div class="content-link"><a href="#lathing">Lathing</a></div>
+                <div class="content-link"><a href="#matingSurfaces">Mating Surfaces &amp; Flatness</a></div>
+                <div class="content-link"><a href="#rightAngles">Creating Right Angles</a></div>
+                <div class="content-link"><a href="#measuringFlatness">Measuring Flatness</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="videoResources">Video Resources</div>
+                <a href="https://www.youtube.com/watch?v=xMP_AfiNlX4&list=PLSGA1wWSdWaTXNhz_YkoPADUUmF1L5x2F">Dan Gelbarts </a>has an excellent series called building prototypes which contains details for how and when to use most metalworking machinery <br>
+                <a href="https://www.youtube.com/watch?v=a_E-tYRxBkU">Basic Machining Skills</a> are covered in part 16 of the series
+
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="drilling">Drilling a hole</div>
+                <a href="https://youtu.be/a_E-tYRxBkU?t=21">How to drill a hole</a> covers the basics well <br>
+                Basics of Marking & Punching<br>
+                <ul>
+                    <li>Lines are scribed with a tool that scratches the surface. Two intersecting lines are needed at the position where the holes will be drilled</li>
+                    <li>Center punches are not located by eye, but by feel. You feel the punch into one line, then slide it until you feel it in the intersection</li>
+                    <li>A good idea is to use an automatic punch to create an initial mark, then follow up with a heavier punch. Punches need to be kept sharp</li>
+                </ul>
+                Drilling
+                <ul>
+                    <li>Pilot hole is necessary, as the web in larger bits will be wider than the punch mark</li>
+                    <li>Deburr</li>
+                </ul>
+                Reaming - more accurate than drilling
+                <ul>
+                    <li>Drill 0.1-0.2mm undersize hole</li>
+                    <li>Use cutting oil or wax</li>
+                    <li>Much lower speed is used then when drilling </li>
+                    <li>Shafts going into reamed holes need a groove near the end, in order to stop locking up. Similar to the type of groove a retaining ring would fit into</li>
+                </ul> 
+                Boring - reamers don't work in blind holes, and are fixed sizes. For cases where reaming is not an option, a boring head can be used. 
+                <ul>
+                    <li>Requires a rigid machine, due to single cutter</li>
+                    <li>Quality is similar to reaming</li>
+                    <li>Bore the hole and then go back and forth once or twice, in case the boring head bent a bit on the first pass</li>
+                </ul>
+            </div>
+            <div class="row content-section">
+                <div class="col-12 row-content">
+                    <div class="h4" id="milling">Milling</div>
+                    <strong>Ball regular vs flat head cutters</strong><br>
+                    If you don't need sharp inside corners, specify/use ball nose cutters because
+                    <ul>
+                        <li>Ball nose cutters cut faster</li>
+                        <li>Ball nose cutters don't have small cutters that are prone to breakage</li>
+                    </ul>
+                    <strong>Milling Speed</strong><br>
+                    This has a lot to do with cutter stiffness. As this affects deflection <br><br>
+                    <strong>Cutter Stiffness</strong><br>
+                    Relative stiffnes of milling cutters is defined by the formula - 
+                    <code>Stiffness = k*diameter^3/exposed_length^3</code>
+                    So for example doubling the diameter and halving the length of the mill increases stiffness by a factor of 128. This means that the basic rule when choosing a cutter is 
+                    <ul>
+                        <li>Choose the fattest cutter possible</li>
+                        <li>Choose the shortest cutter possible</li>
+                    </ul>
+                    <strong>Clamping, Moving &amp; Accuracy</strong><br>
+                    Design to minimise the number of times the part needs to be moved during milling. This will improve overall accuracy
+                </div>
+            </div>
+            <div class="row content-section">
+                <div class="col-12 row-content">
+                    <div class="h4" id="lathing">Lathing</div>
+                    <strong>3 or 4 jaw chuck?</strong><br>
+                    4-jaw. You can (counterintuiltively) hold hex stock accurately, in addition to square etc.
+                </div>
+            </div>
+            <div class="row content-section">
+                <div class="col-12 row-content">
+                    <div class="h4" id="matingSurfaces">Mating Surfaces &amp; Flatness</div>
+                    Mating surfaces from milling machines are close to flat, but will still have high points. 
+                    The following processes create flatness, in order from least to most flat 
+                    <ul>
+                        <li>Milling</li>
+                        <li>Surface grinding</li>
+                        <li>Lapping and scraping</li>
+                    </ul>
+                    <strong>Making parts flat flat</strong><br>
+                    If parts are flat flat, and lubricated, there will effectively be no wear between them, as the lubricant will form a thin layer and the parts will not actually touch <br><br>
+                    The possibilities are 
+                    <ul>
+                        <li>Lapping - suitable for small parts</li>
+                        <li>Scraping - suitable for larger parts</li>
+                    </ul>
+                    <strong>Lapping</strong><br>
+                    Lapping is done on a flat reference surface and can be done using sandpapers and lapping compunds (<a href="https://youtu.be/cwdoUjynpEk?t=265">Details here</a>) <br><br>
+                    
+                    Tips:
+                    <ul>
+                        <li>If parts need to slide, the middle can often be relieved, so less surface area needs to be lapped</li>
+                        <li>Use the correct lapping compound - If you lap a part made from softer materials with the wrong compound, the lapping compound will embed in the part - this turns the part into a lap itself.</li>
+                        <li>To correct errors in parallelism between the surface being lapped and the top surface, you can increase pressure in the high corner as you lap</li>
+                    </ul>
+                    <strong>Scraping</strong><br>
+                    Scraping seems super tedious and to be avoided at all costs. <br><br>
+                    It involves testing the surface for level, then using a hardened scraper tool to scrape off the high spots. Repeat until done.
+                </div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="rightAngles">Creating Right Angles</div>
+                
+            </div>
+        </div>
+
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="measuringFlatness">Measuring Flatness</div>
+                Flatness of unknown surfaces can be accurately measured using the <strong>reversal method</strong> (<a href="https://youtu.be/cwdoUjynpEk?t=1362">details here</a>). I don't quite understand how it is working in the examples in the video, but if I did, it would be useful <br> <br>
+                The reversal method is also applicable for measuring roundness, runout, dividing a circle. Not sure how exactly
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

@@ -75,9 +75,16 @@
         <div class="row">
             <div class="col-12 row-content">
                 <div class="h4" id="SSH">Connecting via SSH, and other useful stuff</div>
+                <strong>SSHing</strong> 
                 <ul>
-                    <li><strong>SSHing</strong> - Connect to the same network as the pi. Run <code>arp -a</code> to list all the computers on the network, and identify the ip address of the pi. Connect by running <code>ssh pi@&lt;pi-ip-address&gt;</code></li>
-                    <li><strong>Grabbing a file from the pi</strong> - Connect to the same network as the pi and run <code>scp pi@192.168.0.139:/home/pi/Desktop/output.jpg /Users/dave/Documents</code></li>
+                    <li>Connect to the same network as the pi</li>
+                    <li>Run <code class="inline">arp -a</code> to list all the computers on the network, and identify the ip address of the pi</li>
+                    <li>Connect by running <code class="inline">ssh pi@&lt;pi-ip-address&gt;</code></li>
+                </ul>
+                <strong>Grabbing a file from the pi</strong>
+                <ul>
+                    <li>Connect to the same network as the pi</li>
+                    <li>run <code class="inline">scp pi@192.168.0.139:/home/pi/Desktop/output.jpg /Users/dave/Documents</code></li>
                 </ul>
             </div>
         </div>

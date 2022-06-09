@@ -94,6 +94,11 @@ script{
   margin-bottom: 0px;
 }
 
+.cover-title{
+  @include h1-mixin;
+  font-size: 12rem;
+  margin-bottom: 0px;
+}
 
 @media screen and (max-width: 599px){
   .page-title{
@@ -153,3 +158,33 @@ ul.basics-list li::before {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+.useful-link-table{
+
+}
+
+.useful-link-place{
+  font-family: $script-font-stack;
+  font-weight: bold;
+  color: $airbnb-red;  
+  font-size: 2rem;
+  font-weight: 700;
+  padding:0 20px 0 20px;
+  vertical-align: middle;
+}
+
+.small-image{
+  width :100px;
+}
+
+.useful-link-qr-code{
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 50px 20px;
+}
+
+.useful-link-url{
+  padding: 0 20px 0 20px;
+  vertical-align: top;
+}
+

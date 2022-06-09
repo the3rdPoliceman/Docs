@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <title>Bluetooth Gardener</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Bluetooth Gardener</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="contents">Contents</div>
+                <div class="content-link"><a href="#progress">Progress</a></div>
+                <div class="content-link"><a href="#UUIDs">UUIDs</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="progress">Progress</div>
+                RUNNING <br>
+                It seems that the python file which does the advertising needs to be running all the time. As soon as it shuts down, the advertising instances goes to zero.  <br>
+                CONCLUSION: (Not certain about this) A python file containing the advertising needs to run at startup, and always remain on <br>
+                QUESTION: Can only bonded devices connect? So, would it be dangerous to have advertising on all the time? Maybe this is why UE Boom has a button to turn on advertising for a short time? Or maybe that's about battery? <br>
+                QUESTION: Can a bonded device connect and communicate, even if advertising is no longer on?  <br>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="UUIDs">UUIDs</div>
+                Profile - Gardener - <span class="copyable">756af8f6-60c2-44ad-97c8-40d621f13a4e</span><br>
+                &nbsp;&llcorner;Service - WaterNow - <span class="copyable">a0445a21-158f-4ca8-840d-6ec56ca58962</span><br>
+                &nbsp;&nbsp;&llcorner;Characteristic - water - <span class="copyable">7e709c77-1844-46e7-8fd0-27b0b2382ee8</span><br>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../js/daves-clipboard-chocolate.js" type="text/javascript"></script>
+</html>

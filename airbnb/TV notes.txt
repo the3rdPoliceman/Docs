@@ -1,0 +1,9 @@
+
+
+
+SUBCLIPS FROM REMOTE VIDEO
+0-7 		pressing TV on
+9.8-12.5 	pressing source
+20-23.5 	pressing menu apple
+24-27		pressing tv on apple
+28-33		scrolling and selecting on apple touch pad

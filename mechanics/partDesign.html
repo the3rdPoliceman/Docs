@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <title>Part Design Guidelines</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Part Design Guidelines</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="contents">Contents</div>
+        		<div class="content-link"><a href="#basics">Basics</a></div>
+        		<div class="content-link"><a href="#screwMounting">Mounting Parts with Screws</a></div>
+        		<div class="content-link"><a href="#aligningShafts">Aligning Shafts</a></div>
+        		<div class="content-link"><a href="#attachingToShafts">Mounting Components on Shafts</a></div>
+        		<div class="content-link"><a href="#bearings">Using Bearings</a></div>
+        		<div class="content-link"><a href="#strengthStiffness">Strength & Stiffness</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="basics">Basics</div>
+				<strong>Mechanical Considerations</strong>
+				<ul>
+					<li>Need for precision - do i really need precision?</li>
+					<li>Load - how much load will there be. Do i need stiffness or just accuracy? </li>
+					<li>Mating surfaces - Do surfaces need to mate accurately to take load? Point contacts translate to more or less infinite pressure - is that ok?</li>
+				</ul>
+				<strong>Electrical Considerations</strong>
+				<ul>
+					<li>Design where the cables go</li>
+					<li>Electricals go above water/hydraulics. Leaks shouldn't fuck the electrics too</li>
+				</ul>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="screwMounting">Mounting Parts with Screws</div>
+                Slots of Keyholes are good options when parts are being mounted with screws. Consideration needs to be given to how much load or shock the parts being held will be expected to withstand. Keyholes and slots are good convenience options, but if its critical your part stays in an exact place then they may be a bad idea (some big lump will come along and thump your part out of place) <br><br>
+				<strong>Keyholes vs plain holes</strong> - Keyholes give flexibility and mean screws dont have to be removed to mount or dismount the part <br><br>
+				<strong>Slots vs plain holes</strong> - Less positioning precision is needed when slots are used <br>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-4 row-content">
+            	<figure>
+	            	<img src="keyhole-mounting-hole.jpeg" alt="" class="full-width-image">
+            		<figcaption>Keyhole mounting hole</figcaption>
+            	</figure>
+            </div>
+            <div class="col-4 row-content">
+            	<figure>
+	            	<img src="slotted-mounting-hole.jpeg" alt="" class="full-width-image">
+            		<figcaption>Slotted mounting hole</figcaption>
+            	</figure>
+            </div>
+            <div class="col-4 row-content">
+            	<figure>
+	            	<img src="plain-mounting-hole.jpeg" alt="" class="full-width-image">
+            		<figcaption>Plain mounting hole</figcaption>
+            	</figure>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="aligningShafts">Aligning Shafts</div>
+                When shafts that run between two components are installed, getting them aligned correctly is crucial. In these cases, using some form of slots or keyholes as part of the design is a bad idea as the shafts will likely be susceptible to vibration, knocks, shocks etc. 
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+	            <div class="h4" id="attachingToShafts">Mounting Components on Shafts</div>
+	            <strong>Set Screws</strong><br>
+                These are relatively weak, and marr shafts (leaving a small raised area siilar to when you center punch something) which will prevent precision compenents being removed from the shaft. <br>
+                If they are to be used, a flat must be milled or filed on the shaft, so parts can be removed once the set screw is loosened <br><br>
+                <strong>Split collars</strong><br>
+                Split collars will create higher clamping force, a more even clamping around the bar, and will not damage it. They come in one piece and two piece varieties <br><br>
+                One piece split collars are less fiddly, but have to be removed over the end of the shaft. <br><br>
+                Two piece split collars give slightly higher clamping force. They can also be removed and installed without access to the end of the shaft and without moving other components, which can be an advantage <br>
+                If the screws in two piece collars are in opposite directions, better balancing can be achieved <br><br>	
+                Collar clamping force increases with collar length (length along the shaft), but making the collar thicker radially does not increase its holding power. However, a larger diameter collar will enable the clamping screw head to be inset further<br><br>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-4 row-content">
+            	<figure>
+	            	<img src="two-piece-split-collar.jpeg" alt="" class="full-width-image">
+            		<figcaption>Two piece split collar</figcaption>
+            	</figure>
+            </div>
+            <div class="col-4 row-content">
+            	<figure>
+	            	<img src="one-piece-split-collar.jpeg" alt="" class="full-width-image">
+            		<figcaption>One piece split collar</figcaption>
+            	</figure>
+            </div>
+            <div class="col-4 row-content">
+            	<figure>
+	            	<img src="set-screw-collar-with-flat.jpeg" alt="" class="full-width-image">
+            		<figcaption>Collar with set screw and flat</figcaption>
+            	</figure>
+            </div>
+        </div>
+
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="bearings">Using Bearings</div>
+                Some details from Dan Gelbart <a href="https://youtu.be/MtxA20Q-Uss?t=320">here</a><br><br>
+                <strong>Pairs</strong><br>
+                Even expensive bearings have a lot of play when used singly. When used on shafts, they always need to be used in pairs <br><br>
+                <strong>Preloading</strong><br>
+                Bearings and other components on shafts should not be sliding around back and forwards. Components should be designed so that there is force on components keeping them in position. For eaxmple, housings should be deisnged the correct width. Preload washers can be used to take up slack where tolerences are not good
+                <strong>Correcting Fit</strong><br>
+                For non critical applications, if bearings are slightly loose, they can be loctited into place. If they later need to be removed, heating the housing to around 150C will break the loctite bond
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="strengthStiffness">Strength & Stiffness</div>
+                It's important to consider in each case if stregth or stiffness is the more important thing. For example, in a lathe base, you are after stiffness more than anything else. THe base will be strong enough to support tonnes of weight even though it may be only is used to machine parts up to 10kg. But if it's not very stiff, it will be useless <br><br>
+                <strong>Thickness to Stiffness </strong><br>
+                Doubling thickness increases stiffness <strong>8 times</strong>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

@@ -16,8 +16,20 @@
                 <div class="page-title col-12">How did i fix...</div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <div class="section-title">Command Line Problems </div>
+                <div class="col-12 row-content">
+                    <div class="h4" id="contents">Contents</div>
+                    <div class="content-link"><a href="#commandLine">Command Line Problems</a></div>
+                    <div class="content-link"><a href="#javascript">Javascript Problems</a></div>
+                    <div class="content-link"><a href="#android">Android Problems</a></div>
+                    <div class="content-link"><a href="#other">Other Problems</a></div>
+                </div>
+            </div>
+            <div class="row content-section">
+                <div class="col-12 row-content">
+                    <div class="h4" id="commandLine">Command Line Problems</div>
+                    <div class="content-link"><a href="#optionsCwd">TypeError [ERR_INVALID_ARG_TYPE]: The "options.cwd" property must be of type string. Received type function</a></div>
+                    <div class="content-link"><a href="#bindingJs">/Users/dave/Documents/GitHub/Bootstrap4/conFusion/node_modules/node-sass/lib/binding.js:15
+      throw new Error(errors.missingBinary());</a></div>
                     <div class="problem-list">
                         <div class="problem">
                             <div class="problem-description">TypeError [ERR_INVALID_ARG_TYPE]: The "options.cwd" property must be of type string. Received type function</div>
@@ -37,16 +49,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="section-title">Javascript Problems </div>
+            </div>
+            <div class="row content-section">
+                <div class="col-12 row-content">
+                    <div class="h4" id="javascript">Javascript Problems</div>
+                    <div class="content-link"><a href="#LexicalDeclaration">javascript error Lexical declaration cannot appear in a single-statement context</a></div>
                     <div class="problem-list">
                         <div class="problem">
-                            <div class="problem-description">javascript error Lexical declaration cannot appear in a single-statement context</div>
+                            <div class="problem-description" id="LexicalDeclaration">javascript error Lexical declaration cannot appear in a single-statement context</div>
                             <div class="solution">I had multiple statements inside an if block, without using curly brackets
                                 <div class="solution-link">See solution on <a href="https://stackoverflow.com/questions/55815772/how-to-fix-lexical-declaration-cannot-appear-in-a-single-statement-context">Stack Overflow</a></div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row content-section">
+                <div class="col-12 row-content">
+                    <div class="h4" id="android">Android Problems</div>
+                    <div class="content-link"><a href="#nopopupForPermissions">No Popup When Requesting Permissions</a></div>
+                    <div class="problem-list">
+                        <div class="problem">
+                            <div class="problem-description" id="nopopupForPermissions">No Popup When Requesting Permissions</div>
+                            <div class="solution">
+                                <div class="solution-link"><a href=""></a>Lint kept telling me I should check for BLUETOOTH_SCAN permission before doing a scan. In the end, the permissions I was requesting were only part of the API since version 31, so were not in fact required. They were not being granted when I requested them, as i was running version 30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row content-section">
+                <div class="col-12 row-content">
+                    <div class="h4" id="other">Other Problems</div>
+                    
                 </div>
             </div>
             <!-- Content here -->

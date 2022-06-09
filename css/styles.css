@@ -13,6 +13,9 @@ code {
   display: block;
   white-space: pre-wrap; }
 
+code.inline {
+  display: inline; }
+
 .container {
   max-width: 960px; }
 
@@ -137,4 +140,9 @@ thead {
   color: #FFF; }
 
 .section {
-  margin-top: 2em; }
+  margin-top: 1em;
+  padding-bottom: 10px; }
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px; }

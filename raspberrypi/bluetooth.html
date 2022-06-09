@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <title>Bluetooth</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Bluetooth</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="contents">Contents</div>
+        		<div class="content-link"><a href="#Documentation">Documentation</a></div>
+                <div class="content-link"><a href="#usefulTools">Tools Summary</a></div>
+           		<div class="content-link"><a href="#bluez">Bluez</a></div>
+                <div class="content-link"><a href="#bluetoothctl">bluetoothctl</a></div>
+        		<div class="content-link"><a href="#dbus">D-Bus</a></div>
+        		<div class="content-link"><a href="#gdbus">gdbus</a></div>
+        		<div class="content-link"><a href="#debugging">Debugging</a></div>
+        		<div class="content-link"><a href="#macAddresses">MAC Addresses</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="Documentation">Documentation</div>
+                <a href="https://www.bluetooth.com/specifications/specs/">Specs, Official Profiles &amp; Services</a>
+                <a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.s132.api.v2.0.0%2Fgroup___b_l_e___a_p_p_e_a_r_a_n_c_e_s.html">More documentation about enums etc.</a>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="usefulTools">Tools Summary</div>
+                <code class="inline">bluez</code> - the most popular bluetooth stack for linux <br>
+        		<code class="inline">bluetoothctl</code> - the main utility for controlling bluetooth devices on Linux <br>
+        		<code class="inline">D-Bus</code> - a messaging system used for interprocess communication on Linux <br>
+        		<code class="inline">dbus-monitor</code> - allows monitoring of dbus to follow messages <br>
+        		<code class="inline">gdbus</code> - a tool for inspecting and working with dbus objects <br>
+            </div>
+        </div>
+		<div class="row content-section">
+		    <div class="col-12 row-content">
+		        <div class="h4" id="bluetoothctl">bluetoothctl</div>
+		        To start using bluetoothctl, run <code class="inline">bluetoothctl</code> at the prompt. That gets you into an interactive session <br>
+                Typing <code class="inline">help</code> will what commands are available. There are also submenus for some things <br>
+                Some of the commands take a controller MAC address as a parameter. To find this, run  <code class="inline">list</code> and it will list controllers and their addresses <br>
+                Some of the commands take a device as a parameter. dunno how to get this<br>
+                If bluetooth service is not up and running and you run bluetoothctl, weird things will happen <br><br>
+                <strong>Sample commands to set name, appearance (affects icon that central devices disply) and advertise</strong>
+<code>pi@raspberrypi:~ $ bluetoothctl 
+[bluetooth]# menu advertise 
+[bluetooth]# clear
+[bluetooth]# uuids 0x180D
+[bluetooth]# appearance 833
+[bluetooth]# name heart_test
+[bluetooth]# discoverable on
+[bluetooth]# back
+[bluetooth]# advertise on</code>
+		    </div>
+		</div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="bluez">Bluez</div>
+                
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="dbus">D-Bus</div>
+                To see what bluetooth messages are flowing through dbus, run
+                <code>sudo dbus-monitor --system "destination='org.bluez'" "sender='org.bluez'"</code> <br>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="gdbus">gdbus</div>
+                <code class="inline">gdbus introspect --system --dest "org.bluez" --object-path "/org/bluez/hci0"</code> - tells gdbus that we want to look at our adapter object "/org/bluez/hci0" that is managed by the BlueZ service "org.bluez" which is on the system bus. <br>
+                <strong>LEAdvertisingManager</strong>
+                <code>
+                interface org.bluez.LEAdvertisingManager1 {
+                methods:
+                  RegisterAdvertisement(in  o advertisement,
+                                        in  a{sv} options);
+                  UnregisterAdvertisement(in  o service);
+                signals:
+                properties:
+                  readonly y ActiveInstances = 0x01;
+                  readonly y SupportedInstances = 0x04;
+                  readonly as SupportedIncludes = ['tx-power', 'appearance', 'local-name'];
+                  readonly as SupportedSecondaryChannels;
+                };
+                </code>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="debugging">Debugging</div>
+                <code class="inline">systemctl status bluetooth</code> can tell you some basics about the bluetooth status
+                <ul>
+                	<li>If &amp; where the system is installed.</li>
+                	<li>If it is enabled, and if enabled by default</li>
+                	<li>Where to find docs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="macAddresses">MAC Addresses</div>
+                <table class="table table-bordered table-condensed">
+                	<thead>
+                		<tr>
+                			<th>MAC</th>
+                			<th>Device</th>
+                		</tr>
+                	</thead>
+                	<tbody>
+						<tr><td>40:4E:36:BE:62:F8</td><td>Pixel 2 Bluetooth</td>
+						<tr><td>42:2B:18:7E:08:B9</td><td>Julias Galaxy Tab A WiFi</td>
+						<tr><td>78:4f:43:65:bf:79</td><td>Macbook WiFi</td>
+						<tr><td>78:4F:43:69:B5:01</td><td>Macbook Pro Bluetooth</td>
+						<tr><td>B8:27:EB:33:8E:B7</td><td>Raspberry Pi Zero Gardener Bluetooth</td>
+						<tr><td>B8:27:EB:CC:71:48</td><td>Raspberry Pi Zero Gardener Wifi</td>
+                	</tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

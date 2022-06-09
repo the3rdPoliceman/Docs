@@ -20,12 +20,48 @@
         <div class="row">
             <div class="col-12 row-content">
                 <div class="h4" id="contents">Contents</div>
+                <div class="content-link"><a href="#examples">Example Builds</a></div>
+                <div class="content-link"><a href="#base">Base</a></div>
         		<div class="content-link"><a href="#motor">Motor</a></div>
-        		<div class="content-link"><a href="#speeds">Spindle Speeds</a></div>
+        		<div class="content-link"><a href="#speeds">Spindle Speeds</a></div>                
         		<div class="content-link"><a href="#vibration">Vibration</a></div>
         		<div class="content-link"><a href="#sanding">Sanding Attatchment</a></div>
+                <div class="content-link"><a href="#partDetection">Part Detection</a></div>
             </div>
         </div>
+        <div class="content-link"><a href="#generalDesignIdeas">General Design Ideas</a></div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="generalDesignIdeas">General Design Ideas</div>
+                <strong>Fixed tailstock</strong><br>
+                Given that the variation in piece length may be small, a non movable tailstock seems like a good idea. <br>
+                Obviously some travel in the tailstock spindle is needed, although if all work pieces were cut to the same length (which would be reasonable if a machine was specialied for example for chair legs) travel could be minimal, and possibly some mechanism with a forward and back position with minimal travel would be enough
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="examples">Example Builds</div>
+                <a href="https://www.youtube.com/watch?v=sFrVdoOhu1Q">Dan Gelbarts </a>Self built CNC Lathe. (micron accuracy)
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="base">Base</div>
+                <strong>Expoxy Granite</strong><br>
+                Epoxy granit looks like a possibility, but its hard to tell if all these people are amateur bullshitters doing nonsense <br>
+                Examples include:<br>
+                <a href="https://www.model-engineer.co.uk/forums/postings.asp?th=139042&p=2">John McNamaras build thread </a> on model-engineer.co.uk <br>
+                Joerg Beigang at <a href="https://www.youtube.com/watch?v=dwTMZ2Qx0QY">https://www.youtube.com/watch?v=dwTMZ2Qx0QY</a><br>
+                <a href="https://www.youtube.com/watch?v=4aBVAbfxLJw">How to Build Epoxy Granite Machine Base</a><br>
+                <a href="https://www.adambender.info/post/2017/03/25/epoxy-granite-machine-frame-how-to">https://www.adambender.info/post/2017/03/25/epoxy-granite-machine-frame-how-to</a><br>
+                <a href="https://www.cnczone.com/forums/epoxy-granite/100555-epoxy-granite-practice-mineral-casting-polymer-concrete-2.html">https://www.cnczone.com/forums/epoxy-granite/100555-epoxy-granite-practice-mineral-casting-polymer-concrete-2.html</a><br>
+                <a href="https://www.cnczone.com/forums/epoxy-granite/38800-index-quot-epoxy-granite-machine-bases-quot.html">https://www.cnczone.com/forums/epoxy-granite/38800-index-quot-epoxy-granite-machine-bases-quot.html</a><br>
+                <a href="https://www.cnczone.com/forums/epoxy-granite/170384-cnc-forum.html">https://www.cnczone.com/forums/epoxy-granite/170384-cnc-forum.html</a><br><br>
+                <strong>Granitan</strong><br>
+                Studer AG use something called granitan. Not sure if it's secret recipe or copyable <br>
+            </div>
+        </div>
+
         <div class="row content-section">
             <div class="col-12 row-content">
                 <div class="h4" id="motor">Motor</div>
@@ -84,6 +120,7 @@
 
             </div>
         </div>	
+
         <div class="row content-section">
             <div class="col-12 row-content">
                 <div class="h4" id="vibration">Vibration</div>
@@ -111,6 +148,17 @@
                 <p>Short belt option e.g. 762*25mm could be held in a zigzag along a set of rollers. Advantage being the simplicity of the setup.</p>
                 <p>Long belts roll from one pulley onto another. This would be more complicated mechenism, but longer time between replacement</p>
                 <p>For round pieces, belts would pun perpendicular to lathe. Similar setup could be used on <a href="routerLathe.html">router lathe</a> to sand pieces with hex or octagon proflies</p>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="partDetection">Part Detection</div>
+                At various stages it may be necessary to detect if a part is present, or has been ejected properly <br>
+                Possible solutions for this include
+                <ul>
+                    <li>Cameras and machine learning</li>
+                    <li>IR beam broken by part present, or dropping through it <a href="https://youtu.be/JpIRCmk2cRU?t=337">example here</a>)</li>
+                </ul>                
             </div>
         </div>
     </div>
