@@ -3,7 +3,7 @@ MUMS CASE
   - 2018/2019 Diagnosis. At that point, missing a few words and using a few incorrect words
   - 2022 struggling to find a lot of common words (food, clothing etc), and frequently switching related words e.g. year, month, hour
   - Mums type is semantic PPA
-  
+
 
   OTHER SYMPTOMS
     - headaches for a lot of years
@@ -40,5 +40,3 @@ DEMENTIA IN GENERAL
 COPING WITH IT
   - Should we push them towards acceptance, and coping strategies?
 - Best strategies (word lists, calendars etc.
-
-
