@@ -120,6 +120,17 @@ ul.basics-list li::before {
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */ }
 
+a {
+  color: #f7585b; }
+
+.apartment-content-link {
+  font-family: "Caveat-VariableFont_wght";
+  font-weight: bold;
+  color: #f7585b;
+  margin: 30px 0px 0px 0px;
+  font-size: 2rem;
+  font-weight: 700; }
+
 .useful-link-place {
   font-family: "Caveat-VariableFont_wght";
   font-weight: bold;

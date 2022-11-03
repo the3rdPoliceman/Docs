@@ -159,6 +159,19 @@ ul.basics-list li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+a{
+  color: $airbnb-red;
+}
+
+.apartment-content-link{
+  font-family: $script-font-stack;
+  font-weight: bold;
+  color: $airbnb-red;
+  margin : 30px 0px 0px 0px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .useful-link-table{
 
 }
