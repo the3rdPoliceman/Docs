@@ -121,6 +121,11 @@ ul.basics-list li::before {
   /* Also needed for space (tweak if needed) */ }
 
 a {
+  color: #f7585b;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
   color: #f7585b; }
 
 .apartment-content-link {

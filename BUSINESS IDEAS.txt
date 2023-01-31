@@ -25,6 +25,39 @@ dog food with added ingredients to help with health /breed issues
 
 
 
+DOG CAGE FOR CARS
+Similar to 4pets - Can size based on theirs and use their data about which size car it fits
+https://www.galaxus.ch/en/s15/product/4pets-entkalker-vehicle-accessories-for-pets-8393137?gclid=Cj0KCQjw8rT8BRCbARIsALWiOvSWI-w0_2zxfh3GhKcqv2rtBM6Kz-TZNhpekdYkPUCH7EjWXhms4QUaAnj4EALw_wcB&gclsrc=aw.ds
+They rattleproof evey joint with plastic coupler
+
+Plastic parts:
+	3D Printed would be an option, but possibly prohibitively expensive for now
+	Low pressure injection molding using heated molds seems very possible. Induction for heating and water for cooling seems interesting - for some details see https://www.ptonline.com/articles/Hot-Cold-Injection-Molding-Which-Approach-Is-Best-for-You  
+
+Design Details:
+	In general, reducing the possibility for rattling is very important. Metal to metal should be avoided.
+	A compliant mechanism for the door lock could be interesting - reducing part count and rattling
+
+No lock on door of cage:
+ 	cheaper to make and 
+ 	safer in case of accidents - less likely to trap dog
+ 	no need to lock the dog anyway since car is lockable
+
+Gap under cage:
+ 	Purpose. Allows a ramp to slide under, for older or smaller dogs
+ 	Maybe ramp could be built in somehow to the cage (tricky though, as boot depth would vary a lot)
+ 	Ramp could be folded in 2 when stowed and then unfolded in use. Allows longer ramp in smaller space
+ 	Could be optional, by adding feet under existing cage corner joints
+ 	Requires stronger base to not flex, or bracing either side of ramp
+
+ Bed:
+ 	May not be necessary, as owner could supply
+ 	Could be suspended rather than stuffed for chew proofness. Like this, but brobably takes up too much height: https://k9ballistics.com/products/chew-proof-armored-rip-stop-elevated-dog-bed
+ 	Should be washable, or not need washing
+ 	Kevlar seemed like a good iddea, but apparently the fibers are dangerous in cases where the dog eats them
+
+
+
 RETURNABLES
 returnable reusable packaging etc.
 anything a company uses as part of the delivery process can be left outside to be collected on a particular day
@@ -79,6 +112,7 @@ croque msr
 cheese toastie - see https://www.instagram.com/thecheesetruck/?hl=en for ideas
 falafel
 shawarma
+everything from All antico vinaio https://www.allanticovinaio.com/il-menu-firenze_en/
 
 
 PLANTS IN OFFICES
@@ -91,6 +125,7 @@ Have a reasonable number of large office customers, so many plants can be visite
 
 POTTERY
 Series of pottery with Jpanase Enso circles
+Series of pottery in the style of simple curved origami. Like the 1 fold origami. Google "simple origami curved" for ideas
 
 ART
 https://www.instagram.com/reel/Ci5vn7dugCG/?igshid=YmMyMTA2M2Y= Tree trunk prints	
@@ -100,8 +135,83 @@ Rungs and parts painted slightly different shades to add some interest
 
 
 LIONS MANE MUSHROOM SUPPLEMENTS
-Help brain, memory
+Help brain, memory. 
+Or grow them - 
+	https://www.youtube.com/watch?v=il9Ij5Y4TSc
+	https://www.youtube.com/watch?v=417Qbwn9yso
+
+PLANT POTS WITH BASE LIKE SPRING FORM TIN; TO MAKE REPOTTING EASIER ( FOR BIG PLANTS MAINLY)
+	https://www.youtube.com/watch?v=RD7y59grK3U
+
 
 KIDS BOOK
 The Rhino that didn't like No. A stubborn young rhino always wants to get his way - mostly he gets put in his place by his parents, but one day he doesn't give up and somehow saves the day.
 Illustrations via midjourney V4 or higher
+
+
+VACUUM RAMP
+Custom ramps for vacuum cleaner robots
+Fixings - mounting button (search tow rax) or pin
+Some kind of screw like shower curtain, to make it a friction fit
+
+
+UNSELLABLE CLONE
+Do something similar to unsellable - buying worthless NFTs in exchange for receipts that can be used for tax purposes
+Name - Something with acronym NFT...notfuckingtaxable.com, nofuckingtax...com
+how to sell 
+
+
+KNIFE SHARPENER
+Similar to wicked edge, but cheaper
+Features:
+	Off center stone holding, to allow better edge polishing
+	Jaws might have padded jaws e.g. leather or rubber, although this needs to be thin. Better grip, and on need to protect the knife
+	If unpadded, aluminium is probably good - it is used for soft jaws in vices due to its softness
+	Griping faces of jaws should maybe have a slight curve, to ensure contact with the knife is like this 
+	 |
+	(|)
+	 |
+	I like the double sided nature of wicked edge. Some extra expense obviously, but no messing with the knife during the sharpening. Plus it means alternating sides with each stroke which seems optimal
+	Clamp idea 1: A thumb wheel, similar to belt tensioner on 3D printer, connected to a wire arrangement which has a Y shape (top two prongs connect to either clamp side and bottom to tensioner)
+	Clamp idea 2: Thumb wheel with threaded rod coming out either side. Nuts on the threaded rods push the clamp jaws out. (Rod may need to be threaded in opposite directions on either side). Shape of nut and whatever it makes with (i guess some type of recess) needs to ensure allow for jaw pivot and to stop nut rotating. Compasses like faber caastell stream have exactly this.	
+
+Advanced version:
+	Foot pedal, via bike cable to pull. Possibly 2 separate wires (one from each jaw) the whole way to the pedal, to allow a bit of left to right finessing with foot pressure to ensure blade is vertical. Maybe this is a bad idea though and single cable is better?
+	Blade aligners, similar to wicked edge but on outside of one jaw, so large knives always rest in same position
+
+
+BIKE STAND
+Bike needs to be positionable in height, around vertical axis, around horizontal axis from clamp through pole
+Along the lines of https://www.efficientvelo.com/tools/ez-lift-repair-stand
+https://www.youtube.com/watch?v=iul032uk11c
+
+	LIFT MECHANISM
+		Maybe with electric lift. Wireless with buttons on clamp?
+		Or gas lift?
+		Why? Aimed at electric bikes, weight is much higer than non electric
+		Could even run off battery if life was good enough, then no need for cabling over shop floor. 
+		A wire pulley lift similar to efficient velo, but looped up around the top pulley, then the whole way down through the tube and out a hole in the bottom where it connects to a winch. In this case it would be good if the rotation locking mechanism around the central post was separate the height lock (maybe there would be no hight lock?) - what you don't want is somebody winching when the rotation is locked. Alternatively, have a very light power lift, or a torque limiter so it doesn't matter. 
+
+	LOCKING/UNLOCKING AXIAL MOVEMENT
+		Maybe everything could be done by footpedals - releasing twist in axis 1 and axis 2, 
+		Adjustable locking handles from mcmaster carr might be useful - https://youtu.be/2dxCAHU_xpY?t=537 (https://www.mcmaster.com/locking-handles/heavy-duty-adjustable-handles/)
+
+	POLE
+		How precise does it need to be to work with bushings?
+
+	BUSHINGS
+	    How to press fit - https://www.instagram.com/p/Bs_hP3xh96H/
+	    Video on making bushings https://www.youtube.com/watch?v=iXB42bKMkHY	
+
+	EXTRAS
+		Mat - maybe could have a work mat as an option with a cutout the size of the base
+
+
+DAVES DONUTS
+Make donuts according to recipes from St Johns Bakery - see PDF Bread Cake Doughnut Pudding, by Justin Gellatly.pdf in google drive cookbooks	
+Googling for youtube videos, there are lots showing korean donut production, high volume efficient production
+Most show hand balling which seems tedious, but this one uses a balling machine - https://youtu.be/kbm3n9xhR0g?t=309	
+Flipping when frying - maybe a metal loop on a metal stem (lollipop shape) that could dip in between the doghnuts, slide part of the way over the donut, then pull up to flip
+Cutting slots - oscillating saw, like Fein. Or correct length very sharp knife
+https://www.youtube.com/shorts/sEaoVaXr41Y has some automation clips
+SELLING: direct from a mini stall, at basel, bern, geneva, zurich hb. Or through small - medium chain fast food type restaurants

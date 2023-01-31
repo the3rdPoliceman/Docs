@@ -131,6 +131,9 @@ sub {
 .medium-image {
   width: 50%; }
 
+.small-image {
+  width: 25%; }
+
 .full-width-image {
   width: 100%; }
 

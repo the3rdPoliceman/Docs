@@ -161,6 +161,12 @@ ul.basics-list li::before {
 
 a{
   color: $airbnb-red;
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:none;
+  color:$airbnb-red;
 }
 
 .apartment-content-link{
