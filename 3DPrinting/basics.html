@@ -21,8 +21,11 @@
             <div class="col-12 row-content">
                 <div class="h4" id="contents">Contents</div>
                 <div class="content-link"><a href="#MyPrinter">My Printer</a></div>
+                <div class="content-link"><a href="#myMainboard">My Mainboard (creality 4.2.2)</a></div>
                 <div class="content-link"><a href="#MySoftware">My Software</a></div>
                 <div class="content-link"><a href="#HowtoupdatetheFirmware">How to update the Firmware</a></div>
+                <div class="content-link"><a href="#klipper">Klipper</a></div>
+                <div class="content-link"><a href="#jyers">Jyers firmware (no longer using)</a></div>
                 <div class="content-link"><a href="#MyFilaments">My Filaments</a></div>
                 <div class="content-link"><a href="#PotentialotherFilaments">Potential other Filaments</a></div>
                 <div class="content-link"><a href="#filamentInfo">Specific Filament Info</a></div>
@@ -46,10 +49,17 @@
                     <li>Creality Ender 3 v2</li>
                     <li>Takes nozzle with an M6 thread e.g. MK8 (Haven't actually bought one, but reddit thinks this is the right one). Recommended manufacturers of nozzles include micro swiss (expensive, very good, available) and <a href="https://www.aliexpress.com/item/32835656952.html?spm=a2g0o.cart.0.0.292a3c00lo9cFo&mp=1">trianglelab</a> (cheap, also good, available slowly through aliexpress) </li>
                     <li>Motherboard 4.2.2</li>
-                    <li>Firmware E3V2-UBL-BLTouch-10x10-v4.2.2-v2.0 from <a href="https://github.com/Jyers/Marlin/releases">Jyers (Universal Bed Levelling BL Touch)</a>. Making use of the bed levelling requires adding the GCode command <code>M420 S1</code> in Cura printer setup to use stored bed levelling mesh. <a href="https://www.youtube.com/watch?v=ZqFIpoekTXY">This video</a> explains the features of Jyers</li>
+                    <li>Firmware - Klipper firmware. See <a href="#klipper">details below</a></li>
                     <li>Triangle labs 3d Touch sensor for bed levelling</li>
                     <li><strong>Potential upgrade</strong> - Noctua quiet fans - <a href="https://www.reddit.com/r/ender3v2/comments/lto6uq/ender_3_v2_all_noctua_fans_buck_converter/">https://www.reddit.com/r/ender3v2/comments/lto6uq/ender_3_v2_all_noctua_fans_buck_converter/ </a></li>
                 </ul>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="myMainboard">My Mainboard (creality 4.2.2)</div>
+                <strong>Schematic</strong> <br>
+                <a href="Creality.4.2.2.-.Schematic.28-5-22.pdf"><img src="schematicLink.png"/></a>
             </div>
         </div>
         <div class="row">
@@ -71,6 +81,47 @@
                     <li>Load the SD card into the printer and restart it</li>
                     <li>While restarting it will automatically do the firmware update </li>
                 </ul>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="klipper">Klipper</div>
+                See details on <a href="klipper.html">Klipper page</a>
+            </div>
+        </div>
+        
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="jyers">Jyers firmware (No longer using)</div>
+                Previously, I was using the Jyers Firmware. On last check, Jyers was not in active development, and many of the features were already integrated into newer version of marlin. Others recommended mriscoc ahead of Jyers, so if moving away from Klipper, one of these is probably best.
+                 E3V2-UBL-BLTouch-10x10-v4.2.2-v2.0 from <a href="https://github.com/Jyers/Marlin/releases">Jyers (Universal Bed Levelling BL Touch)</a>
+                 <br><br>
+                 Making use of the bed levelling requires adding the GCode command <code>M420 S1</code> in Cura printer setup to use the stored bed levelling mesh<br><br>
+                 <a href="https://www.youtube.com/watch?v=ZqFIpoekTXY">This video</a> explains the features of Jyers <br>
+                <div>
+                    <strong>Jyers Start GCode for Cura</strong> <br>
+                        ; Ender 3 Custom Start G-code for jyers <br>
+                        G92 E0 ; Reset Extruder <br>
+                        M140 S60 ; Start heating the heated bed <br>
+                        M190 S60 ; Wait until the heated bed reaches the desired temperature <br>
+                        G28 ; Auto Home <br>
+                        G29 A; Activate Bed Leveling <br>
+                        G29 L0; Loads the saved mesh in slot 0 <br>
+                        G29  J3; 9 point autotilt <br>
+                        G92 E0 ; Reset extruder origin <br>
+                        G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed <br>
+                        G1 X0.1 Y20 Z0.3 F5000.0 ; Move to start position <br>
+                        G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line <br>
+                        G1 X0.4 Y200.0 Z0.3 F5000.0 ; Move to side a little <br>
+                        G1 X0.4 Y20 Z0.3 F1500.0 E30 ; Draw the second line <br>
+                        G92 E0 ; Reset Extruder <br>
+                        G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed <br>
+                        G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish <br>
+                        ; End of Ender 3 Custom Start G-code <br><br>
+                    <strong>Jyers End GCode for Cura</strong> <br>
+                        Lost it :-/ <br><br>
+                </div>
+
             </div>
         </div>
         <div class="row">
@@ -113,35 +164,6 @@
                     <li>Print a temperature tower & retraction tower - <a href="https://www.youtube.com/watch?v=6LjbCIGCmd0">video with details</a></li>
                     <li>Print a benchy</li>
                 </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 row-content">
-                <div class="h4" id="threadedInserts">Threaded Inserts</div>
-                <strong>General Tips</strong>
-                <ul>
-                    <li>High temperature seems to liquify the plastic around the insert better (although it also leaves more melted plastic around the bottom of the threads). Around 400C</li>
-                    <li>Heat the insert on the soldering iron first, then slowly push in</li>
-                    <li>Melt the inserts 90% of the way in with the soldering iron, then quickly push the last bit in with a flat tool</li>
-                </ul>
-                <table class="table table-bordered table-condensed">
-                    <thead>
-                        <tr>
-                            <th title="Field #1">Insert Size</th>
-                            <th title="Field #2">Hole Diameter (mm)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td align="right">M3</td>
-                            <td align="right">4.0</td>
-                        </tr>
-                        <tr>
-                            <td align="right">M5</td>
-                            <td align="right">6.2</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
         <div class="row">

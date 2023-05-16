@@ -36,7 +36,15 @@ Plastic parts:
 
 Design Details:
 	In general, reducing the possibility for rattling is very important. Metal to metal should be avoided.
-	A compliant mechanism for the door lock could be interesting - reducing part count and rattling
+	A compliant mechanism for the door lock could be interesting - reducing part count and rattling. 
+		- https://www.youtube.com/watch?v=oMQItryhbl4 is interesting, but complex
+		- Something like a rucksack buckle compliant mechanism (built solidly into the door/frame, not on a strap). Fit in the best orientation (with pins facing towards the cage), you could just close the door and it would be "locked" automatically. Examples:
+			https://youtu.be/XXlkTab3rno?t=194 buckle
+			https://youtu.be/XXlkTab3rno?t=214 buckle
+			https://youtu.be/XXlkTab3rno?t=264 battery compartment door
+			https://youtu.be/XXlkTab3rno?t=649 camera lens cover
+			https://youtu.be/LU77kPf25Yg?t=126 rotary to linear mechanism
+			https://www.youtube.com/watch?v=oMQItryhbl4 this compliant handle, but with knob, and using metal attached (screwed, bolted) onto the plastic latch bolt for the part that does the actual blocking
 
 No lock on door of cage:
  	cheaper to make and 
@@ -56,6 +64,15 @@ Gap under cage:
  	Should be washable, or not need washing
  	Kevlar seemed like a good iddea, but apparently the fibers are dangerous in cases where the dog eats them
 
+ Aluminium Profiles:
+ 	Question re 105 degree profiles - https://www.reddit.com/r/IndustrialDesign/comments/10m4coz/finding_aluminium_profiles/
+ 	Custom profiles - not that expensive - dies are available for around $1000 according to someone on reddit, Minimum order may be as low as 50kg, or more often 2000kg
+ 	80/20 is a common supplier (also available UK), as is mcmaster carr
+
+ Car paintwork Protection:
+ 	Fold out flap made of rubber/cloth/something. Flap is attached to the front of the dog box, full width, about 50cm long, and maybe stores under it somehow. 
+ 	Could roll in/out like a roller blind.
+ 	Could be spring returned to a flat position under the cage. Would be full size of base of cage. You pull it out, it locks into position at full extension (either automatically or manually), then unlocks and returns automatically via vacuum cleaner style spring winch thingy.
 
 
 RETURNABLES
@@ -124,14 +141,17 @@ Have a reasonable number of large office customers, so many plants can be visite
 
 
 POTTERY
-Series of pottery with Jpanase Enso circles
+Series of pottery with Japanase Enso circles
 Series of pottery in the style of simple curved origami. Like the 1 fold origami. Google "simple origami curved" for ideas
+
 
 ART
 https://www.instagram.com/reel/Ci5vn7dugCG/?igshid=YmMyMTA2M2Y= Tree trunk prints	
 
+
 CHAIRS
 Rungs and parts painted slightly different shades to add some interest
+https://www.youtube.com/watch?v=RzR6mDJwEAQ - ladder maker has interesting technique to put in rungs
 
 
 LIONS MANE MUSHROOM SUPPLEMENTS
@@ -179,6 +199,11 @@ Advanced version:
 	Foot pedal, via bike cable to pull. Possibly 2 separate wires (one from each jaw) the whole way to the pedal, to allow a bit of left to right finessing with foot pressure to ensure blade is vertical. Maybe this is a bad idea though and single cable is better?
 	Blade aligners, similar to wicked edge but on outside of one jaw, so large knives always rest in same position
 
+Materials:
+	RODS: Either 303 stainless (better choice than 304 or 316 as highly corrosion resistant. It's main disadvantage is heat resistance, but i don't care about that), or Aluminium which is cheaper.
+	GRIPS: 	thin leather, cork, or rubber band https://de.aliexpress.com/item/1005003398073303.html
+			dycem antislip rubber to make circular pads - https://www.amazon.de/-/en/Dycem-non-slip-film-roll-blue/dp/B006ZL41Q2/ref=sr_1_5?crid=2MVCVFC3I5KKI&keywords=Dycem&qid=1677972626&sprefix=dycem%2Caps%2C191&sr=8-5&th=1
+
 
 BIKE STAND
 Bike needs to be positionable in height, around vertical axis, around horizontal axis from clamp through pole
@@ -207,11 +232,113 @@ https://www.youtube.com/watch?v=iul032uk11c
 		Mat - maybe could have a work mat as an option with a cutout the size of the base
 
 
+
+BIKE HANDLEBAR ALIGNER
+	3D print based on this - https://www.youtube.com/shorts/oJcXXnjMKzo
+	Could have a push button to turn on the light in the natuarl place to hold it on the bar, or clip on would be even better
+
+	Seat post aligner would be good too
+
 DAVES DONUTS
-Make donuts according to recipes from St Johns Bakery - see PDF Bread Cake Doughnut Pudding, by Justin Gellatly.pdf in google drive cookbooks	
-Googling for youtube videos, there are lots showing korean donut production, high volume efficient production
-Most show hand balling which seems tedious, but this one uses a balling machine - https://youtu.be/kbm3n9xhR0g?t=309	
-Flipping when frying - maybe a metal loop on a metal stem (lollipop shape) that could dip in between the doghnuts, slide part of the way over the donut, then pull up to flip
-Cutting slots - oscillating saw, like Fein. Or correct length very sharp knife
-https://www.youtube.com/shorts/sEaoVaXr41Y has some automation clips
-SELLING: direct from a mini stall, at basel, bern, geneva, zurich hb. Or through small - medium chain fast food type restaurants
+-Make donuts according to recipes from St Johns Bakery - see PDF Bread Cake Doughnut Pudding, by Justin Gellatly.pdf in google drive cookbooks	
+-Googling for youtube videos, there are lots showing korean donut production, high volume efficient production
+-Most show hand balling which seems tedious, but this one uses a balling machine - https://youtu.be/kbm3n9xhR0g?t=309	
+-Flipping when frying - maybe a metal loop on a metal stem (lollipop shape) that could dip in between the doghnuts, slide part of the way over the donut, then pull up to flip
+-Cutting slots - oscillating saw, like Fein. Or correct length very sharp knife
+-https://www.youtube.com/shorts/sEaoVaXr41Y has some automation clips
+-https://youtu.be/LWpGhfj5J3s?t=59 shows rack for frying
+-SELLING: direct from a mini stall, at basel, bern, geneva, zurich hb. Or through small - medium chain fast food type restaurants
+-Butthole doughnuts? https://www.reddit.com/r/oddlysatisfying/comments/ueqglk/this_donut_butthole/
+-Tiramisu donut, like this but more separate ingredients. Maybe spray inside with coffeE and alcohol. Have a vein of cocoa powder in the cream. https://www.youtube.com/shorts/LutNiDEbClI
+-Basque cheesecake doughnut - make the cheesecake mix with or without burnt top and pipe in
+-Cake doughnuts - This adam ragusa video has some interesting info https://www.youtube.com/watch?v=jbYcR3POPko
+
+
+SKI LOCK SCREEN APP (or maybe not just for skiing)
+App that can increase what you can do from the lock screen
+Original feature is to display a large image on the lock screen, that pans around when the screen is tilted. Motivation is to display a piste map when skiing, so it can be navigated without taking off gloves.
+Other features can be ski related too - e.g. take photos, videos etc without hands. 
+
+
+AI LANGUAGE LEARNING
+Frequency lists 
+
+
+SIGNS
+CNC signs
+CNC wood
+CNC laser wood
+CNC plasma metal cut
+CNC plastic for neon 
+Pottery mosaic - https://www.youtube.com/watch?v=IEgK0LkJ1Bo
+
+
+CUSTOM PERFUME
+
+ChatGPT Research
+	https://chat.openai.com/c/d2cc9a05-ecb6-4779-a67f-89d6727874ff
+
+Offerings 
+	30ml, 50ml, 100ml custom created perfume.
+	Mini samples in variations of what the customer chooses. e.g. 5*1ml samples, with the customers chosen base & notes in differing quantities. 
+	 
+Names
+	ScentLab 		taken
+	ScentLabs		taken
+	Scentelligence	taken
+	Scentigen 		available
+	Scentique 		taken
+	Scentesse		taken
+	Scentego		available
+	Scentisan		available
+	ScentAcademy	taken
+	Scentea 		taken
+
+Name Parts
+	Scent
+	Lab
+	io - italian, I
+	Esse - latin, to be
+	Ego - greek, me
+	Gen
+	ique
+	isan - contraction of artisan
+	academy
+	pro
+	expert
+
+
+Packaging
+	Basic, functional - Similar to TheOrdinary.
+	Dark glass bottles (which are better for perfume shelf life)
+	Alibaba sell very small bottles which could be used for samples - Specifically, they sell perfume sample vials
+		https://www.alibaba.com/product-detail/1ml-1-5ml-2ml-2-5ml_1600606100643.html?spm=a2700.galleryofferlist.normal_offer.d_title.5c7e615ajXkbzU&s=p
+
+Equipment
+	Measuring for samples requires extreme accuracy. 
+	Micropipettes are designed for this but are expensive. Maybe can be DIY replicated with a motorized syringe (https://www.youtube.com/watch?v=0KjniIBHNMo)
+
+
+SOLAR BIRDBOX WITH CAM
+	https://www.youtube.com/watch?v=Ul0h5Maeoeg
+	removing filter for night vision https://www.youtube.com/watch?v=QYH-FWvDbDc
+	again https://www.youtube.com/watch?v=BALonY_Ksz8
+
+
+KEYRING WEDGE
+Idea
+	A keyring that includes a detachable wedge for levelling tables. Inspired by this - https://twitter.com/elsie_em/status/1656341383140069376
+	
+Designs
+	3D printed, in 2 parts, which keyring attchment. 
+	Molded silicon ith embedded carabiner
+
+Advertising
+	Make one and send it to the original twitterer
+	Her business is https://theproductpathway.co.uk/contact/
+
+Attachment
+	Carabiner clip? Rucksack buckle? Ring?
+	https://de.aliexpress.com/item/1005004210259028.html?spm=a2g0o.productlist.main.41.7f2175a3pr0bEv&algo_pvid=2db9952f-b98e-42da-91c5-953b2c0a65e6&aem_p4p_detail=202305111417532029170068044080001582244&algo_exp_id=2db9952f-b98e-42da-91c5-953b2c0a65e6-20&pdp_npi=3%40dis%21CHF%210.91%210.73%21%21%21%21%21%402100b0d116838398730891592d0742%2112000028390356850%21sea%21CH%21802261660&curPageLogUid=mWrvvOkusrj0&ad_pvid=202305111417532029170068044080001582244_21&ad_pvid=202305111417532029170068044080001582244_21
+	https://www.printables.com/model/124601-buckle
+	https://www.printables.com/model/281536-robust-buckles

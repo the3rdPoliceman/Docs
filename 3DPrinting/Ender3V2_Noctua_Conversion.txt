@@ -1,0 +1,28 @@
+CREATLITY ENDER 3 V2 QUIET CONVERSION
+
+EXAMPLE:
+https://www.reddit.com/r/ender3v2/comments/lto6uq/ender_3_v2_all_noctua_fans_buck_converter/
+
+WIRING BUCK CONVERTERS:
+https://youtu.be/k9Yy8OxohGI?t=342
+https://i.imgur.com/c6vo3yE.jpg
+fan wiring - https://faqs.noctua.at/support/solutions/articles/101000081757-what-pin-configuration-do-noctua-fans-use-
+
+VIDEO FROM TEACHING TECH OF FAN REPLACEMENT (THAT AUSTRALIAN GUY):
+https://www.youtube.com/watch?v=yW9ovo9CHi0
+
+UNCERTAINTIES: 
+People worry about the reduced airflow of the noctua fans in the hotend/part cooler. Could a larger fan for the hotend be adapted? Like this
+https://www.digitec.ch/de/s1/product/noctua-nf-a6x25-pwm-60-mm-1-x-pc-luefter-5812186
+Seems like using the 40x20 noctua is good enough for cooling the hotend
+For cooling the printed parts, it seems like less of a worry. Too much cooling may actually be a bad thing
+
+UPGRADED FAN HOLDER:
+Print Briss Ender 3 V2 with CR touch fan holder
+
+PARTS:
+2 x https://www.amazon.de/gp/product/B009NQM7V2
+2 x https://www.amazon.de/gp/product/B071J8CZP9/
+4 x Squash Balls
+1 set of https://www.amazon.de/-/en/Hailege-2596S-ADJ-Regulator-Adjustable-Convert/dp/B07XT8C3BK/ref=sr_1_1?crid=1AZ8R0SVTL6NL&keywords=Yizhet+LM2596&qid=1676040554&s=industrial&sprefix=yizhet+lm2596%2Cindustrial%2C155&sr=1-1
+

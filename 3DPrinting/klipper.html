@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <title>Klipper</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="page-title col-12">Klipper</div>
+        </div>
+        <div class="row">
+            <div class="col-12 row-content">
+                <div class="h4" id="contents">Contents</div>
+                <div class="content-link"><a href="#installation">Installation Details</a></div>
+            </div>
+        </div>
+        <div class="row content-section">
+            <div class="col-12 row-content">
+                <div class="h4" id="installation">Installation Details</div>
+                <ul>
+                    <li>Used KIAUH to install klipper, moonraker and fluidd on a Raspberry Pi.</li>
+                    <li>On the Raspberry Pi, used the Klipper "make menuconfig" to generate firmware to install on the printer to allow it to be controlled from klipper. Options as follows <br><img src="makeMenuconfigOptions.png" alt=""></li>
+                    <li>Grab the bin file from the /hone/pi/klipper/home folder and copy it to my computer using scp, then onto a blank formatted fat32 SD card. Load it into the printer, start up the printer, and leave a couple of minutes </li>
+                    <li>Klipper Printer Config (Settings for printer e.g. probe, mesh, offsets etc.)                 
+                      <ul>
+                        <li>Start klipper and open the configuration tab </li>
+                        <li>Copy the contents of the ender 3 V2 config file from config examples into the printer.cfg file, which should already exist</li>
+                        <li>Update mcu serial entry. (with USB connected to pi and printer, use "ls /dev/serial/by-id" to see serial devices, and copy the path into the config) </li>
+                        <li>Update the file to include fluidd.cfg by adding the line [include fluidd.cfg]</li>
+                        <li>Update bltouch, mesh and z probe settings in printer.cfg
+                            <ul>
+                               <li>
+                                    [stepper_z] <br>
+                                    step_pin: PB6 <br>
+                                    dir_pin: !PB5 <br>
+                                    enable_pin: !PC3 <br>
+                                    microsteps: 16 <br>
+                                    rotation_distance: 8 <br>
+                                    endstop_pin: probe:z_virtual_endstop <br>
+                                    #position_endstop: 0.0 <br>
+                                    position_max: 250 <br>
+ <br>
+                                    [bltouch] <br>
+                                    sensor_pin: ^PB1 <br>
+                                    control_pin: PB0 <br>
+                                    x_offset: -43.0 <br>
+                                    y_offset: -7.0 <br>
+                                    z_offset: 1.82 <br>
+ <br>
+                                    [safe_z_home] <br>
+                                    home_xy_position: 117.5, 117.5 <br>
+                                    z_hop: 10 <br>
+                                    z_hop_speed: 5 <br>
+ <br>
+                                    [bed_mesh] <br>
+                                    speed: 120 <br>
+                                    horizontal_move_z: 5 <br>
+                                    mesh_min: 15,15 <br>
+                                    mesh_max: 191,200 <br>
+                                    probe_count: 8,8 <br>
+                                    algorithm: bicubic <br>
+                                    fade_start: 1 <br>
+                                    fade_end: 10 <br>
+                                    fade_target: 0 <br>
+                                   
+                               </li> 
+                            </ul>
+                            <li>
+                                Add start and end macros to the printer.cfg: <br>
+                                [gcode_macro START_PRINT] <br>
+                                gcode: <br>
+                                  {% set BED_TEMP = params.BED_TEMP|default(60)|float %} <br>
+                                  {% set EXTRUDER_TEMP = params.EXTRUDER_TEMP|default(190)|float %} <br>
+                                  # Start bed heating (but don't wait for it) <br>
+                                  M140 S{BED_TEMP} <br>
+                                  # Use absolute coordinates <br>
+                                  G90 <br>
+                                  # Home the printer <br>
+                                  G28 <br>
+                                  # load default mesh <br>
+                                  BED_MESH_PROFILE LOAD="default" <br>
+                                  # Wait for bed to reach temperature <br>
+                                  M190 S{BED_TEMP} <br>
+                                  # Set and wait for nozzle to reach temperature <br>
+                                  M109 S{EXTRUDER_TEMP} <br>
+                                  G92 E0 ; Reset extruder origin <br>
+                                  G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed <br>
+                                  G1 X0.1 Y20 Z0.3 F5000.0 ; Move to start position <br>
+                                  G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ; Draw the first line <br>
+                                  G1 X0.4 Y200.0 Z0.3 F5000.0 ; Move to side a little <br>
+                                  G1 X0.4 Y20 Z0.3 F1500.0 E30 ; Draw the second line <br>
+                                  G92 E0 ; Reset Extruder <br>
+                                  G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed <br>
+                                  G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish <br>
+ <br>
+                                [gcode_macro END_PRINT] <br>
+                                gcode: <br>
+                                  # Turn off bed, extruder, and fan <br>
+                                  M140 S0 <br>
+                                  M104 S0 <br>
+                                  M106 S0 <br>
+                                  # Move nozzle away from print while retracting <br>
+                                  G91 <br>
+                                  G1 X-2 Y-2 E-3 F300 <br>
+                                  # Raise nozzle by 10mm <br>
+                                  G1 Z10 F3000 <br>
+                                  G90 <br>
+                                  G28 X <br>
+                                  # Disable steppers <br>
+                                  M84 <br>
+                            </li>
+                            
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                        Simplfy Cura start and end g-code: <br>
+                        start code is this (all one line): <br>
+                        START_PRINT EXTRUDER_TEMP={material_print_temperature_layer_0} BED_TEMP={material_bed_temperature_layer_0}<br><br>
+                        end code is this: <br>
+                        END_PRINT <br>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/prism.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,37 @@
+Internet options:
+
+FIBER:
+	Digiweb:
+		Lightning 1000 Saver
+		Unlimited Broadband
+		1000Mbps Download Speed
+		100Mbps Upload Speed
+		12 month contract 
+		€64.95 / month
+		€25 activation
+	eir:
+		500Mbps Download Speed
+		€75 / month
+		€0 activation
+	Pure Telecom:
+		Should call back
+	Sky:
+		500Mbps Download Speed
+		€65 / month
+		€50 activation
+	Virgin Media:
+		Not available (as of 01/02/2023)
+	Vodafone:
+		500Mbps Download Speed
+		€60 / month
+		€0 activation
+		
+SATELLITE:
+	Starlink:
+		Available
+		50-200 Mbps
+		No contracts
+		30-day trial
+		1-2 weeks
+		€85 / month
+		€450 for hardware

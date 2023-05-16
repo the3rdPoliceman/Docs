@@ -1,0 +1,72 @@
+.lesson{
+	margin-top: 1.5em;
+}
+
+.lesson-title{
+	font-weight: 700;
+}
+
+.demo{
+
+}
+
+.demo::before {
+    content: "demo";
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    font-size: 75%;
+   	font-weight: 700;
+  }
+
+
+.tip{
+
+}
+
+.tip::before {
+    content: "tip";
+    display: inline-block;
+    background-color: #00AA44;
+    color: white;
+    border-radius: 10em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+   	font-size: 75%;
+   	font-weight: 700;
+  }
+
+.exercise::before{
+    content: "exercise";
+    display: inline-block;
+    background-color: ORANGE;
+    color: white;
+    border-radius: 10em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    font-size: 75%;
+    font-weight: 700;
+}
+
+.advanced::before{
+    content: "advanced";
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border-radius: 10em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    font-size: 75%;
+    font-weight: 700;
+}
