@@ -1,0 +1,97 @@
+DONEGAL (TONDUFF) 
+
+	ADDRESS
+		Full address:
+			DUNREE VIEW
+			TONDUFF
+			LINSFORT
+			BUNCRANA
+			CO. DONEGAL
+			F93 N2W8
+		Full POSTAL Address (no idea why this is different:
+			DUNREE VIEW
+			TONDUFF
+			LINSFORT
+			LIFFORD
+			CO. DONEGAL
+			F93 N2W8
+
+	INTERNET
+
+		MOBILE UNLIMITED - (All sub 20eur a month)
+			3.ie 		(Three)
+			48.ie 		(Three)
+			anpost.ie 	(Vodafone) 
+			gomo.ie   	(EIR network)
+
+			COVERAGE MAP
+			https://coveragemap.comreg.ie/map?location=55.2006542,-7.523891600000001&technology=4g&network=three&place_id=ChIJXZcGxbv5X0gR1hw3wxATa6A
+				As of 23.05.2023, 4G coverage from Eir is good, Vodafone is fair, Three is fringe
+
+			CELL TOWER (MOBILE MAST) LOCATIONS
+			Locations available on https://siteviewer.comreg.ie/#explore
+			The app Network Cell Info Lite will tell you which cell tower your phone is connected to
+				Nearest (towards mamore gap) 
+					3km away
+					Mapped in Google Earth
+					Might have direct Line of Sight - see elevation profile
+					https://siteviewer.comreg.ie/#site/DL_4298/55.2234476504/-7.498695378/1/Site%20DL_4298
+
+				South across Swilly
+					6km away
+					Direct line of sight
+					https://siteviewer.comreg.ie/#site/DL_4848/55.1506988323/-7.5588818843/1/Site%20DL_4848
+
+				Murren Hill (West across Swilly)
+					Three, EIR and Vodafone all have towers here
+					9.4km away
+					Direct Line of sight
+					https://siteviewer.comreg.ie/#site/DL_4081/55.2276517511/-7.6635256356/1/Site%20DL_4081
+
+			EXTERNAL ANTENNA
+			From Rich - "The neighbours put in an antenna thing on the side of the house to get the best possible signal. About €100 on Amazon."
+			External antennas are mounted on the outside of the building and wired into your router. They are specifically to improve the speed of the internet provided by your router. 
+			External router antennas come in omnidirectional and directional. 
+				A directional antenna creates a cone shaped improved reception area. Seems you point it to a tower to get improved reception.
+				More info :https://simrush.com/best-4g-routers-with-external-antenna/
+
+			MOBILE PHONE REPEATER
+			A mobile phone repeater is essentially a localised signal booster. It listens for weak signals and then shouts them out louder. So all phones, 4g routers etc. near the repeater would benefit. As they essentially broadcast, you need to use hardware approved by the regulator. More info here.
+			https://www.comreg.ie/advice-information/service-issues/mobile-phone-repeaters/#1
+
+
+		FIBER:
+			Digiweb:
+				Lightning 1000 Saver
+				Unlimited Broadband
+				1000Mbps Download Speed
+				100Mbps Upload Speed
+				12 month contract 
+				€64.95 / month
+				€25 activation
+			eir:
+				500Mbps Download Speed
+				€75 / month
+				€0 activation
+			Pure Telecom:
+				Should call back
+			Sky:
+				500Mbps Download Speed
+				€65 / month
+				€50 activation
+			Virgin Media:
+				Not available (as of 01/02/2023)
+			Vodafone:
+				500Mbps Download Speed
+				€60 / month
+				€0 activation
+				
+		SATELLITE:
+			Starlink:
+				Available
+				50-200 Mbps
+				No contracts
+				30-day trial
+				1-2 weeks
+				€85 / month
+				€450 for hardware
