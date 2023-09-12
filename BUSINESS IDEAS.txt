@@ -154,7 +154,10 @@ Ideas
 	Rungs and parts painted slightly different shades to add some interest. Or maybe not
 Techniques
 	https://www.youtube.com/watch?v=RzR6mDJwEAQ - ladder maker has interesting technique to put in rungs with a lever thing
-
+Selling Points
+	Wood from nearby, sustainable. Lock in carbon
+	Wood from invasive tree species would be ideal
+	Wood from tree surgeons or storm damage
 Sanding Device
 	https://youtu.be/tI3H3ZjNF0Q?t=389 - interesting spring mechanism in this to keep belt tight while allowing pressure
 Sanding belts
@@ -369,3 +372,40 @@ Idea
 		Tree ring prints 
 		Rock Vases - https://www.instagram.com/reel/CsI0rocohYx/?igshid=NjFiZTE0ZDQ0ZQ==
 		Wooden stuff?
+
+
+QUIZ SITE
+Idea
+	Website to make it easy to run a pub quiz. Charge per quiz
+
+Rounds
+	word cloud - https://wordclouds.ethz.ch/
+	image of person generated in style of artist - AI generated
+	news - scrape quirky stories from around the world and use AI to make a question about them
+	One note music rounds or questions
+	Backwards music rounds or questions
+
+Features
+	Remote control via phone?
+	Record scoring via phone
+	Keyboard shortcuts for next question, previous question, play audio/video, show scores
+	customizable initial screens
+
+ONLINE GARDENING HELP
+Idea
+	Platform to get help gardening
+	Buy credit and give it out to people helping with a gardening issue
+	Low price - maybe $1 per tip
+	Relatively few gardening experts could probably quickly identify issues
+	AI could maybe learn from the pictures and eventually answer some
+	
+
+BIKE FIT
+	Motorised adjustment of bike fit rig
+		use riders seat on rig
+		use riders handlebars if they are not open to change them
+			if open to changing them and using drop bars, do 2 separate comfort assessments. One with hands on top, one with hands down
+	
+
+RECYCLED/UPCYCLED/ECO-FRIENDLY FURNITURE
+	Use excess concrete from pours to make furniture - https://www.youtube.com/watch?v=a_AABGkeoNQ
