@@ -369,10 +369,14 @@ Idea
 SWISS NATURE ART
 Idea
 	Art inspired by nature for wellness, yoga places etc.
-		Tree ring prints 
+		Tree ring prints - bryan nash gill style
+			Some info in a series of videos from The Mighty Bluegill, starting with this one https://www.youtube.com/watch?v=wfHCq74MSFw
+			Book available but not cheap
 		Rock Vases - https://www.instagram.com/reel/CsI0rocohYx/?igshid=NjFiZTE0ZDQ0ZQ==
 		Wooden stuff?
-
+		Rock Wood Benches - https://www.instagram.com/p/CxqqAtuv9qS/?hl=en
+		Tree Vases in what looks like natural stone or baskets
+		Alex Walshaw style wooden objects
 
 QUIZ SITE
 Idea
@@ -384,6 +388,13 @@ Rounds
 	news - scrape quirky stories from around the world and use AI to make a question about them
 	One note music rounds or questions
 	Backwards music rounds or questions
+	Identify words from their multiple meanings
+	Origins of company names
+	Product original names
+	Sequences to complete, like the what comes next round in only connect. 3 things in sequence, what is the fourth	
+	Geography - How many bordering countries has a country
+				Identify countries from shapes
+				Identify cities from facts about them e.g. romeo and juliet set in this city
 
 Features
 	Remote control via phone?
@@ -406,6 +417,25 @@ BIKE FIT
 		use riders handlebars if they are not open to change them
 			if open to changing them and using drop bars, do 2 separate comfort assessments. One with hands on top, one with hands down
 	
+BIKE SERVICE
+	Automated Bike wheel truing:
+	Measure alignment in rim plane - micrometer, simple cantilever 10x indicator, or similar
+	Measure rim offset from axle:
+	Camera pointing across inner surface of rim, with background in specific colour. First point with BG color indicates edge of rim. Allowances for valve, spokes etc
+	Tension: 
+		Spoke detection from camera.
+		Apply torque to wheel (At opposing nipple? Wheel surface with friction wheel?) while blocking spoke. Measure deflection, or pressure on blocking device
+		Guitar pickup on trying stand can be used to amplify vibration
+		Can it be fed into a computer?
 
 RECYCLED/UPCYCLED/ECO-FRIENDLY FURNITURE
 	Use excess concrete from pours to make furniture - https://www.youtube.com/watch?v=a_AABGkeoNQ
+	Using telegraph poles to make stools -
+	https://youtu.be/R4z1QTdTCX8?si=nyaTLCzzlNHx8T9E&t=414
+	Recycled plastic furniture, like stools etc from slabs 
+
+
+KNIFE SHARPENING SERVICE
+	Advertise with laminted poster, 1 per house, that gets collected the next day
+	
+	
