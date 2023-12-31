@@ -1,6 +1,7 @@
 BUSINESS IDEAS
 
 
+
 RECYCLING CONTAINERS
 Type A: Fit on a bike carrier
 	maybe with a strap to turn two into a saddle bag
@@ -75,6 +76,7 @@ Gap under cage:
  	Could be spring returned to a flat position under the cage. Would be full size of base of cage. You pull it out, it locks into position at full extension (either automatically or manually), then unlocks and returns automatically via vacuum cleaner style spring winch thingy.
 
 
+
 RETURNABLES
 returnable reusable packaging etc.
 anything a company uses as part of the delivery process can be left outside to be collected on a particular day
@@ -88,13 +90,16 @@ make christmas puddings
 buy ingredients abroad
 
 
+
 POT WATCHER
 RPI pot watcher using AI to let you know boiling, bubbling, simmering etc.
 FURTHER DEV - induction hob which interacts with pot watcher to allw controlled simmering, boiling etc
 
 
+
 MEAL PREPPER
 Prepped bulk meals for people training
+
 
 
 BONSAI TREES
@@ -102,21 +107,10 @@ Sheds full of bonsai trees somewhere, automatically watered
 20 yrs later - 800CHF each
 
 
-LARGE CERAMIC TABLES IN THE STYLE OF BENOIT VIAENE
-
-
-LARGE CAST RECYCLED PLASTIC TABLES
-
-
-GEO GURU
-Similar to seterra, but with a lot of social media
-Youtube videos of best players - country records, state records, worldwide state records, outline records
-Tiktok to grab users, get them to the site, get them to youtube
-Competitions for schools to encourage them to get students in
-
 
 PLAYGROUNDS
 https://www.kukukschweiz.ch/planen-und-gestalten/materialien.html - robinia wood (black locust)
+
 
 
 SANDWICHES
@@ -132,6 +126,7 @@ shawarma
 everything from All antico vinaio https://www.allanticovinaio.com/il-menu-firenze_en/
 
 
+
 PLANTS IN OFFICES
 Supply plants to offices. The office workers enjoy the plants - health benefits etc.
 As plants grow they increase in value, and can be sold after a few years at a profit, while occurring no overheads as no floor space / nursery space is required. 
@@ -140,13 +135,11 @@ Use relatively high value, hard to kill plants. Monstera, Bonsai etc.
 Have a reasonable number of large office customers, so many plants can be visited at a time. e.g. 20 Large offices with 100 plants each
 
 
+
 POTTERY
 Series of pottery with Japanase Enso circles
 Series of pottery in the style of simple curved origami. Like the 1 fold origami. Google "simple origami curved" for ideas
 
-
-ART
-https://www.instagram.com/reel/Ci5vn7dugCG/?igshid=YmMyMTA2M2Y= Tree trunk prints	
 
 
 CHAIRS
@@ -158,6 +151,15 @@ Selling Points
 	Wood from nearby, sustainable. Lock in carbon
 	Wood from invasive tree species would be ideal
 	Wood from tree surgeons or storm damage
+	Non kiln dried wood - air dried or solar kiln
+	Repairability 
+		Repairing sticks
+			Replacement sticks should be fittable by an amateur without dissassembling the whole chair.  
+			Idea: Stick has 2 wooden parts, joined by a bolt. The two parts are screwed together initially, then get put roughly into place and are unscrewed to expand (a bit like a screw out tension rail) and push into the holes
+			If a stick breaks, saw it out, then drill out the ends to leave holes, then replace with the new stick. 
+			Replacement sticks could be shipped with any tools needed to do the repair. These are then shipped back, and deposit is refunded (If in a different country, these could be shipped to someone I know before picking up in bulk)
+Potential Wood Sources
+	Maybe firewood - buy firewood in bulk, use what makes sense, and sell on the rest. Maybe can pick up wood basically for free. 
 Sanding Device
 	https://youtu.be/tI3H3ZjNF0Q?t=389 - interesting spring mechanism in this to keep belt tight while allowing pressure
 Sanding belts
@@ -165,9 +167,57 @@ Sanding belts
 		From ChatGPT. In metric units, sanding belts are typically found in these common sizes:
 		Widths: 13 mm, 20 mm, 25 mm, 50 mm, 75 mm, 100 mm, 150 mm
 		Lengths: 457 mm, 533 mm, 610 mm, 760 mm, 914 mm, 1067 mm, 1220 mm, 1829 mm
-
 	Sources:
 		https://de.aliexpress.com/item/1005005365836852.html?spm=a2g0o.productlist.main.23.76222203O5gdHt&algo_pvid=e9661d42-37b8-42da-a60e-fce93d1bbf74&aem_p4p_detail=202305181235478303063380568280007921400&algo_exp_id=e9661d42-37b8-42da-a60e-fce93d1bbf74-11&pdp_npi=3%40dis%21CHF%2119.32%2111.59%21%21%21%21%21%402145277316844385478923637d07b5%2112000032757441960%21sea%21CH%21802261660&curPageLogUid=9eEhtrV3P688&ad_pvid=202305181235478303063380568280007921400_12&ad_pvid=202305181235478303063380568280007921400_12
+
+
+
+HOLZ UND PILZ
+	Sustainable wood furniture, automatic manufacturing, with wood waste used to feed mycelium fungi furniture elements 
+		Question. How resistant are they to water? e.g. If a table base is on the floor, will mopping affect it?
+
+
+
+RECYCLED/UPCYCLED/ECO-FRIENDLY FURNITURE
+	Use excess concrete from pours to make furniture - https://www.youtube.com/watch?v=a_AABGkeoNQ
+	Using telegraph poles to make stools -
+	https://youtu.be/R4z1QTdTCX8?si=nyaTLCzzlNHx8T9E&t=414
+	Recycled plastic furniture, like stools etc from precious plastic style slabs 
+
+
+
+SWISS NATURE ART
+Idea
+	Art inspired by nature for wellness, yoga places etc.
+		Tree ring prints - bryan nash gill style
+			Some info in a series of videos from The Mighty Bluegill, starting with this one https://www.youtube.com/watch?v=wfHCq74MSFw
+			Book available but not cheap
+		Tree slices 
+			Take a slice of tree and get it as thin as possible - flatten it with a CNC or router jig (then maybe with handplane), then sand it until it's very thin, then use a sandblaster to make it even more wafery and see through.
+			Possibly for prints also, or as stand alone items
+			Maybe present it in a frame?
+		Rock Vases - https://www.instagram.com/reel/CsI0rocohYx/?igshid=NjFiZTE0ZDQ0ZQ==
+		Wooden stuff?
+		Rock Wood Benches - https://www.instagram.com/p/CxqqAtuv9qS/?hl=en
+		Tree Vases in what looks like natural stone or baskets
+		Alex Walshaw style wooden objects
+	Tables in the style of benoit viaene, but from wood
+
+
+SKYLINE PRINTS
+	Woodblock or other type prints, similar to merlyn chestermans print on my wall.
+	Prints would be of famous mountain skylines in switzerland, and could include vegetation or animals in foreground. clouds stars etc.
+	Merlyn has a youtube video and a DVD 
+		- https://www.youtube.com/watch?v=9hb1nJ-Fuqk
+		- DVD available physical or maybe downloadable - https://www.facebook.com/watch/?v=655967555036628
+		- clips at artisan media channel - https://www.youtube.com/@ArtisanMediaLtd
+		- Merlyn also has other clips on youtube, along with her collective Pine Feroda
+
+	Example Subjects
+	 	- Matterhorn
+	 	- Augstmatthorn https://i0.wp.com/alliemtaylor.blog/wp-content/uploads/2019/09/untitled-1-of-1-27.jpg
+	 	- Salbitnadel https://www.filidor.ch/pictures/05/069sxz3n1rqukaw44vlsy8sad27n02/salbit-4-2560.jpg
+
 
 
 LIONS MANE MUSHROOM SUPPLEMENTS
@@ -176,8 +226,11 @@ Or grow them -
 	https://www.youtube.com/watch?v=il9Ij5Y4TSc
 	https://www.youtube.com/watch?v=417Qbwn9yso
 
+
+
 PLANT POTS WITH BASE LIKE SPRING FORM TIN; TO MAKE REPOTTING EASIER ( FOR BIG PLANTS MAINLY)
 	https://www.youtube.com/watch?v=RD7y59grK3U
+
 
 
 KIDS BOOK
@@ -185,16 +238,12 @@ The Rhino that didn't like No. A stubborn young rhino always wants to get his wa
 Illustrations via midjourney V4 or higher
 
 
+
 VACUUM RAMP
 Custom ramps for vacuum cleaner robots
 Fixings - mounting button (search tow rax) or pin
 Some kind of screw like shower curtain, to make it a friction fit
 
-
-UNSELLABLE CLONE
-Do something similar to unsellable - buying worthless NFTs in exchange for receipts that can be used for tax purposes
-Name - Something with acronym NFT...notfuckingtaxable.com, nofuckingtax...com
-how to sell 
 
 
 KNIFE SHARPENER
@@ -219,6 +268,7 @@ Materials:
 	RODS: Either 303 stainless (better choice than 304 or 316 as highly corrosion resistant. It's main disadvantage is heat resistance, but i don't care about that), or Aluminium which is cheaper.
 	GRIPS: 	thin leather, cork, or rubber band https://de.aliexpress.com/item/1005003398073303.html
 			dycem antislip rubber to make circular pads - https://www.amazon.de/-/en/Dycem-non-slip-film-roll-blue/dp/B006ZL41Q2/ref=sr_1_5?crid=2MVCVFC3I5KKI&keywords=Dycem&qid=1677972626&sprefix=dycem%2Caps%2C191&sr=8-5&th=1
+
 
 
 BIKE STAND
@@ -255,6 +305,8 @@ BIKE HANDLEBAR ALIGNER
 
 	Seat post aligner would be good too
 
+
+
 DAVES DONUTS
 -Make donuts according to recipes from St Johns Bakery - see PDF Bread Cake Doughnut Pudding, by Justin Gellatly.pdf in google drive cookbooks	
 -Googling for youtube videos, there are lots showing korean donut production, high volume efficient production
@@ -270,14 +322,17 @@ DAVES DONUTS
 -Cake doughnuts - This adam ragusa video has some interesting info https://www.youtube.com/watch?v=jbYcR3POPko
 
 
+
 SKI LOCK SCREEN APP (or maybe not just for skiing)
 App that can increase what you can do from the lock screen
 Original feature is to display a large image on the lock screen, that pans around when the screen is tilted. Motivation is to display a piste map when skiing, so it can be navigated without taking off gloves.
 Other features can be ski related too - e.g. take photos, videos etc without hands. 
 
 
+
 AI LANGUAGE LEARNING
 Frequency lists 
+
 
 
 SIGNS
@@ -287,6 +342,7 @@ CNC laser wood
 CNC plasma metal cut
 CNC plastic for neon 
 Pottery mosaic - https://www.youtube.com/watch?v=IEgK0LkJ1Bo
+
 
 
 CUSTOM PERFUME
@@ -335,29 +391,12 @@ Equipment
 	Micropipettes are designed for this but are expensive. Maybe can be DIY replicated with a motorized syringe (https://www.youtube.com/watch?v=0KjniIBHNMo)
 
 
+
 SOLAR BIRDBOX WITH CAM
 	https://www.youtube.com/watch?v=Ul0h5Maeoeg
 	removing filter for night vision https://www.youtube.com/watch?v=QYH-FWvDbDc
 	again https://www.youtube.com/watch?v=BALonY_Ksz8
 
-
-KEYRING WEDGE
-Idea
-	A keyring that includes a detachable wedge for levelling tables. Inspired by this - https://twitter.com/elsie_em/status/1656341383140069376
-	
-Designs
-	3D printed, in 2 parts, which keyring attchment. 
-	Molded silicon ith embedded carabiner
-
-Advertising
-	Make one and send it to the original twitterer
-	Her business is https://theproductpathway.co.uk/contact/
-
-Attachment
-	Carabiner clip? Rucksack buckle? Ring?
-	https://de.aliexpress.com/item/1005004210259028.html?spm=a2g0o.productlist.main.41.7f2175a3pr0bEv&algo_pvid=2db9952f-b98e-42da-91c5-953b2c0a65e6&aem_p4p_detail=202305111417532029170068044080001582244&algo_exp_id=2db9952f-b98e-42da-91c5-953b2c0a65e6-20&pdp_npi=3%40dis%21CHF%210.91%210.73%21%21%21%21%21%402100b0d116838398730891592d0742%2112000028390356850%21sea%21CH%21802261660&curPageLogUid=mWrvvOkusrj0&ad_pvid=202305111417532029170068044080001582244_21&ad_pvid=202305111417532029170068044080001582244_21
-	https://www.printables.com/model/124601-buckle
-	https://www.printables.com/model/281536-robust-buckles
 
 
 PRIDECYCLE
@@ -366,33 +405,27 @@ Idea
 	See this video for details - https://www.youtube.com/watch?v=Rc1W6PH5x9k
 
 
-SWISS NATURE ART
-Idea
-	Art inspired by nature for wellness, yoga places etc.
-		Tree ring prints - bryan nash gill style
-			Some info in a series of videos from The Mighty Bluegill, starting with this one https://www.youtube.com/watch?v=wfHCq74MSFw
-			Book available but not cheap
-		Rock Vases - https://www.instagram.com/reel/CsI0rocohYx/?igshid=NjFiZTE0ZDQ0ZQ==
-		Wooden stuff?
-		Rock Wood Benches - https://www.instagram.com/p/CxqqAtuv9qS/?hl=en
-		Tree Vases in what looks like natural stone or baskets
-		Alex Walshaw style wooden objects
 
 QUIZ SITE
 Idea
 	Website to make it easy to run a pub quiz. Charge per quiz
 
 Rounds
-	word cloud - https://wordclouds.ethz.ch/
-	image of person generated in style of artist - AI generated
-	news - scrape quirky stories from around the world and use AI to make a question about them
-	One note music rounds or questions
-	Backwards music rounds or questions
-	Identify words from their multiple meanings
-	Origins of company names
-	Product original names
-	Sequences to complete, like the what comes next round in only connect. 3 things in sequence, what is the fourth	
-	Geography - How many bordering countries has a country
+	- word clouds of people - https://wordclouds.ethz.ch/
+	- image of person generated in style of artist - AI generated
+	- news - scrape quirky stories from around the world and use AI to make a question about them
+	- One note music rounds or questions
+	- Backwards music rounds or questions
+	- Next lines of songs, a la buzzcocks
+	- Identify words from their multiple meanings
+	- Origins of company names
+	- Product original names
+	- Top 5s - List the top 5 of a category.  One point per correct anser. Possibly bonus for full house, or per answer in correct position
+	- Quiz round: Name the movie from a screen shot - https://vm.tiktok.com/ZGedNtDQp/
+	- First lines of books. Either straight forward, what is this book from the famous first line. Or gradually reveal the  first line over a series of questions, one per round, decreasing the points as more clues are given.
+	- Sequences to complete, like the what comes next round in only connect. 3 things in sequence, what is the fourth
+	- Answer that's gradually revealed as clues, with one clue per round. The earlier you get it the more points you get. Bit like only connect	
+	- Geography - How many bordering countries has a country
 				Identify countries from shapes
 				Identify cities from facts about them e.g. romeo and juliet set in this city
 
@@ -401,6 +434,8 @@ Features
 	Record scoring via phone
 	Keyboard shortcuts for next question, previous question, play audio/video, show scores
 	customizable initial screens
+
+
 
 ONLINE GARDENING HELP
 Idea
@@ -411,12 +446,15 @@ Idea
 	AI could maybe learn from the pictures and eventually answer some
 	
 
+
 BIKE FIT
 	Motorised adjustment of bike fit rig
 		use riders seat on rig
 		use riders handlebars if they are not open to change them
 			if open to changing them and using drop bars, do 2 separate comfort assessments. One with hands on top, one with hands down
 	
+
+
 BIKE SERVICE
 	Automated Bike wheel truing:
 	Measure alignment in rim plane - micrometer, simple cantilever 10x indicator, or similar
@@ -428,14 +466,223 @@ BIKE SERVICE
 		Guitar pickup on trying stand can be used to amplify vibration
 		Can it be fed into a computer?
 
-RECYCLED/UPCYCLED/ECO-FRIENDLY FURNITURE
-	Use excess concrete from pours to make furniture - https://www.youtube.com/watch?v=a_AABGkeoNQ
-	Using telegraph poles to make stools -
-	https://youtu.be/R4z1QTdTCX8?si=nyaTLCzzlNHx8T9E&t=414
-	Recycled plastic furniture, like stools etc from slabs 
 
 
 KNIFE SHARPENING SERVICE
-	Advertise with laminted poster, 1 per house, that gets collected the next day
+	Advertise with weatherproof poster, 1 per house, that gets collected the next day when coming to do the sharpening
+		- Use Weatherproof Inks: Opt for screenprinting inks that are specifically designed for outdoor use. These inks are more resistant to fading and water damage. UV-curable inks are a good choice as they are known for their durability and resistance to weather elements.
+		- Protective Coatings: After printing, apply a clear, protective coating over the poster. This can be a UV-resistant varnish or a waterproof sealant. These coatings help protect the ink from fading and the paper from water damage.
+		- Synthetic Paper: While you've mentioned using thick paper, another option is to use synthetic paper made for outdoor use. These papers are inherently more durable and water-resistant than regular paper.
+		Attaching adverts
+			- rubber suckers - https://de.aliexpress.com/item/4000437856281.html?spm=a2g0o.productlist.main.11.6ae223bbYIdR40&algo_pvid=77a3530e-b004-40bb-9b30-5048f3d141ec&algo_exp_id=77a3530e-b004-40bb-9b30-5048f3d141ec-5&pdp_npi=4%40dis%21CHF%213.76%212.63%21%21%214.17%21%21%402103244417005758354652799eab7a%2110000001805089399%21sea%21CH%21802261660%21&curPageLogUid=EomcXjB7vFk1
+			- sticky dots - https://de.aliexpress.com/item/1005003512445262.html?spm=a2g0o.productlist.main.1.60bd1f7dhaUpRh&algo_pvid=d12034f6-75dc-4311-8fd4-e679b94fdc1c&algo_exp_id=d12034f6-75dc-4311-8fd4-e679b94fdc1c-0&pdp_npi=4%40dis%21CHF%212.59%211.58%21%21%212.87%21%21%402103297417005786196768738e9853%2112000026742321018%21sea%21CH%21802261660%21&curPageLogUid=UwaKqjl5JBGO
+			- gecko tape https://shop.setextechnologies.com/products/setex-tape?variant=40110796144726
+
+	https://www.youtube.com/watch?v=VEVmXViW34c - grinding info
+
+	Vehicle:
+		Cargo-bike:
+
+		Cargo scooter:
+			Like https://www.scootility.com, but with shorter wheelbase for manoeuverability (maybe rear wheel between feet, from wheel under box)
+			https://www.youtube.com/watch?v=PKZzM1h5ixw
+			Stand:
+				Two footed kick-stand flips down from the side of the cargo box to support the scooter. 
+				Stand includes any foot controls e.g. speed control for grinder
+			Advantages:
+				Narrow
+				Nimble
+				Lower top speed, but good acceleration
+			Disadvantages:
+				DIY
+
+		4 wheel scooter:
+
+
+
+FOOD TRUCK 
+	Chicken edition
+	 	- Something along the lines of "first we feast" spice challenge. 
+	 	- Crucible challenge - containing ultimate hottest of hot sauces. If you pass challenge 1, you can go for the crucible challenge - that means eating 2 pieces of chicken with the hottest sauce.
+	Menu Eis - One menu per day of great things
+
+
+
+RECHARGABLE FLOOR LAMPS
+	Big floor lamps like Hektor, including Lithium Ion batteries so they don't need to be plugged in. 
+	Wheels on the base, so they can be moved around like portable basketball nets.
+	It's possible to buy for example 12V DC bulbs online, or premade boards with LEDs on places like ali express
+	This guy got bulbs that can run on a range of voltages  https://www.youtube.com/watch?v=LeiyMjE48VM
+
+
+ULTIMATE FONDUE SET
+	Brutallist style fondue set
+	Some nonsense like this girls for the forks - https://www.chelseamillerknives.com/shop1 (cheese tool especially)
+	Forged or possibly even cast base - bit mad looking - possibly 1) soha brutallist 2) heavy set spider 3) giger alien 
+	Some fancy caquelon - probably that rough knife cut japanese whisky glass style with very dark clay that looks like lava. See:
+		- takashi endo
+		- tsubo
+		- https://www.pinterest.ch/pin/418553359116465374/ has a cool red line
+
+
+
+BRUTALLIST KNIVES
+	Like this in terms of material style - https://www.chelseamillerknives.com/shop1
+	Possible also for handle style - carved brutallist 
+	Blade should actually be decent rather than whatever BS she's selling
+		- Some good steel info https://www.youtube.com/watch?v=3XFTmB-OFs4 
+
+
+
+BRUTALLIST ANIMAL SCULPTURES
+	Style similar to https://www.instagram.com/dejan.art.sculptor like https://www.instagram.com/p/Czwfo7MIgIf/?img_index=1
+	Using different animals - chickens? His ravens are a good choice - bit mysterious, magic-y - maybe there are others in that vein
+
+
+
+COFFEE VENDING MACHINE
+	Robot Vending Machine where you can see process happening
+	Knows who you are, and remembers your preferences. Learns what you like
+	Attempt to perfect all stages, according to rules for expresso
+	See James Hoffman videos for making espresso details
+	Name: KaffGPT
+	Visually displays all data while making the coffee - pressure, temperatures
+	Features:
+		Load sensors to determine pressure
+		Screw driven. Flair machines e.g. flair 58 are a good example of manual machine i would try to replicate - https://www.youtube.com/watch?v=3X84AYoNEQw
+		Grind as needed
+		Needles to even coffee
+		Tamper with load pressure sensor
+		Auto washer/dryer
+		Heated, insulated head (maybe 3d printed internally circulating oil) to maintain precise temperature
+		Heated insulated water tank at same ideal head temp
+		Pre-infusion pressure?
+		Scale on output for measuring output weight
+		Should the portafilter be heated?
+		A precision made portafilter basket is highly recommended, and in theory different sized portafilter basket should be used for different grinds etc - see https://www.youtube.com/watch?v=3oFV88PzEFE	
+		Saline solution? https://www.youtube.com/watch?v=9PUWQQ-joKE
+		What if the head moved in relation to the portafilter? i.e. could then head do the tamping, and then keep pressure on the puck, so it couldn't break apart. I guess you'd have to back off a bit as water started flowing to allow for puck expansion, but maybe not much
+
+	James Hoffman Process:  (https://youtu.be/xb3IxAr4RCo?si=b57AXfszV1YWt50g)
+		Weigh beans
+		Wet beans
+		Grind coffee into portafilter
+		Redistribute with needles
+		Optional Extraction improvement (may reduce cleanup):
+			https://coffeechronicler.com/puck-screen-explained/ has details
+			Option 1 - paper filters, top or bottom or both.
+			Option 2 - metal screen, top
+			Advantages of paper or puck screen:
+				+ keeps group head clean
+				+ more consistent extraction
+				+ dryer, easier to remove puck
+				+ minimizes channeling
+				+ could in theory reduce need for cleanup quite a bit (both portafilter and group head)
+			Disadvantages of paper
+				- may be difficult to automate - maybe a vacuum sucker to place, and water jet wash out
+				- Metal puck screen would need to be cleaned, although cheap simple version with just holes is good and maybe can be manipulated by magnets?
+			Probably paper is better than metal if going this way
+			Option 3 - Higher quality basket and rinsing - https://www.youtube.com/watch?v=JzmGNwyN0MI
+				This would be the way i would go
+		Tamping:
+			straight down and up is standard, no need to twist
+			tamping level is important
+			you need to tamp enough to remove air pockets, but tamping too hard isn't a big deal. 
+
+	Milk drinks:
+		Some good steaming info
+		 	https://youtu.be/oaKRBBpA4fw?si=JVH6yCP-kTDGjnC2
+			https://www.youtube.com/watch?v=gTC3dJvwgUI		
+
+	Info:
+		https://www.youtube.com/watch?v=GKA2COJRt6M shows a portafilter with temp sensor, and has some interesting info on Decent DE1
+
+	Setup:
+		Could you do everything in the same position? i.e. grind straight into the open top of the group head, then declump, level, tamp in place, add the water and push through 
+
+	Water:
+		Water quality significantly affects the extraction and taste of coffee.
+		 - https://www.youtube.com/watch?v=jfElZfrmlRs
+		
+		Ideal Water Balance: 
+			The best water for coffee is a balance between mineral content and bicarbonate levels. Matching water to a coffee roaster's water can enhance taste.
+		Calcium and Magnesium: 
+			Calcium and magnesium ions in water help extract coffee flavors. The right amount is crucial for optimal extraction. Generally, slightly more calcium or less magnesium is preferred, depending on which ion is predominant.
+		Bicarbonate Levels: 
+			The bicarbonate content in water affects its pH balance. High bicarbonate levels can reduce coffee's acidity, but an imbalance can spoil the taste.
+		Measuring Water Composition: 
+			Water content can be checked via local water authority websites or using dropper kits to measure hardness and bicarbonate levels.
+		Water Treatment Methods: 
+			Brita filters can improve water taste but are less effective in softening hard water. Reverse osmosis systems might excessively soften water.
+		Creating Custom Mineral Water: 
+			Ideal brewing water can be made by adding Epsom salt (for magnesium) and baking soda (for bicarbonate) to distilled water. Distilled water in coop is 60C per liter, or about 2 cents per espresso. Might be worth considering.
+
+	Pressure:
+		1 bar 	= 14.5PSI
+				= 64.5 newtons per square inch
+				= 0.1 newtons per mm2
+
+		If grouphead cylinder inner diameter = 58mm
+		CSA = pi*r^2 
+			= pi * (29 * 29) 
+			= 2642 mm2
+
+		so, to get 1 bar in a 58mm diameter CSA cylinder:
+			force 	= 0.1N * 2642 
+					= 264N
+					= 26.9Kg
+
+		For a spreadsheet, calculating forces for variable pressures and diameters, go to  https://docs.google.com/spreadsheets/d/156jahC238Hy6_u8eQYA8o65sq2kiy1WhxtpjgKh2qAw/edit?usp=sharing
+
+
+	UI
+		Scan QR Code, then do everything else by phone.
+		Registering: Being forced to register could put off first time users, so should have 2 modes:
+			Guest Mode: For first-time users or those who prefer not to register, have a guest mode where they can quickly choose their coffee without signing up. They could be encouraged to register post ordering, for a more personalized experience, and loyalty bonuses.
+			Registered User mode: Those who have signed up can give feedback which should help make coffee more how they like it. 
+				Registered users bonuses: 
+					Loyalty bonus - every 10th coffee free
+					Prepay bonus - 8 for 10. May encourage increased buying, and maybe would save me money from payment processors fees i.e. one big transaction rather than many small
+
+
+
+3D PRINTED CUSTOM PAINTBRUSHES, WITH CARBON FIBER RODS AS LONG HANDLES
+	Screw attachment for carbon fiber handles:
+		allows multiple length handles
+		share handles between many heads
+		reuse handles when head is done
+	3D print heads
+		Custom head, custom bristles
+
+
+
+EDGAR PAYNE REWRITTEN
+	Rewrite Edgar Paynes "Composition of Outdoor Painting" into a more readable form.
+
+
+
+OFF GRID SHATTAF
+	A shattaf that works off a 
+		5V pump, powered by a USB powerpack, usb plug etc
+		Water tank (bucket, plastic tank etc.) in a closet
+		Standard 1/2" shower hose shattaf
 	
-	
+	Advantages:
+		Suitable for renters
+		Relatively cheap
+		Sellable with of without power supply
+		Repairable - Parts easily exchangeable, even by amateur
+		Saves cash relatively (need toilet paper stats)
+		Eco friendly - work on a way to reduce environmental impact (research pump, materials etc. environmental impact)
+
+
+PAINTINGS
+	Imagineg Cloundscapes From Oppenheimer Film end sequence - oppenheimerCloudscape1.png, oppenheimerCloudscape1.png in this folder
+	https://www.pinterest.ch/pin/418553359134536728/
+	https://www.pinterest.ch/pin/418553359134536715/
+	There's a 3rd image too in the photos to paint album
+	Sunset above cloudscapes
+	Landscapes above cloudscapes 
+
+	Aletsch. Definitely paint this.
+	https://www.pinterest.ch/pin/418553359121841331/
