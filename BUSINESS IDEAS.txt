@@ -175,6 +175,10 @@ Names
 	Stool samples
 	Sit happens
 
+Broadcast on TikTok, and eventually lead to classes and sales
+	@ZurichChairGuy
+
+
 
 HOLZ UND PILZ
 	Sustainable wood furniture, automatic manufacturing, with wood waste used to feed mycelium fungi furniture elements 
@@ -502,12 +506,15 @@ KNIFE SHARPENING SERVICE
 
 		4 wheel scooter:
 
+	Grinding/Sharpening
+		What about a fuck-off magnetic block the holds the knife at the right angle (20 degrees for most)? And then a bunch of belt sharpeners, possibly with water.
 
 
 FOOD TRUCK 
 	Chicken edition
 	 	- Something along the lines of "first we feast" spice challenge. 
 	 	- Crucible challenge - containing ultimate hottest of hot sauces. If you pass challenge 1, you can go for the crucible challenge - that means eating 2 pieces of chicken with the hottest sauce.
+	 	- Something in actual flames would be good. volcanoes as an option?
 	Menu Eis - One menu per day of great things
 
 
@@ -681,7 +688,7 @@ OFF GRID SHATTAF
 
 
 PAINTINGS
-	Imagineg Cloundscapes From Oppenheimer Film end sequence - oppenheimerCloudscape1.png, oppenheimerCloudscape1.png in this folder
+	Imagined Cloundscapes From Oppenheimer Film end sequence - oppenheimerCloudscape1.png, oppenheimerCloudscape1.png in this folder
 	https://www.pinterest.ch/pin/418553359134536728/
 	https://www.pinterest.ch/pin/418553359134536715/
 	There's a 3rd image too in the photos to paint album
@@ -690,3 +697,27 @@ PAINTINGS
 
 	Aletsch. Definitely paint this.
 	https://www.pinterest.ch/pin/418553359121841331/
+
+	ART IDEA (All these paragraphs are one idea)
+		Paintings as an impression of the experience of being in the landscape. Not impressionist paintings, but paintings that almost are collage of the experience of being within a landscape for a day or at a particular moment. Elements of the painting would not be to physical scale, rather they would be to the scale of the impression that they made on me while I was creating the painting. 
+
+		For example, on a day with a spectacular sky, the sky would dominate the painting as opposed to the land. Some red poppies, might appear as a red splatter across the painting, having had or made a large impression.
+
+		Each painting could be accompanied by a small, edited video of the experience of the landscape that day. The video would probably be a fast pace exploration, with a lot of cuts, zooming in on features, etc. Head cam would be good.
+
+		Potentially the video could also contain video of the artwork itself being made. Maybe cuts from the landscape could be interspersed with the scenes where that feature is being created in the painting.
+
+		Potentially the video could be dynamically cut together, by an algorithm. So, it wouldn't actually be a definitive video, but a series of scenes being randomly cut together.
+
+		Maybe the video would be included as part of the piece. I'm not sure how that would work, as I don't know how digital art videos are sold. I guess the right to the video would be sold alone with the original painting, and prints of the painting could be sold separately with no rights to the video. Maybe that's overcomplicating things , and the video could simply be made available to the owner who would already have the painting.
+
+	ART IDEA
+		A way of implementing the idea that I had where each paint stroke would be generated using a colour that was mixed on the brush rather than being mixed in a pile on the palette.
+
+		Maybe instead of trying to put the colours directly on the brush, we could use a system where we automatically deposited the blobs of paint where we felt a brush stroke should begin. 
+
+		So, for example, we could have a series of syringes filled with colours of paint which then get deposited at the correct locations. Later we could come along and make the brush strokes. The spots could be placed at the start of the stroke, or gradually along the stroke giving bursts of variations. We could pre-plan all the strokes, or generate them one at a time. 
+
+		Maybe instead of a brush we use a spreader, which is calibrated to spread a certain thickness of paint, we could calculate the volume of paint which should be applied along the brushstroke. How would it be calibrated? Maybe by running it on rollers, or having a paint spreader consisting of a flat blade like a paint scraper, with an area filed out of the edge to a certain depth e.g. 20mm wide and 0.5 mm deep, which would then create a "stroke" in that profile
+
+		Potentially brush strokes could be automated as well, but this my look very unnatural. Maybe looking unnatural would be interesting though.
