@@ -565,7 +565,10 @@ COFFEE VENDING MACHINE
 		Needles to even coffee
 		Tamper with load pressure sensor
 		Auto washer/dryer
-		Heated, insulated head (maybe 3d printed internally circulating oil) to maintain precise temperature
+		Heated, insulated head (maybe 3d printed internally circulating oil) to maintain precise temperature. 
+			3 Part Head design for easily machined oil heated head:
+				Mid (main) section is a thick walled cylinder with multiple vertical holes
+				Top and bottom sections are like caps, and contain multiple slots. Each slot joins 2 mid section holes together, and the result is one long snaking channel that makes its way through the whole head. So oil snakes its way up, down, up, down, up down and gradually around the head before exiting.
 		Heated insulated water tank at same ideal head temp
 		Pre-infusion pressure?
 		Scale on output for measuring output weight
@@ -573,6 +576,7 @@ COFFEE VENDING MACHINE
 		A precision made portafilter basket is highly recommended, and in theory different sized portafilter basket should be used for different grinds etc - see https://www.youtube.com/watch?v=3oFV88PzEFE	
 		Saline solution? https://www.youtube.com/watch?v=9PUWQQ-joKE
 		What if the head moved in relation to the portafilter? i.e. could then head do the tamping, and then keep pressure on the puck, so it couldn't break apart. I guess you'd have to back off a bit as water started flowing to allow for puck expansion, but maybe not much
+		Potentially, pressure can be more or less ignored, and we can simply control the output flow profile
 
 	James Hoffman Process:  (https://youtu.be/xb3IxAr4RCo?si=b57AXfszV1YWt50g)
 		Weigh beans
