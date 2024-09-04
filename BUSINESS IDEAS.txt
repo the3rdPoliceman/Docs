@@ -486,12 +486,66 @@ KNIFE SHARPENING SERVICE
 			- sticky dots - https://de.aliexpress.com/item/1005003512445262.html?spm=a2g0o.productlist.main.1.60bd1f7dhaUpRh&algo_pvid=d12034f6-75dc-4311-8fd4-e679b94fdc1c&algo_exp_id=d12034f6-75dc-4311-8fd4-e679b94fdc1c-0&pdp_npi=4%40dis%21CHF%212.59%211.58%21%21%212.87%21%21%402103297417005786196768738e9853%2112000026742321018%21sea%21CH%21802261660%21&curPageLogUid=UwaKqjl5JBGO
 			- gecko tape https://shop.setextechnologies.com/products/setex-tape?variant=40110796144726
 
-	https://www.youtube.com/watch?v=VEVmXViW34c - grinding info
+	Sharpening, Grinding and Polishing
+		https://scienceofsharp.com/
+		Belt Sharpening with Ryan Swanson - Basic but great and practical - https://www.youtube.com/watch?v=WFJV213a6oA
+			His general process - 
+				INFO: Maybe he uses cubitron rather than ceramic now - they are supposed to be faster and more durable 
+				If there are really bad chips, 80 or 60 grit cubitron to start
+				120 grit klingspor ceramic belt (Cubitron would probably be better and more sizes available)
+				240 grit silicon carbide
+				A30 trizact (800 grit)
+				felt belt to finish  
+				Cubitron Belts - https://www.shop-sks.com/en/3M/Grinding-and-polishing/Abrasives/Sanding-belts/Cubitron-II/
+		Thinning and Sharpening (Ryan Swanson) - https://www.youtube.com/watch?v=b0-dt1_gi-g
+		Second Sharpening Video from Ryan Swanson (More info on belts etc.) - https://www.youtube.com/watch?v=c85Tooileyg
+
+		Making Custom Belts - https://www.youtube.com/watch?v=1lE1KbKx9xA
+
+		Explanation of why knifes need thinning sometimes in addition to sharpening - https://www.youtube.com/watch?v=dlpMW92z-oM
+		Great sharpening video (Alexandria Knife Sharpening) - https://www.youtube.com/watch?v=Ic6AG2QhNGg
+		Grinding info (Tobias Hangler) - https://www.youtube.com/watch?v=VEVmXViW34c
+		Polishing & Removing Scratches (Alexandria Knife Sharpening) - https://www.youtube.com/watch?v=wB5GOHN4hKs	
+		Interesting info and links to others on improving sharpening, measuring results etc. (Pete’s knife sharpening) - https://www.youtube.com/watch?v=8PqFwzryyeM
+		Demo of sharpening blade with S-curved profile (Useful for any curve) - https://www.youtube.com/watch?v=m-U-WQYlkYo
+		What dulls knives (Murray Carter) - info for website - https://www.youtube.com/watch?v=lDdPLG3U7xs
+		Testing sharpness (Murray Carter) - https://www.youtube.com/watch?v=2k1o70tMHYM
+		Testing primary/secondary bevel geometry (Murray Carter) - https://youtu.be/xpLXoAEkNuw?si=bFUjMjE2nPL8MjuQ&t=193
+		Checking blade straightness (Murray Carter) - https://youtu.be/_6Fb_6xgfe4?si=ncNq2iWUz3kPmAQd&t=120
+		Fixing bent and twisted knife blades (Murray Carter) - https://www.youtube.com/watch?v=FOoyyjcolV0
+		Speed up Tormek Sharpening (Alexandria Knife Sharpening) - https://www.youtube.com/watch?v=wIuLBznCiLw
+
+	DIY Grinder
+		Requirements:
+			Speed: 2-4000 ft per minute = 40-80 kph = 10-20 ms-1
+			Power: 250-400 watts seems common
+			Torque: 3Nm+
+			Maybe something like this A20 XP2020 Drone Motor - https://www.aliexpress.com/item/1005005161299407.html?spm=a2g0o.productlist.main.41.3362EiroEironz&algo_pvid=a09ebe3a-5dae-4266-9196-68a8c6ef6fbc&algo_exp_id=a09ebe3a-5dae-4266-9196-68a8c6ef6fbc-20&pdp_npi=4%40dis%21CHF%21114.30%2182.30%21%21%21900.00%21648.00%21%402101ef8717124474908135149eb62f%2112000031926041314%21sea%21CH%21802261660%21&curPageLogUid=gJW4Ozp7ZeLH&utparam-url=scene%3Asearch%7Cquery_from%3A
+
+		Converting a grinder to use DC - https://www.youtube.com/watch?v=5_MKFWIAt7o
+		Only one crowned wheel should be necessary, according to - https://www.youtube.com/watch?v=6sM0Qjumyro		
+		Kalamazoo tracking seems clever - https://www.youtube.com/watch?v=iG8D5FifmbM
+			Parts list here - https://kalamazooind.com/product/bg142-1-x-42-inch-industrial-belt-grinder-parts-list/
+			Maybe a collet and collet nut to join 2 parts? But i guess getting the internal part right would be difficult.
+			Maybe a seat tube style clamp using bike parts? - actually i think that could work quite well. Possibly also using the seat clamp to hold the wheel axle and allow tilting in the other axis (like saddle tilt), if that is useful.
+		This tracking is also good, but maybe more complicated - https://www.youtube.com/watch?v=RGcqgjYPTrg
+			This project seems to have very good tracking by just tilting the wheel out at the front/back, rather than top and bottom. 
+			Seems like only the one heim joint adjuster is really needed. That could also potentially do adjustment in the other axis too
+		Machining a Crowned Pulley - https://www.youtube.com/watch?v=iel8FAGTmvg
+		Belt Tensioning - If not intending to swap belts much, a chainsaw type slot adjustment might be fine
+		Using a glass platen on a belt grinder (Google the advantages) - https://www.youtube.com/watch?v=hG0nzdxDkaM
+
+
+	Sharpening Serrated Knives
+		Probably can build sanding blocks with various radiuses, following next level carpentry https://www.youtube.com/watch?v=qxvfIw84i-Y. Maybe can 3d print the end piece with the radius.
+		For using, it's probably easier to have the block clamped, and run the knife over it at a consistent angle.
+		This guy shows how to do it well with machines - https://www.youtube.com/watch?v=22Mx4D12nhQ
+			He also shows a belt splitter in https://www.youtube.com/watch?v=6wMpfPkQ3sQ and a DIY version https://www.youtube.com/watch?v=HDFu9Pu1Jjc. DIY version should probably use carpet blades, according to this https://www.youtube.com/watch?v=MPu73F6jp28
 
 	Vehicle:
 		Cargo-bike:
 
-		Cargo scooter:
+		Cargo scooter:How do you fuck
 			Like https://www.scootility.com, but with shorter wheelbase for manoeuverability (maybe rear wheel between feet, from wheel under box)
 			https://www.youtube.com/watch?v=PKZzM1h5ixw
 			Stand:
@@ -506,9 +560,37 @@ KNIFE SHARPENING SERVICE
 
 		4 wheel scooter:
 
-	Grinding/Sharpening
+	GRINDING/SHARPENING
 		What about a fuck-off magnetic block the holds the knife at the right angle (20 degrees for most)? And then a bunch of belt sharpeners, possibly with water.
 
+	TARGET AREAS
+		See Google Sheet entitled "Swiss Town Distances from Zurich and Populations" for data. 
+		Indications for best prospective areas are:
+			Zürich
+			Winterthur
+			Basel
+			Bern
+			Lucerne
+			Uster
+			Dübendorf
+			Dietikon
+			Schlieren
+			Opfikon
+			Kloten
+			Regensdorf
+			Wallisellen
+			Zug
+			Wetzikon (ZH)
+			Adliswil
+
+	KNIFE HANDLE CLAMP, for Wicked edge style manual sharpening
+		Vice used to hold handle, with rubber padding to increase conformity
+			Vice jaw construction:
+				Layer 1 - Wooden outer jaws
+				Layer 2 - Rubber lined to add some conformity - maybe layers of table tennis rubber? Cheap and various softnesses available
+				Layer 3 - Dycem over the rubber for extra grip
+					Maybe the dycem can simply be stapled into the wood to hold the wood, rubber and dycem together (probably needs a band of something so staples doesn't rip dycem - like nylon webbing fron straps)
+			Alternative, maybe 2 pairs of dycem sausages placed vertically is enough. Could even attach to vice jaws with magnets, so various sizes could quickly be swapped out, or placed in different positions  		
 
 FOOD TRUCK 
 	Chicken edition
